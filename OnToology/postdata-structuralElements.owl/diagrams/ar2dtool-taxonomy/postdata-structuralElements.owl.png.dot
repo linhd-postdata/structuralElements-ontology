@@ -1,15 +1,15 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "core:Word" "-78dbef54:16be0356342:-7fcd" "http://postdata.linhd.uned.es/ontology/POSTDATA-literaryAnalysis.owl/property#OrderedListLine" "core:LexicalUnit" "core:Punctuation" "http://postdata.linhd.uned.es/ontology/POSTDATA-literaryAnalysis.owl/property#StanzaItem" "http://postdata.linhd.uned.es/ontology/POSTDATA-literaryAnalysis.owl/property#OrderedListStanzas" "http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/class#Role" "http://postdata.linhd.uned.es/ontology/POSTDATA-literaryAnalysis.owl/property#LineOrderedListItem" "olo:Slot" "olo:OrderedList" ; /*classes style*/
-	"core:Punctuation" -> "core:LexicalUnit" [ label = "rdfs:subClassOf" ];
-	"http://postdata.linhd.uned.es/ontology/POSTDATA-literaryAnalysis.owl/property#StanzaItem" -> "olo:Slot" [ label = "rdfs:subClassOf" ];
+node [shape = rectangle, color="black"]; "pdstruct:Punctuation" "pdstruct:StanzaItem" "pdstruct:Word" "gold:Syllable" "pdstruct:LineOrderedListItem" "pdstruct:Syllable" "pdstruct:OrderedListStanzas" "pdstruct:OrderedListLine" "pdstruct:LexicalUnit" "olo:Slot" "olo:OrderedList" ; /*classes style*/
+	"pdstruct:LineOrderedListItem" -> "olo:Slot" [ label = "rdfs:subClassOf" ];
+	"pdstruct:Word" -> "pdstruct:LexicalUnit" [ label = "rdfs:subClassOf" ];
 	"olo:OrderedList" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"pdstruct:OrderedListStanzas" -> "olo:OrderedList" [ label = "rdfs:subClassOf" ];
 	"olo:Slot" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
-	"http://postdata.linhd.uned.es/ontology/POSTDATA-literaryAnalysis.owl/property#LineOrderedListItem" -> "olo:Slot" [ label = "rdfs:subClassOf" ];
-	"http://postdata.linhd.uned.es/ontology/POSTDATA-literaryAnalysis.owl/property#OrderedListStanzas" -> "olo:OrderedList" [ label = "rdfs:subClassOf" ];
-	"http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/class#Role" -> "-78dbef54:16be0356342:-7fcd" [ label = "rdfs:subClassOf" ];
-	"http://postdata.linhd.uned.es/ontology/POSTDATA-literaryAnalysis.owl/property#OrderedListLine" -> "olo:OrderedList" [ label = "rdfs:subClassOf" ];
-	"core:Word" -> "core:LexicalUnit" [ label = "rdfs:subClassOf" ];
+	"pdstruct:Syllable" -> "gold:Syllable" [ label = "rdfs:subClassOf" ];
+	"pdstruct:StanzaItem" -> "olo:Slot" [ label = "rdfs:subClassOf" ];
+	"pdstruct:OrderedListLine" -> "olo:OrderedList" [ label = "rdfs:subClassOf" ];
+	"pdstruct:Punctuation" -> "pdstruct:LexicalUnit" [ label = "rdfs:subClassOf" ];
 
 }
