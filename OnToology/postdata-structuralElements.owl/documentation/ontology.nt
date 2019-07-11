@@ -1,0 +1,1669 @@
+<http://postdata.linhd.uned.es/ontology/POSTDATA-structuralElements.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://postdata.linhd.uned.es/ontology/POSTDATA-structuralElements.owl> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/ontology/olo/core#> .
+<http://postdata.linhd.uned.es/ontology/POSTDATA-structuralElements.owl> <http://creativecommons.org/ns#license> "http://creativecommons.org/licenses/by-sa/3.0/" .
+<http://postdata.linhd.uned.es/ontology/POSTDATA-structuralElements.owl> <http://creativecommons.org/ns#license> "http://www.gnu.org/copyleft/fdl.html" .
+<http://postdata.linhd.uned.es/ontology/POSTDATA-structuralElements.owl> <http://purl.org/dc/elements/1.1/creator> "POSTADATA Ontology V1.0"@en .
+<http://postdata.linhd.uned.es/ontology/POSTDATA-structuralElements.owl> <http://purl.org/dc/elements/1.1/creator> "Helena Bermúdez Sabel  -- https://orcid.org/0000-0001-7782-206X" .
+<http://postdata.linhd.uned.es/ontology/POSTDATA-structuralElements.owl> <http://purl.org/dc/elements/1.1/creator> "Mª Luisa Díez Platas -- https://orcid.org/0000-0002-9416-3147" .
+<http://postdata.linhd.uned.es/ontology/POSTDATA-structuralElements.owl> <http://purl.org/dc/elements/1.1/description> "Common ontology using semantic web technologies and W3C standards (such as OWL) and publish the metadata extracted from the poetry philological conceptualization  as linked open data (LOD), ready to be shared, linked and improved by the community of users"@en .
+<http://postdata.linhd.uned.es/ontology/POSTDATA-structuralElements.owl> <http://purl.org/dc/elements/1.1/title> "POSTDATA STRUCTURAL ELEMENTS Ontology"@en .
+<http://postdata.linhd.uned.es/ontology/POSTDATA-structuralElements.owl> <http://purl.org/dc/terms/publisher> "POSTDATA Project\n\n“This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”\nPrincipal Investigator. Elena González Blanco -- https://orcid.org/0000-0002-0448-1812\nTechnical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958"@en .
+<http://postdata.linhd.uned.es/ontology/POSTDATA-structuralElements.owl> <http://purl.org/dc/terms/publisher> "POSTDATA Project" .
+<http://postdata.linhd.uned.es/ontology/POSTDATA-structuralElements.owl> <http://purl.org/vocab/vann/preferredNamespacePrefix> "postdata" .
+<http://postdata.linhd.uned.es/ontology/POSTDATA-structuralElements.owl> <http://www.w3.org/2002/07/owl#versionInfo> "V1.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/property#vc-roleFunction
+<http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/property#vc-roleFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/property#vc-typeOfCharacter
+<http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/property#vc-typeOfCharacter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-audience
+<http://postdata.linhd.uned.es/ontology/core/vc-audience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-audienceEducationLevel
+<http://postdata.linhd.uned.es/ontology/core/vc-audienceEducationLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-authorEducationLevel
+<http://postdata.linhd.uned.es/ontology/core/vc-authorEducationLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-birthDateCertainty
+<http://postdata.linhd.uned.es/ontology/core/vc-birthDateCertainty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-birthPlaceCertainty
+<http://postdata.linhd.uned.es/ontology/core/vc-birthPlaceCertainty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-certainty
+<http://postdata.linhd.uned.es/ontology/core/vc-certainty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-clausula
+<http://postdata.linhd.uned.es/ontology/core/vc-clausula> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-clausulaSchemaType
+<http://postdata.linhd.uned.es/ontology/core/vc-clausulaSchemaType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-dateCertainty
+<http://postdata.linhd.uned.es/ontology/core/vc-dateCertainty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-feetType
+<http://postdata.linhd.uned.es/ontology/core/vc-feetType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-figureCategory
+<http://postdata.linhd.uned.es/ontology/core/vc-figureCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-footType
+<http://postdata.linhd.uned.es/ontology/core/vc-footType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-function
+<http://postdata.linhd.uned.es/ontology/core/vc-function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-gender
+<http://postdata.linhd.uned.es/ontology/core/vc-gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-genre
+<http://postdata.linhd.uned.es/ontology/core/vc-genre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-metricalCategory
+<http://postdata.linhd.uned.es/ontology/core/vc-metricalCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-metricalComplexity
+<http://postdata.linhd.uned.es/ontology/core/vc-metricalComplexity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-metricalContext
+<http://postdata.linhd.uned.es/ontology/core/vc-metricalContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-metricalType
+<http://postdata.linhd.uned.es/ontology/core/vc-metricalType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-poeticType
+<http://postdata.linhd.uned.es/ontology/core/vc-poeticType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-religiousAffiliation
+<http://postdata.linhd.uned.es/ontology/core/vc-religiousAffiliation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-rhymeCategory
+<http://postdata.linhd.uned.es/ontology/core/vc-rhymeCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-rhymeDispositionType
+<http://postdata.linhd.uned.es/ontology/core/vc-rhymeDispositionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-roleFunction
+<http://postdata.linhd.uned.es/ontology/core/vc-roleFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-script
+<http://postdata.linhd.uned.es/ontology/core/vc-script> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-socialStatus
+<http://postdata.linhd.uned.es/ontology/core/vc-socialStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-typeOfBibliographicItem
+<http://postdata.linhd.uned.es/ontology/core/vc-typeOfBibliographicItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-typeOfCharacter
+<http://postdata.linhd.uned.es/ontology/core/vc-typeOfCharacter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-typeOfDesignation
+<http://postdata.linhd.uned.es/ontology/core/vc-typeOfDesignation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-typeOfEdition
+<http://postdata.linhd.uned.es/ontology/core/vc-typeOfEdition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-typeOfEvent
+<http://postdata.linhd.uned.es/ontology/core/vc-typeOfEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-typeOfIntertextuality
+<http://postdata.linhd.uned.es/ontology/core/vc-typeOfIntertextuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-typeOfMusicalNotation
+<http://postdata.linhd.uned.es/ontology/core/vc-typeOfMusicalNotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-typeOfParatext
+<http://postdata.linhd.uned.es/ontology/core/vc-typeOfParatext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-typeOfPlace
+<http://postdata.linhd.uned.es/ontology/core/vc-typeOfPlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-typeOfRedaction
+<http://postdata.linhd.uned.es/ontology/core/vc-typeOfRedaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-typeOfRhymeMatching
+<http://postdata.linhd.uned.es/ontology/core/vc-typeOfRhymeMatching> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-typeOfStanza
+<http://postdata.linhd.uned.es/ontology/core/vc-typeOfStanza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-typeOfStanzaEdition
+<http://postdata.linhd.uned.es/ontology/core/vc-typeOfStanzaEdition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-unitType
+<http://postdata.linhd.uned.es/ontology/core/vc-unitType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-versificationType
+<http://postdata.linhd.uned.es/ontology/core/vc-versificationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/vc-writingTechnique
+<http://postdata.linhd.uned.es/ontology/core/vc-writingTechnique> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/property#affects
+<http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/property#affects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/property#isAffectedBy
+<http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/property#isAffectedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/property#isInvolvedIn
+<http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/property#isInvolvedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/property#isRoleOf
+<http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/property#isRoleOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/contains
+<http://postdata.linhd.uned.es/ontology/core/contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/corresponds
+<http://postdata.linhd.uned.es/ontology/core/corresponds> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/correspondsTo
+<http://postdata.linhd.uned.es/ontology/core/correspondsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/correspondsTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/correspondsTo> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/correspondsTo> <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/correspondsTo> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to a Place that is equivalent to the item at hand"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/creates
+<http://postdata.linhd.uned.es/ontology/core/creates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/creates> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://www.bl.uk/schemas/bibliographic/blterms#hasCreated> .
+<http://postdata.linhd.uned.es/ontology/core/creates> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/core/hasCreator> .
+<http://postdata.linhd.uned.es/ontology/core/creates> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to a bibliographic item (an instance of BibliographicSource, Ensemble, Intertextuality, Melody, Opus, Paratext, Redaction, Stanza) which was authored by the current Creator"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/hasCreator
+<http://postdata.linhd.uned.es/ontology/core/hasCreator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/hasCreator> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://purl.org/dc/terms/creator> .
+<http://postdata.linhd.uned.es/ontology/core/hasCreator> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://schema.org/author> .
+<http://postdata.linhd.uned.es/ontology/core/hasCreator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/hasCreator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://postdata.linhd.uned.es/ontology/core/hasCreator> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/hasCreator> <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/hasCreator> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to the entity Creator who has created the Stanza under analysis" .
+# 
+# http://postdata.linhd.uned.es/ontology/core/hasEditor
+<http://postdata.linhd.uned.es/ontology/core/hasEditor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/hasEditor> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://schema.org/editor> .
+<http://postdata.linhd.uned.es/ontology/core/hasEditor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/hasEditor> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/hasEditor> <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/hasEditor> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to the Person who has edited the current instance of the Stanza"@en .
+<http://postdata.linhd.uned.es/ontology/core/hasEditor> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to the Person who has edited the current instance of the WitnessCollection"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/hasFirstLine
+<http://postdata.linhd.uned.es/ontology/core/hasFirstLine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/hasFirstLine> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/hasFirstLine> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/hasFirstLine> .
+_:genid1 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://postdata.linhd.uned.es/ontology/core/Line> .
+<http://postdata.linhd.uned.es/ontology/core/hasFirstLine> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/core/Line> .
+<http://postdata.linhd.uned.es/ontology/core/hasFirstLine> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/hasFirstLine> <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/hasFirstLine> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to the first line (an instance of Line) which form the current element under analysis" .
+# 
+# http://postdata.linhd.uned.es/ontology/core/hasFirstPart
+<http://postdata.linhd.uned.es/ontology/core/hasFirstPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/hasFirstPart> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/hasFirstPart> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/hasFirstPart> .
+_:genid2 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://postdata.linhd.uned.es/ontology/core/Stanza> .
+<http://postdata.linhd.uned.es/ontology/core/hasFirstPart> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/hasFirstPart> <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/hasFirstPart> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to the first group of lines (an instance of Stanza) which form the current element under analysis"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/hasFirstSyllable
+<http://postdata.linhd.uned.es/ontology/core/hasFirstSyllable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/hasFirstSyllable> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/hasFirstSyllable> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid3 <http://www.w3.org/2002/07/owl#unionOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://postdata.linhd.uned.es/ontology/core/Line> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://postdata.linhd.uned.es/ontology/core/Word> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://postdata.linhd.uned.es/ontology/core/hasFirstSyllable> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/hasFirstSyllable> .
+_:genid6 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid6 <http://www.w3.org/2002/07/owl#onClass> <http://postdata.linhd.uned.es/ontology/core/Syllable> .
+<http://postdata.linhd.uned.es/ontology/core/hasFirstSyllable> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/core/Syllable> .
+<http://postdata.linhd.uned.es/ontology/core/hasFirstSyllable> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/hasFirstSyllable> <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/hasFirstSyllable> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to the first syllable of the word (an instance of Syllable)"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/hasFirstToken
+<http://postdata.linhd.uned.es/ontology/core/hasFirstToken> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/hasFirstToken> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/hasFirstToken> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/core/Line> .
+<http://postdata.linhd.uned.es/ontology/core/hasFirstToken> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/hasFirstToken> .
+_:genid7 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid7 <http://www.w3.org/2002/07/owl#onClass> <http://postdata.linhd.uned.es/ontology/core/LexicalUnit> .
+<http://postdata.linhd.uned.es/ontology/core/hasFirstToken> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/core/LexicalUnit> .
+<http://postdata.linhd.uned.es/ontology/core/hasFirstToken> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/hasFirstToken> <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/hasFirstToken> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to one of the words (an instance of Punctuation or Word) which form the current element under analysis"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/hasMusicalNotation
+<http://postdata.linhd.uned.es/ontology/core/hasMusicalNotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/hasMusicalNotation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/hasMusicalNotationList
+<http://postdata.linhd.uned.es/ontology/core/hasMusicalNotationList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/isCallOf
+<http://postdata.linhd.uned.es/ontology/core/isCallOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/isCallOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/core/Word> .
+<http://postdata.linhd.uned.es/ontology/core/isCallOf> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/isCallOf> .
+_:genid8 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid8 <http://www.w3.org/2002/07/owl#onClass> <http://postdata.linhd.uned.es/ontology/core/Word> .
+<http://postdata.linhd.uned.es/ontology/core/isCallOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/core/Word> .
+<http://postdata.linhd.uned.es/ontology/core/isCallOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to a previous Word (call) that rhymes with the current instance of Word"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/isEchoOf
+<http://postdata.linhd.uned.es/ontology/core/isEchoOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/isEchoOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/core/Word> .
+<http://postdata.linhd.uned.es/ontology/core/isEchoOf> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/isEchoOf> .
+_:genid9 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid9 <http://www.w3.org/2002/07/owl#onClass> <http://postdata.linhd.uned.es/ontology/core/Word> .
+<http://postdata.linhd.uned.es/ontology/core/isEchoOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/core/Word> .
+<http://postdata.linhd.uned.es/ontology/core/isEchoOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to a following Word (echo) that that rhymes with the current instance of Word"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/isFirstLine
+<http://postdata.linhd.uned.es/ontology/core/isFirstLine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/isFirstLine> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/core/Line> .
+<http://postdata.linhd.uned.es/ontology/core/isFirstLine> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to the group of lines (an instance of Stanza) of which the current item under analysis is its first line"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/isFirstSyllable
+<http://postdata.linhd.uned.es/ontology/core/isFirstSyllable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/isFirstSyllable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/core/Syllable> .
+<http://postdata.linhd.uned.es/ontology/core/isFirstSyllable> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/isFirstSyllable> .
+_:genid10 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid10 <http://www.w3.org/2002/07/owl#onClass> <http://postdata.linhd.uned.es/ontology/core/Line> .
+<http://postdata.linhd.uned.es/ontology/core/isFirstSyllable> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/isFirstSyllable> .
+_:genid11 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid11 <http://www.w3.org/2002/07/owl#onClass> <http://postdata.linhd.uned.es/ontology/core/Word> .
+<http://postdata.linhd.uned.es/ontology/core/isFirstSyllable> <http://www.w3.org/2000/01/rdf-schema#range> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid12 <http://www.w3.org/2002/07/owl#unionOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://postdata.linhd.uned.es/ontology/core/Line> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://postdata.linhd.uned.es/ontology/core/Word> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://postdata.linhd.uned.es/ontology/core/isFirstSyllable> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to the word (an instance of Line) of which the item at hand is its first syllable" .
+# 
+# http://postdata.linhd.uned.es/ontology/core/isFirstToken
+<http://postdata.linhd.uned.es/ontology/core/isFirstToken> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/isFirstToken> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/core/LexicalUnit> .
+<http://postdata.linhd.uned.es/ontology/core/isFirstToken> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/isFirstToken> .
+_:genid15 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid15 <http://www.w3.org/2002/07/owl#onClass> <http://postdata.linhd.uned.es/ontology/core/Line> .
+<http://postdata.linhd.uned.es/ontology/core/isFirstToken> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/core/Line> .
+<http://postdata.linhd.uned.es/ontology/core/isFirstToken> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to the container (an instance of Line) of which the current item under analysis is its first token" .
+# 
+# http://postdata.linhd.uned.es/ontology/core/isInflectedForm
+<http://postdata.linhd.uned.es/ontology/core/isInflectedForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/isInflectedForm> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/isInflectedForm> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/core/isLemmaOfWord> .
+<http://postdata.linhd.uned.es/ontology/core/isInflectedForm> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/core/Word> .
+<http://postdata.linhd.uned.es/ontology/core/isInflectedForm> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/isInflectedForm> .
+_:genid16 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid16 <http://www.w3.org/2002/07/owl#onClass> <http://postdata.linhd.uned.es/ontology/core/Word> .
+<http://postdata.linhd.uned.es/ontology/core/isInflectedForm> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/core/Word> .
+<http://postdata.linhd.uned.es/ontology/core/isInflectedForm> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/isInflectedForm> <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/isInflectedForm> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to its lemma (an instance of Word)"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/isLemma
+<http://postdata.linhd.uned.es/ontology/core/isLemma> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/isLemmaOfApp
+<http://postdata.linhd.uned.es/ontology/core/isLemmaOfApp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/isLemmaOfApp> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://postdata.linhd.uned.es/ontology/core/isLemma> .
+<http://postdata.linhd.uned.es/ontology/core/isLemmaOfApp> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to the instance of Reading that contains a variant reading"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/isLemmaOfWord
+<http://postdata.linhd.uned.es/ontology/core/isLemmaOfWord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/isLemmaOfWord> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://postdata.linhd.uned.es/ontology/core/isLemma> .
+<http://postdata.linhd.uned.es/ontology/core/isLemmaOfWord> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bakulf.github.io/raop/0.1#Word> .
+<http://postdata.linhd.uned.es/ontology/core/isLemmaOfWord> <http://www.w3.org/2000/01/rdf-schema#range> <http://bakulf.github.io/raop/0.1#Word> .
+<http://postdata.linhd.uned.es/ontology/core/isLemmaOfWord> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to one of the inflected forms (an instance of Word) of the current headword (the Word at hand)"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/isTheSameAs
+<http://postdata.linhd.uned.es/ontology/core/isTheSameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/isTheSameAs> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/isTheSameAs> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/core/Stanza> .
+<http://postdata.linhd.uned.es/ontology/core/isTheSameAs> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/isTheSameAs> .
+_:genid17 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid17 <http://www.w3.org/2002/07/owl#onClass> <http://postdata.linhd.uned.es/ontology/core/Stanza> .
+<http://postdata.linhd.uned.es/ontology/core/isTheSameAs> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/core/Stanza> .
+<http://postdata.linhd.uned.es/ontology/core/isTheSameAs> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/isTheSameAs> <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/isTheSameAs> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to another instance of Stanza which belongs to another work or ensemble but that has the same contents as the current item at hand"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/isTranslated
+<http://postdata.linhd.uned.es/ontology/core/isTranslated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/isTranslated> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to the work (and instance of Opus) of which the current reference (the instance at hand of BibliographicSource) is a translation"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/isTranslation
+<http://postdata.linhd.uned.es/ontology/core/isTranslation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/isTranslation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/isTranslation> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/isTranslation> <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/isTranslation> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to a bibliographic reference (an instance of BibliographicSource) which is a translation of the current item being analysed"@en .
+<http://postdata.linhd.uned.es/ontology/core/isTranslation> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to another stanza (an instance of Stanza) from which the current item being analysed was translated"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/mentions
+<http://postdata.linhd.uned.es/ontology/core/mentions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/mentions> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/mentions> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to an instance of Event that is referred in the current under analysis"@en .
+<http://postdata.linhd.uned.es/ontology/core/mentions> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to an instance of Word to provide further information of a word referred in the Reading"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/nextPart
+<http://postdata.linhd.uned.es/ontology/core/nextPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/nextPart> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/nextPart> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/nextPart> .
+_:genid18 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid18 <http://www.w3.org/2002/07/owl#onClass> <http://postdata.linhd.uned.es/ontology/core/Stanza> .
+<http://postdata.linhd.uned.es/ontology/core/nextPart> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/nextPart> <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/nextPart> <http://www.w3.org/2000/01/rdf-schema#comment> "nextPart"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/nextStanza
+<http://postdata.linhd.uned.es/ontology/core/nextStanza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/nextStanza> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/nextStanza> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/core/Stanza> .
+<http://postdata.linhd.uned.es/ontology/core/nextStanza> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/nextStanza> .
+_:genid19 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid19 <http://www.w3.org/2002/07/owl#onClass> <http://postdata.linhd.uned.es/ontology/core/Stanza> .
+<http://postdata.linhd.uned.es/ontology/core/nextStanza> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/core/Stanza> .
+<http://postdata.linhd.uned.es/ontology/core/nextStanza> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/nextStanza> <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/nextStanza> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to an instance of Stanza that follows the current item under analysis" .
+# 
+# http://postdata.linhd.uned.es/ontology/core/nextSyllable
+<http://postdata.linhd.uned.es/ontology/core/nextSyllable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/nextSyllable> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/nextSyllable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/core/Syllable> .
+<http://postdata.linhd.uned.es/ontology/core/nextSyllable> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/nextSyllable> .
+_:genid20 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid20 <http://www.w3.org/2002/07/owl#onClass> <http://postdata.linhd.uned.es/ontology/core/Syllable> .
+<http://postdata.linhd.uned.es/ontology/core/nextSyllable> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/core/Syllable> .
+<http://postdata.linhd.uned.es/ontology/core/nextSyllable> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/nextSyllable> <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/nextSyllable> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to an instance of Syllable in order to analyse the syllable that comes after the syllable at hand" .
+# 
+# http://postdata.linhd.uned.es/ontology/core/nextToken
+<http://postdata.linhd.uned.es/ontology/core/nextToken> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/nextToken> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/nextToken> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/core/LexicalUnit> .
+<http://postdata.linhd.uned.es/ontology/core/nextToken> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/nextToken> .
+_:genid21 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid21 <http://www.w3.org/2002/07/owl#onClass> <http://postdata.linhd.uned.es/ontology/core/LexicalUnit> .
+<http://postdata.linhd.uned.es/ontology/core/nextToken> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/core/LexicalUnit> .
+<http://postdata.linhd.uned.es/ontology/core/nextToken> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/nextToken> <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/nextToken> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to an instance of Punctuation that follows the current item under analysis"@en .
+<http://postdata.linhd.uned.es/ontology/core/nextToken> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to an instance of Word that follows the current item under analysis"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/previousPart
+<http://postdata.linhd.uned.es/ontology/core/previousPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/previousPart> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/previousPart> .
+_:genid22 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid22 <http://www.w3.org/2002/07/owl#onClass> <http://postdata.linhd.uned.es/ontology/core/Stanza> .
+<http://postdata.linhd.uned.es/ontology/core/previousPart> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to the previous group of lines (an instance of Stanza) which, together with the current element under analysis, is part of the same textual unit"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/previousStanza
+<http://postdata.linhd.uned.es/ontology/core/previousStanza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/previousStanza> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/core/Stanza> .
+<http://postdata.linhd.uned.es/ontology/core/previousStanza> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/previousStanza> .
+_:genid23 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid23 <http://www.w3.org/2002/07/owl#onClass> <http://postdata.linhd.uned.es/ontology/core/Stanza> .
+<http://postdata.linhd.uned.es/ontology/core/previousStanza> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/core/Stanza> .
+<http://postdata.linhd.uned.es/ontology/core/previousStanza> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to the previous group of lines (an instance of Stanza) which, together with the current element under analysis, is part of the same textual unit"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/previousSyllable
+<http://postdata.linhd.uned.es/ontology/core/previousSyllable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/previousSyllable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/core/Syllable> .
+<http://postdata.linhd.uned.es/ontology/core/previousSyllable> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/previousSyllable> .
+_:genid24 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid24 <http://www.w3.org/2002/07/owl#onClass> <http://postdata.linhd.uned.es/ontology/core/Syllable> .
+<http://postdata.linhd.uned.es/ontology/core/previousSyllable> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/core/Syllable> .
+<http://postdata.linhd.uned.es/ontology/core/previousSyllable> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to an instance of Syllable in order to analyse the syllable that comes before the syllable at hand" .
+# 
+# http://postdata.linhd.uned.es/ontology/core/previousToken
+<http://postdata.linhd.uned.es/ontology/core/previousToken> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/previousToken> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/core/LexicalUnit> .
+<http://postdata.linhd.uned.es/ontology/core/previousToken> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/previousToken> .
+_:genid25 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid25 <http://www.w3.org/2002/07/owl#onClass> <http://postdata.linhd.uned.es/ontology/core/LexicalUnit> .
+<http://postdata.linhd.uned.es/ontology/core/previousToken> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/core/LexicalUnit> .
+<http://postdata.linhd.uned.es/ontology/core/previousToken> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to an instance of Punctuation that preceeds the current item under analysis" .
+# 
+# http://postdata.linhd.uned.es/ontology/core/synalephaFirstElement
+<http://postdata.linhd.uned.es/ontology/core/synalephaFirstElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/synalephaFirstElement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/core/Syllable> .
+<http://postdata.linhd.uned.es/ontology/core/synalephaFirstElement> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/synalephaFirstElement> .
+_:genid26 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid26 <http://www.w3.org/2002/07/owl#onClass> <http://postdata.linhd.uned.es/ontology/core/Syllable> .
+<http://postdata.linhd.uned.es/ontology/core/synalephaFirstElement> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/core/Syllable> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/synalephaSecondElement
+<http://postdata.linhd.uned.es/ontology/core/synalephaSecondElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/synalephaSecondElement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/core/synalephaSecondElement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/core/Syllable> .
+<http://postdata.linhd.uned.es/ontology/core/synalephaSecondElement> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/synalephaSecondElement> .
+_:genid27 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid27 <http://www.w3.org/2002/07/owl#onClass> <http://postdata.linhd.uned.es/ontology/core/Syllable> .
+<http://postdata.linhd.uned.es/ontology/core/synalephaSecondElement> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/core/Syllable> .
+<http://postdata.linhd.uned.es/ontology/core/synalephaSecondElement> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/synalephaSecondElement> <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/synalephaSecondElement> <http://www.w3.org/2000/01/rdf-schema#comment> "This propety points to the next linguistic syllable that is merged with the current instance of Syllable from a prosodic point of view (synalepha)" .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://schema.org/author
+<http://schema.org/author> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://schema.org/editor
+<http://schema.org/editor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/editor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+# 
+# http://www.bl.uk/schemas/bibliographic/blterms#hasCreated
+<http://www.bl.uk/schemas/bibliographic/blterms#hasCreated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/2002/07/owl#topObjectProperty
+<http://www.w3.org/2002/07/owl#topObjectProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://postdata.linhd.uned.es/ontology/POSTDATA-dates.owl/property#hiatusPart1
+<http://postdata.linhd.uned.es/ontology/POSTDATA-dates.owl/property#hiatusPart1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://postdata.linhd.uned.es/ontology/POSTDATA-dates.owl/property#hiatusPart2
+<http://postdata.linhd.uned.es/ontology/POSTDATA-dates.owl/property#hiatusPart2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://postdata.linhd.uned.es/ontology/POSTDATA-dates.owl/property#stanzaNumber
+<http://postdata.linhd.uned.es/ontology/POSTDATA-dates.owl/property#stanzaNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/property#role
+<http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/property#role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/property#roleDescription
+<http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/property#roleDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/property#roleFunction
+<http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/property#roleFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/property#typeOfCharacter
+<http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/property#typeOfCharacter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/altStanzaNumber
+<http://postdata.linhd.uned.es/ontology/core/altStanzaNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://postdata.linhd.uned.es/ontology/core/altStanzaNumber> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://postdata.linhd.uned.es/ontology/core/altStanzaNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/core/Stanza> .
+<http://postdata.linhd.uned.es/ontology/core/altStanzaNumber> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/altStanzaNumber> .
+_:genid28 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid28 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://postdata.linhd.uned.es/ontology/core/altStanzaNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://postdata.linhd.uned.es/ontology/core/altStanzaNumber> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/altStanzaNumber> <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/altStanzaNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Position of the stanza inside the composition when a different ordering is possible"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/coda
+<http://postdata.linhd.uned.es/ontology/core/coda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://postdata.linhd.uned.es/ontology/core/coda> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://postdata.linhd.uned.es/ontology/core/coda> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/core/Syllable> .
+<http://postdata.linhd.uned.es/ontology/core/coda> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/coda> .
+_:genid29 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid29 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://postdata.linhd.uned.es/ontology/core/coda> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://postdata.linhd.uned.es/ontology/core/coda> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/coda> <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/coda> <http://www.w3.org/2000/01/rdf-schema#comment> "Sound or sounds that follow the nucleus" .
+# 
+# http://postdata.linhd.uned.es/ontology/core/content
+<http://postdata.linhd.uned.es/ontology/core/content> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://postdata.linhd.uned.es/ontology/core/content> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://postdata.linhd.uned.es/ontology/core/content> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/content> .
+_:genid30 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid30 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://postdata.linhd.uned.es/ontology/core/content> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://postdata.linhd.uned.es/ontology/core/content> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/content> <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/content> <http://www.w3.org/2000/01/rdf-schema#comment> "Full content of the acrostic, that is, the letters"@en .
+<http://postdata.linhd.uned.es/ontology/core/content> <http://www.w3.org/2000/01/rdf-schema#comment> "Full content of item" .
+<http://postdata.linhd.uned.es/ontology/core/content> <http://www.w3.org/2000/01/rdf-schema#label> "content"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/editionNotes
+<http://postdata.linhd.uned.es/ontology/core/editionNotes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://postdata.linhd.uned.es/ontology/core/editionNotes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://postdata.linhd.uned.es/ontology/core/editionNotes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://postdata.linhd.uned.es/ontology/core/editionNotes> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/editionNotes> <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/editionNotes> <http://www.w3.org/2000/01/rdf-schema#comment> "Editorial commentary"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/hasDiastole
+<http://postdata.linhd.uned.es/ontology/core/hasDiastole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://postdata.linhd.uned.es/ontology/core/hasDiastole> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://postdata.linhd.uned.es/ontology/core/hasDiastole> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://postdata.linhd.uned.es/ontology/core/hasDiastole> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/hasDiastole> <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/hasDiastole> <http://www.w3.org/2000/01/rdf-schema#comment> "If it contains the lengthening of a normally short syllable"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/hasElision
+<http://postdata.linhd.uned.es/ontology/core/hasElision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://postdata.linhd.uned.es/ontology/core/hasElision> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://postdata.linhd.uned.es/ontology/core/hasElision> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://postdata.linhd.uned.es/ontology/core/hasElision> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/hasElision> <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/hasElision> <http://www.w3.org/2000/01/rdf-schema#comment> "If it presents the combination of two syllables into one for the purposes of poetic scansion"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/hasHiatus
+<http://postdata.linhd.uned.es/ontology/core/hasHiatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://postdata.linhd.uned.es/ontology/core/hasHiatus> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://postdata.linhd.uned.es/ontology/core/hasHiatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://postdata.linhd.uned.es/ontology/core/hasHiatus> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/hasHiatus> <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/hasHiatus> <http://www.w3.org/2000/01/rdf-schema#comment> "If it contains the separate pronunciation of the two vowels in a diphthong for the sake of meter"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/hasSynizesis
+<http://postdata.linhd.uned.es/ontology/core/hasSynizesis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://postdata.linhd.uned.es/ontology/core/hasSynizesis> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://postdata.linhd.uned.es/ontology/core/hasSynizesis> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://postdata.linhd.uned.es/ontology/core/hasSynizesis> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/hasSynizesis> <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/hasSynizesis> <http://www.w3.org/2000/01/rdf-schema#comment> "If it presents the union in pronunciation of two adjacent vowels into one syllable without forming a diphthong"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/hasSystole
+<http://postdata.linhd.uned.es/ontology/core/hasSystole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://postdata.linhd.uned.es/ontology/core/hasSystole> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://postdata.linhd.uned.es/ontology/core/hasSystole> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://postdata.linhd.uned.es/ontology/core/hasSystole> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/hasSystole> <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/hasSystole> <http://www.w3.org/2000/01/rdf-schema#comment> "If it contains the shortening of a syllable regularly long"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/incipit
+<http://postdata.linhd.uned.es/ontology/core/incipit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://postdata.linhd.uned.es/ontology/core/incipit> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://postdata.linhd.uned.es/ontology/core/incipit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://postdata.linhd.uned.es/ontology/core/incipit> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/incipit> <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/incipit> <http://www.w3.org/2000/01/rdf-schema#comment> "The first line of the work"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/isDialepha
+<http://postdata.linhd.uned.es/ontology/core/isDialepha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://postdata.linhd.uned.es/ontology/core/isDialepha> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://postdata.linhd.uned.es/ontology/core/isDialepha> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/core/Syllable> .
+<http://postdata.linhd.uned.es/ontology/core/isDialepha> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://postdata.linhd.uned.es/ontology/core/isDialepha> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/isDialepha> <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/isNotMetricStanza
+<http://postdata.linhd.uned.es/ontology/core/isNotMetricStanza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://postdata.linhd.uned.es/ontology/core/isNotMetricStanza> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://postdata.linhd.uned.es/ontology/core/isNotMetricStanza> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/core/Stanza> .
+<http://postdata.linhd.uned.es/ontology/core/isNotMetricStanza> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://postdata.linhd.uned.es/ontology/core/isNotMetricStanza> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/isNotMetricStanza> <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/isNotMetricStanza> <http://www.w3.org/2000/01/rdf-schema#comment> "If Stanza is a metrical unit, then this should be “no”. Otherwise (e.g. a section, a lai, etc.) it should be set to “yes”"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/isRefrainOmitted
+<http://postdata.linhd.uned.es/ontology/core/isRefrainOmitted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://postdata.linhd.uned.es/ontology/core/isRefrainOmitted> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://postdata.linhd.uned.es/ontology/core/isRefrainOmitted> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://postdata.linhd.uned.es/ontology/core/isRefrainOmitted> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/isRefrainOmitted> <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/isRefrainOmitted> <http://www.w3.org/2000/01/rdf-schema#comment> "Whether the copy of the refrain was omitted"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/isStressed
+<http://postdata.linhd.uned.es/ontology/core/isStressed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://postdata.linhd.uned.es/ontology/core/isStressed> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://postdata.linhd.uned.es/ontology/core/isStressed> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/core/Syllable> .
+<http://postdata.linhd.uned.es/ontology/core/isStressed> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://postdata.linhd.uned.es/ontology/core/isStressed> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/isStressed> <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/lemma
+<http://postdata.linhd.uned.es/ontology/core/lemma> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://postdata.linhd.uned.es/ontology/core/lemma> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://postdata.linhd.uned.es/ontology/core/lemma> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/core/Word> .
+<http://postdata.linhd.uned.es/ontology/core/lemma> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/lemma> .
+_:genid31 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid31 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://postdata.linhd.uned.es/ontology/core/lemma> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://postdata.linhd.uned.es/ontology/core/lemma> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/lemma> <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/lemma> <http://www.w3.org/2000/01/rdf-schema#comment> "Citation form, the particular form that is chosen by convention to represent the lexeme"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/lineNumber
+<http://postdata.linhd.uned.es/ontology/core/lineNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://postdata.linhd.uned.es/ontology/core/lineNumber> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://postdata.linhd.uned.es/ontology/core/lineNumber> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/lineNumber> .
+_:genid32 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid32 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://postdata.linhd.uned.es/ontology/core/lineNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://postdata.linhd.uned.es/ontology/core/lineNumber> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/lineNumber> <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/lineNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of the verse" .
+# 
+# http://postdata.linhd.uned.es/ontology/core/morphologicalAnnotation
+<http://postdata.linhd.uned.es/ontology/core/morphologicalAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://postdata.linhd.uned.es/ontology/core/morphologicalAnnotation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://postdata.linhd.uned.es/ontology/core/morphologicalAnnotation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/core/Word> .
+<http://postdata.linhd.uned.es/ontology/core/morphologicalAnnotation> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/morphologicalAnnotation> .
+_:genid33 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid33 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://postdata.linhd.uned.es/ontology/core/morphologicalAnnotation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://postdata.linhd.uned.es/ontology/core/morphologicalAnnotation> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/morphologicalAnnotation> <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/morphologicalAnnotation> <http://www.w3.org/2000/01/rdf-schema#comment> "Any type of morphological analysis (from POS to morpheme composition)"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/nucleusType
+<http://postdata.linhd.uned.es/ontology/core/nucleusType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://postdata.linhd.uned.es/ontology/core/nucleusType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://postdata.linhd.uned.es/ontology/core/nucleusType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/core/Syllable> .
+<http://postdata.linhd.uned.es/ontology/core/nucleusType> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/nucleusType> .
+_:genid34 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid34 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://postdata.linhd.uned.es/ontology/core/nucleusType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://postdata.linhd.uned.es/ontology/core/nucleusType> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/nucleusType> <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/nucleusType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of syllabic nucleus (linguistic typology)"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/onset
+<http://postdata.linhd.uned.es/ontology/core/onset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://postdata.linhd.uned.es/ontology/core/onset> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://postdata.linhd.uned.es/ontology/core/onset> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/core/Syllable> .
+<http://postdata.linhd.uned.es/ontology/core/onset> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/onset> .
+_:genid35 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid35 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://postdata.linhd.uned.es/ontology/core/onset> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://postdata.linhd.uned.es/ontology/core/onset> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/onset> <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/onset> <http://www.w3.org/2000/01/rdf-schema#comment> "Sound or sounds occurring before the nucleus, a consonant or consonant cluster"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/paraphrasis
+<http://postdata.linhd.uned.es/ontology/core/paraphrasis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://postdata.linhd.uned.es/ontology/core/paraphrasis> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://postdata.linhd.uned.es/ontology/core/paraphrasis> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://postdata.linhd.uned.es/ontology/core/paraphrasis> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/paraphrasis> <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/paraphrasis> <http://www.w3.org/2000/01/rdf-schema#comment> "The recasting of the contents in words different from that originally used, whether in the same language or in a translation"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/phoneticTranscription
+<http://postdata.linhd.uned.es/ontology/core/phoneticTranscription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://postdata.linhd.uned.es/ontology/core/phoneticTranscription> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://postdata.linhd.uned.es/ontology/core/phoneticTranscription> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/phoneticTranscription> .
+_:genid36 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid36 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://postdata.linhd.uned.es/ontology/core/phoneticTranscription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://postdata.linhd.uned.es/ontology/core/phoneticTranscription> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/phoneticTranscription> <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/phoneticTranscription> <http://www.w3.org/2000/01/rdf-schema#comment> "Phonetic transcription"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/positionInWord
+<http://postdata.linhd.uned.es/ontology/core/positionInWord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://postdata.linhd.uned.es/ontology/core/positionInWord> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://postdata.linhd.uned.es/ontology/core/positionInWord> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/core/Syllable> .
+<http://postdata.linhd.uned.es/ontology/core/positionInWord> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/positionInWord> .
+_:genid37 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid37 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://postdata.linhd.uned.es/ontology/core/positionInWord> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://postdata.linhd.uned.es/ontology/core/positionInWord> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/positionInWord> <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/positionInWord> <http://www.w3.org/2000/01/rdf-schema#comment> "Position of the syllable in the word \nEg.: 3/4 (= third syllable in a four-syllable word)"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/regularisedSpelling
+<http://postdata.linhd.uned.es/ontology/core/regularisedSpelling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://postdata.linhd.uned.es/ontology/core/regularisedSpelling> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://postdata.linhd.uned.es/ontology/core/regularisedSpelling> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid38 <http://www.w3.org/2002/07/owl#unionOf> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://postdata.linhd.uned.es/ontology/core/Line> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://postdata.linhd.uned.es/ontology/core/Word> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://postdata.linhd.uned.es/ontology/core/regularisedSpelling> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/regularisedSpelling> .
+_:genid41 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid41 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://postdata.linhd.uned.es/ontology/core/regularisedSpelling> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://postdata.linhd.uned.es/ontology/core/regularisedSpelling> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/regularisedSpelling> <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/regularisedSpelling> <http://www.w3.org/2000/01/rdf-schema#comment> "Contains a reading which has been regularised or normalised regarding its orthography"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/sense
+<http://postdata.linhd.uned.es/ontology/core/sense> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://postdata.linhd.uned.es/ontology/core/sense> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://postdata.linhd.uned.es/ontology/core/sense> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/core/Word> .
+<http://postdata.linhd.uned.es/ontology/core/sense> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/sense> .
+_:genid42 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid42 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://postdata.linhd.uned.es/ontology/core/sense> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://postdata.linhd.uned.es/ontology/core/sense> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/sense> <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/sense> <http://www.w3.org/2000/01/rdf-schema#comment> "One of the meanings of a word or phrase"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/translation
+<http://postdata.linhd.uned.es/ontology/core/translation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://postdata.linhd.uned.es/ontology/core/translation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://postdata.linhd.uned.es/ontology/core/translation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/core/Word> .
+<http://postdata.linhd.uned.es/ontology/core/translation> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/translation> .
+_:genid43 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid43 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://postdata.linhd.uned.es/ontology/core/translation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://postdata.linhd.uned.es/ontology/core/translation> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/translation> <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/translation> <http://www.w3.org/2000/01/rdf-schema#comment> "Translation of the word"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/typeOfStanza
+<http://postdata.linhd.uned.es/ontology/core/typeOfStanza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://postdata.linhd.uned.es/ontology/core/typeOfStanza> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://postdata.linhd.uned.es/ontology/core/typeOfStanza> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/core/Stanza> .
+<http://postdata.linhd.uned.es/ontology/core/typeOfStanza> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/typeOfStanza> .
+_:genid44 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid44 <http://www.w3.org/2002/07/owl#onDataRange> <http://postdata.linhd.uned.es/ontology/core/vc-typeOfStanza> .
+<http://postdata.linhd.uned.es/ontology/core/typeOfStanza> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/core/vc-typeOfStanza> .
+<http://postdata.linhd.uned.es/ontology/core/typeOfStanza> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/typeOfStanza> <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/typeOfStanza> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of stanza, but not in relation to its metrics. E.g. tornada, refrain"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/typeOfStanzaEdition
+<http://postdata.linhd.uned.es/ontology/core/typeOfStanzaEdition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://postdata.linhd.uned.es/ontology/core/typeOfStanzaEdition> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://postdata.linhd.uned.es/ontology/core/typeOfStanzaEdition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/core/Stanza> .
+<http://postdata.linhd.uned.es/ontology/core/typeOfStanzaEdition> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/typeOfStanzaEdition> .
+_:genid45 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid45 <http://www.w3.org/2002/07/owl#onDataRange> <http://postdata.linhd.uned.es/ontology/core/vc-typeOfStanzaEdition> .
+<http://postdata.linhd.uned.es/ontology/core/typeOfStanzaEdition> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/core/vc-typeOfStanzaEdition> .
+<http://postdata.linhd.uned.es/ontology/core/typeOfStanzaEdition> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/typeOfStanzaEdition> <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/typeOfStanzaEdition> <http://www.w3.org/2000/01/rdf-schema#comment> "The type of the text provided in the Stanza \nEg.: Diplomatic edition, critical edition, translation"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/weight
+<http://postdata.linhd.uned.es/ontology/core/weight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://postdata.linhd.uned.es/ontology/core/weight> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://postdata.linhd.uned.es/ontology/core/weight> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/core/Syllable> .
+<http://postdata.linhd.uned.es/ontology/core/weight> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/weight> .
+_:genid46 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid46 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://postdata.linhd.uned.es/ontology/core/weight> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://postdata.linhd.uned.es/ontology/core/weight> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/weight> <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/weight> <http://www.w3.org/2000/01/rdf-schema#comment> "Pattern according to the number and/or duration of segments in the syllabic rime, that is, the nucleus and coda"@en .
+# 
+# http:/prototipo-postdata.linhd.uned.es/ontology/POSTADATA-commonDataProperties.owl/property#language
+<http:/prototipo-postdata.linhd.uned.es/ontology/POSTADATA-commonDataProperties.owl/property#language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://bakulf.github.io/raop/0.1#Word
+<http://bakulf.github.io/raop/0.1#Word> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://postdata.linhd.uned.es/ontology/POSTDATA-literaryAnalysis.owl/property#LineOrderedListItem
+<http://postdata.linhd.uned.es/ontology/POSTDATA-literaryAnalysis.owl/property#LineOrderedListItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://postdata.linhd.uned.es/ontology/POSTDATA-literaryAnalysis.owl/property#LineOrderedListItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/olo/core#Slot> .
+# 
+# http://postdata.linhd.uned.es/ontology/POSTDATA-literaryAnalysis.owl/property#OrderedListLine
+<http://postdata.linhd.uned.es/ontology/POSTDATA-literaryAnalysis.owl/property#OrderedListLine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://postdata.linhd.uned.es/ontology/POSTDATA-literaryAnalysis.owl/property#OrderedListLine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/olo/core#OrderedList> .
+# 
+# http://postdata.linhd.uned.es/ontology/POSTDATA-literaryAnalysis.owl/property#OrderedListStanzas
+<http://postdata.linhd.uned.es/ontology/POSTDATA-literaryAnalysis.owl/property#OrderedListStanzas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://postdata.linhd.uned.es/ontology/POSTDATA-literaryAnalysis.owl/property#OrderedListStanzas> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/olo/core#OrderedList> .
+# 
+# http://postdata.linhd.uned.es/ontology/POSTDATA-literaryAnalysis.owl/property#StanzaItem
+<http://postdata.linhd.uned.es/ontology/POSTDATA-literaryAnalysis.owl/property#StanzaItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://postdata.linhd.uned.es/ontology/POSTDATA-literaryAnalysis.owl/property#StanzaItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/olo/core#Slot> .
+# 
+# http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/class#Agent
+<http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/class#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/class#Agent> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.europeana.eu/schemas/edm/Agent> .
+<http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/class#Agent> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent> .
+<http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/class#Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/property#isInvolvedIn> .
+_:genid47 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid47 <http://www.w3.org/2002/07/owl#onClass> <http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/class#Event> .
+<http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/class#Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/class#Event
+<http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/class#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/class#Person
+<http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/class#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/class#Role
+<http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/class#Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/class#Role> <http://www.w3.org/2002/07/owl#equivalentClass> <http://schema.org/Role> .
+<http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/class#Role> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role> .
+<http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/class#Role> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid48 <http://www.w3.org/2002/07/owl#unionOf> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/property#role> .
+_:genid52 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/property#roleFunction> .
+_:genid50 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/property#vc-roleFunction> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/class#Role> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/property#affects> .
+_:genid53 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid53 <http://www.w3.org/2002/07/owl#onClass> <http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/class#Role> .
+<http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/class#Role> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/property#isAffectedBy> .
+_:genid54 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid54 <http://www.w3.org/2002/07/owl#onClass> <http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/class#Role> .
+<http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/class#Role> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/property#isRoleOf> .
+_:genid55 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid55 <http://www.w3.org/2002/07/owl#onClass> <http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/class#Person> .
+<http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/class#Role> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/property#typeOfCharacter> .
+_:genid56 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid56 <http://www.w3.org/2002/07/owl#onDataRange> <http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/property#vc-typeOfCharacter> .
+<http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/class#Role> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/property#roleDescription> .
+_:genid57 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid57 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/class#Role> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/class#Role> <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:37:24Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/class#Role> <http://www.w3.org/2000/01/rdf-schema#comment> "Function of a person or character" .
+<http://postdata.linhd.uned.es/ontology/POSTDATA-relatedEntities.owl/class#Role> <http://www.w3.org/2000/01/rdf-schema#label> "Role"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/LexicalUnit
+<http://postdata.linhd.uned.es/ontology/core/LexicalUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://postdata.linhd.uned.es/ontology/core/LexicalUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "A single element"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/Line
+<http://postdata.linhd.uned.es/ontology/core/Line> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://postdata.linhd.uned.es/ontology/core/Line> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/Line> <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:37:24Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/Line> <http://www.w3.org/2000/01/rdf-schema#comment> "A unit of verse that usually ends in a visual or typographic break and generally characterized by its length and meter\nEg.: “As armas e os barões assinalados” - from Os Lusíadas" .
+<http://postdata.linhd.uned.es/ontology/core/Line> <http://www.w3.org/2000/01/rdf-schema#label> "Line"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/Punctuation
+<http://postdata.linhd.uned.es/ontology/core/Punctuation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://postdata.linhd.uned.es/ontology/core/Punctuation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/core/LexicalUnit> .
+<http://postdata.linhd.uned.es/ontology/core/Punctuation> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/Punctuation> <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:37:24Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/Punctuation> <http://www.w3.org/2000/01/rdf-schema#comment> "Specific markings, signs and symbols that are used in and around sentences to give them structure and to allow for correct understanding and comprehension"@en .
+<http://postdata.linhd.uned.es/ontology/core/Punctuation> <http://www.w3.org/2000/01/rdf-schema#label> "Punctuation"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/Stanza
+<http://postdata.linhd.uned.es/ontology/core/Stanza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://postdata.linhd.uned.es/ontology/core/Stanza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/incipit> .
+_:genid58 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid58 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://postdata.linhd.uned.es/ontology/core/Stanza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/core/paraphrasis> .
+_:genid59 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid59 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://postdata.linhd.uned.es/ontology/core/Stanza> <http://www.w3.org/2000/01/rdf-schema#comment> "Group of lines. Usually, this grouping forms the basic recurring metrical unit of a poem, song or play\nEg.: As armas e os barões assinalados,\nQue da ocidental praia Lusitana,\nPor mares nunca de antes navegados,\nPassaram ainda além da Taprobana,\nEm perigos e guerras esforçados,\nMais do que prometia a força humana,\nE entre gente remota edificaram\nNovo Reino, que tanto sublimaram;" .
+<http://postdata.linhd.uned.es/ontology/core/Stanza> <http://www.w3.org/2000/01/rdf-schema#label> "Stanza"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/Syllable
+<http://postdata.linhd.uned.es/ontology/core/Syllable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://postdata.linhd.uned.es/ontology/core/Syllable> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/linguistics/gold/Syllable> .
+<http://postdata.linhd.uned.es/ontology/core/Syllable> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/Syllable> <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:37:24Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/Syllable> <http://www.w3.org/2000/01/rdf-schema#comment> "A linguistic analysis using the syllable as the unit of reference\nEg.: The onset and coda of the rhyme vowel"@en .
+<http://postdata.linhd.uned.es/ontology/core/Syllable> <http://www.w3.org/2000/01/rdf-schema#label> "Syllable"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/core/Word
+<http://postdata.linhd.uned.es/ontology/core/Word> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://postdata.linhd.uned.es/ontology/core/Word> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/core/LexicalUnit> .
+<http://postdata.linhd.uned.es/ontology/core/Word> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/core/Word> <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:37:24Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/core/Word> <http://www.w3.org/2000/01/rdf-schema#comment> "A single distinct meaningful element of writing, used with others (or sometimes alone) to form a sentence and typically shown with a space on either side when written or printed\nEg.: The word “life”"@en .
+<http://postdata.linhd.uned.es/ontology/core/Word> <http://www.w3.org/2000/01/rdf-schema#label> "Word"@en .
+# 
+# http://purl.org/linguistics/gold/Syllable
+<http://purl.org/linguistics/gold/Syllable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://schema.org/Role
+<http://schema.org/Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.europeana.eu/schemas/edm/Agent
+<http://www.europeana.eu/schemas/edm/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent
+<http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role
+<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://postdata.linhd.uned.es/ontology/core/Cantigas
+<http://postdata.linhd.uned.es/ontology/core/Cantigas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://postdata.linhd.uned.es/ontology/core/Cantigas> <http://postdata.linhd.uned.es/ontology/core/hasCreator> <http://postdata.linhd.uned.es/ontology/core/Person_1> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/Cantigas_de_Santa_Maria
+<http://postdata.linhd.uned.es/ontology/core/Cantigas_de_Santa_Maria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/Creator1
+<http://postdata.linhd.uned.es/ontology/core/Creator1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/Facsimile1
+<http://postdata.linhd.uned.es/ontology/core/Facsimile1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/Facsimile2
+<http://postdata.linhd.uned.es/ontology/core/Facsimile2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/Facsimile3
+<http://postdata.linhd.uned.es/ontology/core/Facsimile3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/LP1
+<http://postdata.linhd.uned.es/ontology/core/LP1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://postdata.linhd.uned.es/ontology/core/LP1> <http://postdata.linhd.uned.es/ontology/core/phoneticTranscription> "mais nos fadzsanta maRi.a" .
+# 
+# http://postdata.linhd.uned.es/ontology/core/LP13
+<http://postdata.linhd.uned.es/ontology/core/LP13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/LP2
+<http://postdata.linhd.uned.es/ontology/core/LP2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/LP21
+<http://postdata.linhd.uned.es/ontology/core/LP21> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/LP29
+<http://postdata.linhd.uned.es/ontology/core/LP29> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/LP37
+<http://postdata.linhd.uned.es/ontology/core/LP37> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/LP5
+<http://postdata.linhd.uned.es/ontology/core/LP5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/Line1
+<http://postdata.linhd.uned.es/ontology/core/Line1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://postdata.linhd.uned.es/ontology/core/Line1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://postdata.linhd.uned.es/ontology/core/Line> .
+<http://postdata.linhd.uned.es/ontology/core/Line1> <http://postdata.linhd.uned.es/ontology/core/content> "Mais nos faz Santa María" .
+<http://postdata.linhd.uned.es/ontology/core/Line1> <http://postdata.linhd.uned.es/ontology/core/lineNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/Line13
+<http://postdata.linhd.uned.es/ontology/core/Line13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/Line21
+<http://postdata.linhd.uned.es/ontology/core/Line21> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/Line29
+<http://postdata.linhd.uned.es/ontology/core/Line29> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/Line5
+<http://postdata.linhd.uned.es/ontology/core/Line5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/Location1
+<http://postdata.linhd.uned.es/ontology/core/Location1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/Location2
+<http://postdata.linhd.uned.es/ontology/core/Location2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/MusicalNotation1
+<http://postdata.linhd.uned.es/ontology/core/MusicalNotation1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://postdata.linhd.uned.es/ontology/core/MusicalNotation1> <http://postdata.linhd.uned.es/ontology/core/editionNotes> "E1:The word nos is repeated on this stave in the manuscript, but is not assigned another note or ligature. E2:See E4. E3:This is a cus- tos indicating the pitch of the note after the page break: these are commonplace in [To] but as far as I am aware this is the only one in [E]. By the way, all the custodes (pl.) in [To] have their stems down, so that’s how they are ren- dered here, even though this one has its stem up in [E]. E4:Compare this odd-looking liga- ture (for one syllable) with the pair of sepa- rate notes at E2 in the refrain. E5:This line appears very faint in the manuscript facsimile. E6:The word a is repeated at the start of this stave, but is not assigned a note or ligature." .
+# 
+# http://postdata.linhd.uned.es/ontology/core/Paratext1
+<http://postdata.linhd.uned.es/ontology/core/Paratext1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/Performance1
+<http://postdata.linhd.uned.es/ontology/core/Performance1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/Performance2
+<http://postdata.linhd.uned.es/ontology/core/Performance2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/Performance3
+<http://postdata.linhd.uned.es/ontology/core/Performance3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/Performance4
+<http://postdata.linhd.uned.es/ontology/core/Performance4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/Performance5
+<http://postdata.linhd.uned.es/ontology/core/Performance5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/Person_1
+<http://postdata.linhd.uned.es/ontology/core/Person_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/PrimarySource1
+<http://postdata.linhd.uned.es/ontology/core/PrimarySource1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/Redaction1
+<http://postdata.linhd.uned.es/ontology/core/Redaction1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/Rhyme1
+<http://postdata.linhd.uned.es/ontology/core/Rhyme1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/Rhyme2
+<http://postdata.linhd.uned.es/ontology/core/Rhyme2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/Stanza1
+<http://postdata.linhd.uned.es/ontology/core/Stanza1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://postdata.linhd.uned.es/ontology/core/Stanza1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://postdata.linhd.uned.es/ontology/core/Stanza> .
+<http://postdata.linhd.uned.es/ontology/core/Stanza1> <http://postdata.linhd.uned.es/ontology/core/hasFirstLine> <http://postdata.linhd.uned.es/ontology/core/Line5> .
+<http://postdata.linhd.uned.es/ontology/core/Stanza1> <http://postdata.linhd.uned.es/ontology/core/nextStanza> <http://postdata.linhd.uned.es/ontology/core/Stanza2> .
+<http://postdata.linhd.uned.es/ontology/core/Stanza1> <http://postdata.linhd.uned.es/ontology/core/isRefrainOmitted> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/Stanza2
+<http://postdata.linhd.uned.es/ontology/core/Stanza2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/Stanza3
+<http://postdata.linhd.uned.es/ontology/core/Stanza3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/Stanza4
+<http://postdata.linhd.uned.es/ontology/core/Stanza4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/Stanza5
+<http://postdata.linhd.uned.es/ontology/core/Stanza5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/WP1
+<http://postdata.linhd.uned.es/ontology/core/WP1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/Witness1
+<http://postdata.linhd.uned.es/ontology/core/Witness1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://postdata.linhd.uned.es/ontology/core/Witness1> <http://postdata.linhd.uned.es/ontology/core/hasMusicalNotation> <http://postdata.linhd.uned.es/ontology/core/MusicalNotation1> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/Witness2
+<http://postdata.linhd.uned.es/ontology/core/Witness2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/Witness3
+<http://postdata.linhd.uned.es/ontology/core/Witness3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://postdata.linhd.uned.es/ontology/core/resource/BibliographicSource1
+<http://postdata.linhd.uned.es/ontology/core/resource/BibliographicSource1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://postdata.linhd.uned.es/ontology/core/resource/BibliographicSource1> <http://postdata.linhd.uned.es/ontology/core/hasCreator> <http://postdata.linhd.uned.es/ontology/core/Person_1> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/CLP104_subject_to> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates a publication, i.e. an instance of F3 Manifestation Product Type, with an instance of E30 Right, which applies to all exemplars of that publication, as long as they are recognised as exemplars of that publication.\nThe rights covered by this property may include: acquisition or access authorisation; terms of availability; access restrictions on the Manifestation Product Type; etc.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/CLP104_subject_to> <http://www.w3.org/2000/01/rdf-schema#label> "subject to"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/CLP104i_applies_to> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/CLP104i_applies_to> <http://www.w3.org/2000/01/rdf-schema#label> "applies to"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/CLP105_right_held_by> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates a publication, i.e. an instance of F3 Manifestation Product Type, with an instance of E39 Actor, who holds an instance of E30 Right on all exemplars of that publication, as long as they are recognised as exemplars of that publication.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/CLP105_right_held_by> <http://www.w3.org/2000/01/rdf-schema#label> "right held by"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/CLP105i_right_on> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/CLP105i_right_on> <http://www.w3.org/2000/01/rdf-schema#label> "right on"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/CLP2_should_have_type> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates a publication, i.e. an instance of F3 Manifestation Product Type, with an instance of E55 Type, which all exemplars of that publication should belong to, as long as they are recognised as exemplars of that publication. Typically, this property is observed on one exemplar of a publication, and extrapolated to all other exemplars of the same publication. This logical inference is an induction along the path that can be modelled as: F3 Manifestation Product Type R7i has example F5 Item P41i was classified by E17 Type Assignment P42 assigned E55 Type.\nIt can happen that a given exemplar, or subset of exemplars, originally produced, or intended to be produced, with that characteristic, accidentally lacks it. This fact should be recorded as a property of F5 Item, and not of F3 Manifestation Product Type.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/CLP2_should_have_type> <http://www.w3.org/2000/01/rdf-schema#label> "should have type"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/CLP2i_should_be_type_of> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/CLP2i_should_be_type_of> <http://www.w3.org/2000/01/rdf-schema#label> "should be type of"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/CLP43_should_have_dimension> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates a publication, i.e. an instance of F3 Manifestation Product Type, with an instance of E54 Dimension, which all exemplars of that publication should have, as long as they are recognised as exemplars of that publication. Typically, this property is observed on one exemplar of a publication, and extrapolated to all other exemplars of the same publication. This logical inference is an induction along the path that can be modelled as: F3 Manifestation Product Type R7i has example F5 Item P39i was measured by E16 Measurement P40 observed dimension E54 Dimension.\nIt can happen that a given exemplar, or subset of exemplars, originally produced, or intended to be produced, with that characteristic, accidentally lacks it. This fact should be recorded as a property of F5 Item, and not of F3 Manifestation Product Type.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/CLP43_should_have_dimension> <http://www.w3.org/2000/01/rdf-schema#label> "should have dimension"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/CLP43i_should_be_dimension_of> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/CLP43i_should_be_dimension_of> <http://www.w3.org/2000/01/rdf-schema#label> "should be dimension of"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/CLP45_should_consist_of> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates a publication, i.e. an instance of F3 Manifestation Product Type, with an instance of E57 Material, which all exemplars of that publication should consist of, as long as they are recognised as exemplars of that publication. Typically, this property is observed on one exemplar of a publication, and extrapolated to all other exemplars of the same publication. This logical inference is an induction along the path that can be modelled as: F3 Manifestation Product Type R7i has example F5 Item P41i was classified by E17 Type Assignment P42 assigned E57 Material.\nIt can happen that a given exemplar, or subset of exemplars, originally produced, or intended to be produced, with that characteristic, accidentally lacks it. This fact should be recorded as a property of F5 Item, and not of F3 Manifestation Product Type.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/CLP45_should_consist_of> <http://www.w3.org/2000/01/rdf-schema#label> "should consist of"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/CLP45i_should_be_incorporated_in> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/CLP45i_should_be_incorporated_in> <http://www.w3.org/2000/01/rdf-schema#label> "should be incorporated in"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/CLP46_should_be_composed_of> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F3 Manifestation Product Type which prescribes that all its Items will contain as parts an Item of another instance of F3 Manifestation Product Type with that instance of F3 Manifestation Product Type.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/CLP46_should_be_composed_of> <http://www.w3.org/2000/01/rdf-schema#label> "should be composed of"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/CLP46i_may_form_part_of> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/CLP46i_may_form_part_of> <http://www.w3.org/2000/01/rdf-schema#label> "may form part of"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/CLR6_should_carry> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates a publication, i.e. an instance of F3 Manifestation Product Type, with an instance of F24 Publication Expression, which all exemplars of that publication should carry, as long as they are recognised as complete exemplars of that publication. Typically, this property is observed on one exemplar of a publication, and extrapolated to all other exemplars of the same publication. This logical inference is an induction along the path that can be modelled as: F3 Manifestation Product Type R7i has example F5 Item R6 carries F24 Publication Expression.\nIt can happen that a given exemplar, or a subset of exemplars, originally produced, or intended to be produced with that characteristic, accidentally lacks part of the publication expression. This fact should be recorded as a property of F5 Item, and not of F3 Manifestation Product Type.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/CLR6_should_carry> <http://www.w3.org/2000/01/rdf-schema#label> "should carry"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/CLR6i_should_be_carried_by> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/CLR6i_should_be_carried_by> <http://www.w3.org/2000/01/rdf-schema#label> "should be carried by"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R10_has_member> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F15 Complex Work with an instance of F1 Work that forms part of it. \n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R10_has_member> <http://www.w3.org/2000/01/rdf-schema#label> "has member"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R10i_is_member_of> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R10i_is_member_of> <http://www.w3.org/2000/01/rdf-schema#label> "is member of"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R11_has_issuing_rule> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F18 Serial Work with the instance of E29 Design or Procedure that specifies the issuing policy planned by this Work, such as sequencing pattern, expected frequency and expected regularity.\nThis property is a shortcut of the full path: F18 Serial Work R23i was realised through F30 Publication Event P16 used specific object E29 Design or Procedure.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R11_has_issuing_rule> <http://www.w3.org/2000/01/rdf-schema#label> "has issuing rule"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R11i_is_issuing_rule_of> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R11i_is_issuing_rule_of> <http://www.w3.org/2000/01/rdf-schema#label> "is issuing rule of"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R12_is_realised_in> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F20 Performance Work with an instance of F25 Performance Plan that consists of signs (words, figures, etc.) which express the directions the instance of F20 Performance Work consists of.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R12_is_realised_in> <http://www.w3.org/2000/01/rdf-schema#label> "is realised in"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R12i_realises> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R12i_realises> <http://www.w3.org/2000/01/rdf-schema#label> "realises"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R13_is_realised_in> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F21 Recording Work with an instance of F26 Recording realising the instance of F21 Recording Work.\nThis is a shortcut of the more elaborated path through R22 was realised through, F29 Recording Event and R21 created, which should be used when information about the recording event is available.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R13_is_realised_in> <http://www.w3.org/2000/01/rdf-schema#label> "is realised in"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R13i_realises> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R13i_realises> <http://www.w3.org/2000/01/rdf-schema#label> "realises"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R15_has_fragment> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates the fragment of an expression and the expression of which it is a fragment.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R15_has_fragment> <http://www.w3.org/2000/01/rdf-schema#label> "has fragment"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R15i_is_fragment_of> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R15i_is_fragment_of> <http://www.w3.org/2000/01/rdf-schema#label> "is fragment of"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R16_initiated> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates the first conception of a work and the work itself that ensued from a given initial idea.\nIt marks the origin of the causality chain that results in a work’s coming into existence.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R16_initiated> <http://www.w3.org/2000/01/rdf-schema#label> "initiated"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R16i_was_initiated_by> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R16i_was_initiated_by> <http://www.w3.org/2000/01/rdf-schema#label> "was initiated by"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R17_created> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates the expression that was first externalised during a particular creation event with that particular creation event.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R17_created> <http://www.w3.org/2000/01/rdf-schema#label> "created"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R17i_was_created_by> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R17i_was_created_by> <http://www.w3.org/2000/01/rdf-schema#label> "was created by"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R18_created> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F28 Expression Creation with the first physical objects in which the resulting instance of F2 Expression was embodied.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R18_created> <http://www.w3.org/2000/01/rdf-schema#label> "created"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R18i_was_created_by> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R18i_was_created_by> <http://www.w3.org/2000/01/rdf-schema#label> "was created by"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R19_created_a_realization_of> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F28 Expression Creation with the corresponding instance of F14 Individual Work or an instance of F15 Complex Work of which the corresponding instance of F14 Individual Work is a member.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R19_created_a_realization_of> <http://www.w3.org/2000/01/rdf-schema#label> "created a realization of"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R19i_was_realised_through> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R19i_was_realised_through> <http://www.w3.org/2000/01/rdf-schema#label> "was realised through"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R1_is_logical_successor_of> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F1 Work which logically continues the content of another instance of F1 Work with the latter.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R1_is_logical_successor_of> <http://www.w3.org/2000/01/rdf-schema#label> "is logical successor of"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R1i_has_successor> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R1i_has_successor> <http://www.w3.org/2000/01/rdf-schema#label> "has successor"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R20_recorded> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F29 Recording Event with the instance of E2 Temporal Entity which was captured.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R20_recorded> <http://www.w3.org/2000/01/rdf-schema#label> "recorded"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R20i_was_recorded_through> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R20i_was_recorded_through> <http://www.w3.org/2000/01/rdf-schema#label> "was recorded through"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R21_created> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F29 Recording Event with the instance of F26 Recording that was created.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R21_created> <http://www.w3.org/2000/01/rdf-schema#label> "created"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R21i_was_created_through> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R21i_was_created_through> <http://www.w3.org/2000/01/rdf-schema#label> "was created through"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R22_created_a_realization_of> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F29 Recording Event with the instance of F21 Recording Work it realised.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R22_created_a_realization_of> <http://www.w3.org/2000/01/rdf-schema#label> "created a realization of"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R22i_was_realised_through> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R22i_was_realised_through> <http://www.w3.org/2000/01/rdf-schema#label> "was realised through"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R23_created_a_realization_of> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F30 Publication Event with the instance of F19 Publication Work it realised.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R23_created_a_realization_of> <http://www.w3.org/2000/01/rdf-schema#label> "created a realization of"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R23i_was_realised_through> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R23i_was_realised_through> <http://www.w3.org/2000/01/rdf-schema#label> "was realised through"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R24_created> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates the instance of F24 Publication Expression that was created during a particular F30 Publication Event with that F30 Publication Event.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R24_created> <http://www.w3.org/2000/01/rdf-schema#label> "created"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R24i_was_created_through> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R24i_was_created_through> <http://www.w3.org/2000/01/rdf-schema#label> "was created through"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R25_performed> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F31 Performance with the instance of F25 Performance Plan to which all those participating in the performance were supposed to conform.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R25_performed> <http://www.w3.org/2000/01/rdf-schema#label> "performed"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R25i_was_performed_in> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R25i_was_performed_in> <http://www.w3.org/2000/01/rdf-schema#label> "was performed in"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R26_produced_things_of_type> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F32 Carrier Production Event with the instance of F3 Manifestation Product Type it produced items of.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R26_produced_things_of_type> <http://www.w3.org/2000/01/rdf-schema#label> "produced things of type"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R26i_was_produced_by> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R26i_was_produced_by> <http://www.w3.org/2000/01/rdf-schema#label> "was produced by"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R27_used_as_source_material> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F32 Carrier Production Event with the set of signs provided by the publisher to be carried by all of the produced items.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R27_used_as_source_material> <http://www.w3.org/2000/01/rdf-schema#label> "used as source material"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R27i_was_used_by> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R27i_was_used_by> <http://www.w3.org/2000/01/rdf-schema#label> "was used by"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R28_produced> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F32 Carrier Production Event with any one of the produced items (i.e., the instances of F5 Item or F53 Material Copy).\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R28_produced> <http://www.w3.org/2000/01/rdf-schema#label> "produced"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R28i_was_produced_by> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R28i_was_produced_by> <http://www.w3.org/2000/01/rdf-schema#label> "was produced by"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R29_reproduced> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F33 Reproduction Event with an instance of E84 Information Carrier it reproduces.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R29_reproduced> <http://www.w3.org/2000/01/rdf-schema#label> "reproduced"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R29i_was_reproduced_by> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R29i_was_reproduced_by> <http://www.w3.org/2000/01/rdf-schema#label> "was reproduced by"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R2_is_derivative_of> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F1 Work which modifies the content of another instance of F1 Work with the latter. The property R2.1 has type of this property allows for specifying the kind of derivation, such as adaptation, summarisation etc.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R2_is_derivative_of> <http://www.w3.org/2000/01/rdf-schema#label> "is derivative of"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R2i_has_derivative> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R2i_has_derivative> <http://www.w3.org/2000/01/rdf-schema#label> "has derivative"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R30_produced> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F33 Reproduction Event with an instance of E84 Information Carrier it produces.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R30_produced> <http://www.w3.org/2000/01/rdf-schema#label> "produced"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R30i_was_produced_by> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R30i_was_produced_by> <http://www.w3.org/2000/01/rdf-schema#label> "was produced by"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R31_is_reproduction_of> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of E84 Information Carrier which is a reproduction of another instance of E84 Information Carrier with the latter. It is considered that a reproduction of multiple originals resulting in a single product requires a merging of those objects prior to the reproduction. Therefore an Information Carrier is regarded to be a reproduction of one and only one original. This property is a shortcut of the more fully developed path from E84 Information Carrier through R30 produced (was produced by), F33 Reproduction Event R29 reproduced (was reproduced by) to E84 Information Carrier.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R31_is_reproduction_of> <http://www.w3.org/2000/01/rdf-schema#label> "is reproduction of"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R31i_has_reproduction> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R31i_has_reproduction> <http://www.w3.org/2000/01/rdf-schema#label> "has reproduction"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R32_is_warranted_by> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F35 Nomen Use Statement with an instance of F52 Name Use Activity which provides evidence for the use of the particular nomen in the stated sense. The association between this name use activity and a source for it may be described by the property P70 documents (is documented in).\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R32_is_warranted_by> <http://www.w3.org/2000/01/rdf-schema#label> "is warranted by"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R32i_warrants> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R32i_warrants> <http://www.w3.org/2000/01/rdf-schema#label> "warrants"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R34_has_validity_period> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F34 KOS with the instance of E52 Time-Span describing the period for which the particular KOS Expression was regarded as valid by its maintainers. Each change of validity status of a nomen use statement within a KOS should be associated with a release change of the KOS. The individual time-span of a validity state of a nomen would be the union of the time-spans of the KOS in which the Nomen was declared to have the particular validity status (provisional, accepted, obsolete etc...).\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R34_has_validity_period> <http://www.w3.org/2000/01/rdf-schema#label> "has validity period"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R34i_is_validity_period_of> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R34i_is_validity_period_of> <http://www.w3.org/2000/01/rdf-schema#label> "is validity period of"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R35_specified_by> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F35 Nomen Use Statement with an instance of F34 KOS in which the Nomen Use Statement has a given status. The property R35.1 allows for specifying the particular status of the nomen use statement within the KOS. An instance of R35 is specified by should have only one status.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R35_specified_by> <http://www.w3.org/2000/01/rdf-schema#label> "specified by"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R35i_specifies> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R35i_specifies> <http://www.w3.org/2000/01/rdf-schema#label> "specifies"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R36_uses_script_conversion> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F35 Nomen Use Statement with the instance of F36 Script Conversion that was used to create the Nomen referred to in the Nomen Use Statement. The source of this conversion may or may not be explicitly mentioned. Is shortcut of: F35 Nomen Use Statement R17 was created by (created) F28 Expression Creation P33 used specific technique (was used by) E29 Design or Procedure.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R36_uses_script_conversion> <http://www.w3.org/2000/01/rdf-schema#label> "uses script conversion"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R36i_is_script_conversion_used_in> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F35 Nomen Use Statement with the instance of F12 Nomen for which it declares usage.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R36i_is_script_conversion_used_in> <http://www.w3.org/2000/01/rdf-schema#label> "is script conversion used in"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R37_states_as_nomen> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R37_states_as_nomen> <http://www.w3.org/2000/01/rdf-schema#label> "states as nomen"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R37i_is_stated_as_nomen_in> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R37i_is_stated_as_nomen_in> <http://www.w3.org/2000/01/rdf-schema#label> "is stated as nomen in"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R38_refers_to_thema> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F35 Nomen Use Statement with the instance of E1 CRM Entity for which it declares the usage of a nomen.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R38_refers_to_thema> <http://www.w3.org/2000/01/rdf-schema#label> "refers to thema"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R38i_is_thema_of> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R38i_is_thema_of> <http://www.w3.org/2000/01/rdf-schema#label> "is thema of"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R39_is_intended_for> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F35 Nomen Use Statement with an instance of E74 Group which is the target audience for which the associated nomen use is intended. To indicate that the associated nomen is declared as preferred in all contexts, the instance of E74 Group is ‘mankind’.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R39_is_intended_for> <http://www.w3.org/2000/01/rdf-schema#label> "is intended for"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R39i_is_target_audience_in> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R39i_is_target_audience_in> <http://www.w3.org/2000/01/rdf-schema#label> "is target audience in"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R3_is_realised_in> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F22 Self-Contained Expression with an instance of F1 Work.\nThis property expresses the association that exists between an expression (F22) and the work that this expression conveys. The semantics of the association will be different depending on what specific subtype of F1 Work the work is an instance of. If the work is an instance of F14 Individual Work, the F22 Self-Contained Expression completely conveys the individual work. If the work is an instance of F15 Complex Work, the F22 Self-Contained Expression conveys an alternative member of the complex work.\nOur factual knowledge of how a given work is realised into an expression is often limited and this property makes it possible to express the association between instances of F22 Self-Contained Expression and the work it conveys without using the more developed paths.\nThe property R3.1 has type: E55 Type allows for specifying the role played by the referred to expression in the overall bibliographic history of the work (e.g., ‘progenitor expression’, on which all other expressions of the same work are based; ‘reference for canonical citations’, in the sense of the HuCit ontology developed by Matteo Romanello and Michele Pasin; ‘earliest draft’, ‘intermediate draft’, ‘final clean draft’, ‘princeps edition’, etc.).\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R3_is_realised_in> <http://www.w3.org/2000/01/rdf-schema#label> "is realised in"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R3i_realises> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R3i_realises> <http://www.w3.org/2000/01/rdf-schema#label> "realises"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R40_has_representative_expression> <http://www.w3.org/2000/01/rdf-schema#comment> "This property identifies an instance of F22 Self-Contained Expression that has been chosen as the most characteristic expression of the instance of F1 Work of which it is an expression. There is no other semantic implication to this notion of being characteristic than to be an adequate candidate to uniquely identify the Work realized by it. Prototypically, this is the instance of F22 Self-Contained Expression that is deemed characteristic of an instance of F15 Complex Work.\nTypically, any expression that is not regarded as “representative” for the work it expresses, would require a controlled access point, with qualifiers specifying the differences between that expression and a representative expression, although this may not always be done in practice. The title of a Work may not be one taken from a representative expression.\nA given work can have more than one representative expression, provided the differences between these expressions are not deemed “substantial.” If the anticipated needs of users are not considered to call for bibliographic distinctions between variant expressions of a work, then even expressions that differ significantly from each other can be regarded as equally representative for the work. (See FRBR: Final Report, p. 19-20).\nA given expression can be deemed representative for a work with regard to some of its aspects (e.g., the text contained in an edition the title proper of which reads ‘The tragicall historie of HAMLET Prince of Denmarke’, and the language of that text), and not representative for it with regard to some other aspects (e.g., the title proper ‘The tragicall historie of HAMLET Prince of Denmarke’ itself, which, being different from the title that is regarded as “representative” for Shakespeare’s work, will require the use of a controlled access point).\nR40 has representative expression is a shortcut of the more developed path F1 Work R50i was assigned by F42 Representative Expression Assignment R51 assigned F2 Expression.\n\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R40_has_representative_expression> <http://www.w3.org/2000/01/rdf-schema#label> "has representative expression"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R40i_is_representative_expression_for> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R40i_is_representative_expression_for> <http://www.w3.org/2000/01/rdf-schema#label> "is representative expression for"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R41_has_rep_manifestation_product_type> <http://www.w3.org/2000/01/rdf-schema#comment> "This property identifies an instance of F3 Manifestation Product Type that has been chosen as the most characteristic Manifestation Product Type of the instance of F2 Expression of which it is a manifestation.\nIdentifying an instance of F3 Manifestation Product Type that is representative for an instance of F2 Expression makes it possible in turn to identify an instance of F2 Expression that is representative for an instance of F1 Work, and to decide what should be regarded as the title of the work.\nThe title of an Expression may not be one taken from a representative Manifestation Product Type or Manifestation Singleton.\nA given expression can have more than one Representative Manifestation Product Type.\nR41 has representative manifestation product type is a shortcut of the more developed path F2 Expression R48i was assigned by F41 Representative Manifestation Assignment R49 assigned F3 Manifestation Product Type.\n\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R41_has_rep_manifestation_product_type> <http://www.w3.org/2000/01/rdf-schema#label> "has rep manifestation product type"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R41i_is_rep_manifestation_product_type_for> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R41i_is_rep_manifestation_product_type_for> <http://www.w3.org/2000/01/rdf-schema#label> "is rep manifestation product type for"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R42_is_representative_manifestation_singleton_for> <http://www.w3.org/2000/01/rdf-schema#comment> "This property identifies an instance of Manifestation Singleton that has been declared as the unique representative for an instance of F2 Expression by some bibliographic agency.\nThis property identifies an instance of F4 Manifestation Singleton that has been chosen as the most characteristic Manifestation Singleton of the instance of F2 Expression of which it is a manifestation.\nIdentifying an instance of F4 Manifestation Singleton that is representative for an instance of F2 Expression makes it possible in turn to identify an instance of F2 Expression that is representative for an instance of F1 Work, and to decide what should be regarded as the title of the work.\nThe title of an Expression may not be one taken from a representative Manifestation Product Type or Manifestation Singleton.\nA given expression can have more than one representative Manifestation Singleton.\nIt is a shortcut for the more developed path: F2 Expression R48i was assigned by F41 Representative Manifestation Assignment R53 assigned F4 Manifestation Singleton.\n\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R42_is_representative_manifestation_singleton_for> <http://www.w3.org/2000/01/rdf-schema#label> "is representative manifestation singleton for"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R42i_has_representative_manifestation_singleton> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R42i_has_representative_manifestation_singleton> <http://www.w3.org/2000/01/rdf-schema#label> "has representative manifestation singleton"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R43_carried_out_by> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates a bibliographic agency (represented by one or more of its cataloguers) and the assigning of which Manifestation (i.e., which instance of F3 Manifestation Product Type or F4 Manifestation Singleton) is representative for a given expression.\nIn cataloguing practice, such a relationship is usually just implicit. However, it can become explicit, for example when a bibliographic agency creates an authority record for a given work and fills the “Source” field with information about the publication that contains the expression that was used by the bibliographic agency to establish the controlled access point for the work realised in that expression.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R43_carried_out_by> <http://www.w3.org/2000/01/rdf-schema#label> "carried out by"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R43i_performed> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R43i_performed> <http://www.w3.org/2000/01/rdf-schema#label> "performed"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R44_carried_out_by> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates a bibliographic agency (represented by one or more of its cataloguers) and the assigning of which expression is representative for a given Work.\nIn cataloguing practice, such a relationship is usually just implicit. However, it can become explicit, for example when a bibliographic agency creates an authority record for a given work and fills the “Source” field with information about the publication that contains the expression that was used by the bibliographic agency to establish the controlled access point for the work realised in that expression.\n\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R44_carried_out_by> <http://www.w3.org/2000/01/rdf-schema#label> "carried out by"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R44i_performed> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R44i_performed> <http://www.w3.org/2000/01/rdf-schema#label> "performed"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R45_assigned_to> <http://www.w3.org/2000/01/rdf-schema#comment> "This property identifies the entity to which an actor, such as a bibliographic agency, assigned an instance of F13 Identifier.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R45_assigned_to> <http://www.w3.org/2000/01/rdf-schema#label> "assigned to"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R45i_was_assigned_by> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R45i_was_assigned_by> <http://www.w3.org/2000/01/rdf-schema#label> "was assigned by"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R46_assigned_to> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates the instance of F13 Identifier assigned to an instance of E1 CRM Entity and the event of assigning it.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R46_assigned_to> <http://www.w3.org/2000/01/rdf-schema#label> "assigned to"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R46i_was_assigned_by> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R46i_was_assigned_by> <http://www.w3.org/2000/01/rdf-schema#label> "was assigned by"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R48_assigned_to> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates the event of assigning a representative instance of F3 Manifestation Product Type or F4 Manifestation Singleton with the expression to which it was assigned.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R48_assigned_to> <http://www.w3.org/2000/01/rdf-schema#label> "assigned to"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R48i_was_assigned_by> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R48i_was_assigned_by> <http://www.w3.org/2000/01/rdf-schema#label> "was assigned by"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R49_assigned> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates the event of assigning a representative instance of F3 Manifestation Product Type with the F3 Manifestation Product Type which has been assigned.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R49_assigned> <http://www.w3.org/2000/01/rdf-schema#label> "assigned"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R49i_was_assigned_by> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R49i_was_assigned_by> <http://www.w3.org/2000/01/rdf-schema#label> "was assigned by"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R4_carriers_provided_by> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates a publication, i.e. an instance of F3 Manifestation Product Type, with an instance of F2 Expression, which all exemplars of that publication should carry, as long as they are recognised as complete exemplars of that publication. Typically, this property is observed on one exemplar of a publication, and extrapolated to all other exemplars of the same publication.\nThis property is a shortcut of: F2 Expression P165i is incorporated in F24 Publication Expression CLR6i should be carried by F3 Manifestation Product Type.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R4_carriers_provided_by> <http://www.w3.org/2000/01/rdf-schema#label> "carriers provided by"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R4i_comprises_carriers_of> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R4i_comprises_carriers_of> <http://www.w3.org/2000/01/rdf-schema#label> "comprises carriers of"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R50_assigned_to> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates the event of assigning a representative instance of F2 Expression with the instance of F15 Complex Work to which it was assigned.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R50_assigned_to> <http://www.w3.org/2000/01/rdf-schema#label> "assigned to"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R50i_was_assigned_by> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R50i_was_assigned_by> <http://www.w3.org/2000/01/rdf-schema#label> "was assigned by"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R51_assigned> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates the event of assigning a representative instance of F2 Expression with the F2 Expression which has been assigned.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R51_assigned> <http://www.w3.org/2000/01/rdf-schema#label> "assigned"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R51i_was_assigned_by> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R51i_was_assigned_by> <http://www.w3.org/2000/01/rdf-schema#label> "was assigned by"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R52_used_rule> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates the event of assigning an instance of F13 Identifier with the instructions followed by an actor, such as a Bibliographic Agency, in creating that identifier.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R52_used_rule> <http://www.w3.org/2000/01/rdf-schema#label> "used rule"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R52i_was_the_rule_used_in> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R52i_was_the_rule_used_in> <http://www.w3.org/2000/01/rdf-schema#label> "was the rule used in"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R53_assigned> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates the event of assigning a representative instance of F4 Manifestation Singleton with the F4 Manifestation Singleton which has been assigned.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R53_assigned> <http://www.w3.org/2000/01/rdf-schema#label> "assigned"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R53i_was_assigned_by> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R53i_was_assigned_by> <http://www.w3.org/2000/01/rdf-schema#label> "was assigned by"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R54_has_nomen_language> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F35 Nomen Use Statement with an instance of E56 Language which is a target language for the associated nomen use.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R54_has_nomen_language> <http://www.w3.org/2000/01/rdf-schema#label> "has nomen language"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R54i_is_language_of_nomen_in> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R54i_is_language_of_nomen_in> <http://www.w3.org/2000/01/rdf-schema#label> "is language of nomen in"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R55_has_nomen_form> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F35 Nomen Use Statement with the instance of E55 Type that characterizes the Nomen referred to in the Nomen Use Statement, such as abbreviation, full name etc. In the case of abbreviations, the source of this form may or may not be explicitly mentioned.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R55_has_nomen_form> <http://www.w3.org/2000/01/rdf-schema#label> "has nomen form"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R55i_is_nomen_form_in> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R55i_is_nomen_form_in> <http://www.w3.org/2000/01/rdf-schema#label> "is nomen form in"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R56_has_related_use> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F35 Nomen Use Statement with another instance of F35 Nomen Use Statement which has a related use in some context, such as alternative, lexical variant, replacing former use etc. The property R56.1 allows for specifying the particular kind of the nomen use statement relationship.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R56_has_related_use> <http://www.w3.org/2000/01/rdf-schema#label> "has related use"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R56i_is_related_use_for> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R56i_is_related_use_for> <http://www.w3.org/2000/01/rdf-schema#label> "is related use for"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R57_is_based_on> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F38 Character with an instance of E39 Actor that the character is motivated by or is intended to represent. An instance of F38 Character may be based on a combination of features taken from several actors. This property is a shortcut of the more fully developed path from E28 Conceptual Object, restricted to F38 Character, through the inverse of P94 has created (was created by), E65 Creation P17 was motivated by (motivated) to E1 CRM Entity restricted to E39 Actor.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R57_is_based_on> <http://www.w3.org/2000/01/rdf-schema#label> "is based on"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R57i_is_basis_for> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R57i_is_basis_for> <http://www.w3.org/2000/01/rdf-schema#label> "is basis for"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R58_has_fictional_member> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F38 Character representing a group with another instance of F38 Character that is presented in relevant fiction as a member of the fictional group.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R58_has_fictional_member> <http://www.w3.org/2000/01/rdf-schema#label> "has fictional member"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R58i_is_fictional_member_of> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R58i_is_fictional_member_of> <http://www.w3.org/2000/01/rdf-schema#label> "is fictional member of"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R59_had_typical_subject> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F51 Pursuit with the instance of E1 CRM Entity that is the typical subject of the associated activity, such as an area of expertise in which the actor is engaged or was engaged.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R59_had_typical_subject> <http://www.w3.org/2000/01/rdf-schema#label> "had typical subject"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R59i_was_typical_subject_of> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R59i_was_typical_subject_of> <http://www.w3.org/2000/01/rdf-schema#label> "was typical subject of"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R5_has_component> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an F2 Expression X with a structural component Y that conveys in itself the complete concept of a work that is member of (R10) the overall work realized by X.\nIt does not cover the relationship that exists between pre-existing expressions that are re-used in a new, larger expression and that new, larger expression. Such a relationship is modelled by P165 incorporates.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R5_has_component> <http://www.w3.org/2000/01/rdf-schema#label> "has component"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R5i_is_component_of> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R5i_is_component_of> <http://www.w3.org/2000/01/rdf-schema#label> "is component of"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R60_used_to_use_language> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F51 Pursuit with the instance of E56 Language that was characteristically used for the products of the associated activity.\nThe property R60.1 has type of use allows for specifying a particular form of use.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R60_used_to_use_language> <http://www.w3.org/2000/01/rdf-schema#label> "used to use language"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R60i_was_language_used_by> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R60i_was_language_used_by> <http://www.w3.org/2000/01/rdf-schema#label> "was language used by"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R61_occured_in_kind_of_context> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F52 Name Use Activity with the instance of E55 Type that characterises the kind of role or context within which the associated name was used.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R61_occured_in_kind_of_context> <http://www.w3.org/2000/01/rdf-schema#label> "occured in kind of context"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R61i_was_kind_of_context_for> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R61i_was_kind_of_context_for> <http://www.w3.org/2000/01/rdf-schema#label> "was kind of context for"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R62_was_used_for_membership_in> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F52 Name Use Activity with the instance of E74 Group that characterises the context within which the associated name was used for membership in that group.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R62_was_used_for_membership_in> <http://www.w3.org/2000/01/rdf-schema#label> "was used for membership in"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R62i_was_context_for> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R62i_was_context_for> <http://www.w3.org/2000/01/rdf-schema#label> "was context for"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R63_named> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F52 Name Use Activity with the instance of E1 CRM Entity that the associated name was used for.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R63_named> <http://www.w3.org/2000/01/rdf-schema#label> "named"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R63i_was_named_by> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R63i_was_named_by> <http://www.w3.org/2000/01/rdf-schema#label> "was named by"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R64_used_name> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F52 Name Use Activity with the instance of E41 Appellation that was used for the associated entity.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R64_used_name> <http://www.w3.org/2000/01/rdf-schema#label> "used name"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R64i_was_name_used_by> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R64i_was_name_used_by> <http://www.w3.org/2000/01/rdf-schema#label> "was name used by"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R65_recorded_aspects_of> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F29 Recording Event with an instance of E18 Physical Thing some of whose features, at the time of recording, were recorded in that process.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R65_recorded_aspects_of> <http://www.w3.org/2000/01/rdf-schema#label> "recorded aspects of"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R65i_had_aspects_recorded_through> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R65i_had_aspects_recorded_through> <http://www.w3.org/2000/01/rdf-schema#label> "had aspects recorded through"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R66_included_performed_version_of> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F31 Performance with a product of the mind that was performed in the course of that instance of F31 Performance.\nAccording to the level of knowledge available about the performance, the range of this property can actually be specialised as either an instance of F1 Work (if nothing is known as to which specific expression of the work was performed), or of F2 Expression (if there is a reasonable amount of certainty as to which specific expression—e.g., a well identified translation of a play—of the work was performed).\nIn addition to being a subproperty of P16 used specific object (was used for), this property also is a shortcut of the fully developed path that goes from F31 Performance to F1 Work through: R25 performed F25 Performance Plan P165 incorporates F22 Self-Contained Expression R3i realises. In this fully developed path, the specific instance of F22 Self-Contained Expression can be precisely identified and described for its own sake, or it can just be known to have necessarily existed.\n\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R66_included_performed_version_of> <http://www.w3.org/2000/01/rdf-schema#label> "included performed version of"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R66i_had_a_performed_version_through> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R66i_had_a_performed_version_through> <http://www.w3.org/2000/01/rdf-schema#label> "had a performed version through"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R6_carries> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F54 Utilised Information Carrier with the unique instance of F24 Publication Expression it carries.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R6_carries> <http://www.w3.org/2000/01/rdf-schema#label> "carries"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R6i_is_carried_by> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R6i_is_carried_by> <http://www.w3.org/2000/01/rdf-schema#label> "is carried by"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R7_is_example_of> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates a publication with one of its exemplars.\nIt is a shortcut of the more developed path: F5 Item R28i was produced by F32 Carrier Production R26 produced things of type (was produced by): F3 Manifestation Product Type.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R7_is_example_of> <http://www.w3.org/2000/01/rdf-schema#label> "is example of"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R7i_has_example> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R7i_has_example> <http://www.w3.org/2000/01/rdf-schema#label> "has example"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R8_consists_of> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F13 Identifier with one of the non-syntactic instances of E90 Symbolic Object which form part of it.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R8_consists_of> <http://www.w3.org/2000/01/rdf-schema#label> "consists of"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R8i_forms_part_of> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R8i_forms_part_of> <http://www.w3.org/2000/01/rdf-schema#label> "forms part of"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R9_is_realised_in> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an F14 Individual Work with the unique F22 Self-Contained Expression that completely conveys it.\nIt is a shortcut for the more developed path: F14 Individual Work R19i was realised through F28 Expression Creation R17 created F22 Self-Contained Expression.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R9_is_realised_in> <http://www.w3.org/2000/01/rdf-schema#label> "is realised in"@en .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/R9i_realises> <http://www.w3.org/2000/01/rdf-schema#comment> "\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R9i_realises> <http://www.w3.org/2000/01/rdf-schema#label> "realises"@en .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
