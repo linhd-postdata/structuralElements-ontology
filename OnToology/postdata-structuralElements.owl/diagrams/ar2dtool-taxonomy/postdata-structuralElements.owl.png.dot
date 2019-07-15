@@ -1,0 +1,18 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "pdstruct:Punctuation" "pdstruct:OrderedStanzaList" "pdstruct:LineItem" "pdstruct:StanzaItem" "pdstruct:Word" "pdstruct:Token" "gold:Syllable" "pdstruct:OrderedSyllableList" "pdstruct:SyllableItem" "pdstruct:Syllable" "raop:Word" "pdstruct:OrderedLineList" "olo:Slot" "olo:OrderedList" ; /*classes style*/
+	"pdstruct:OrderedSyllableList" -> "olo:OrderedList" [ label = "rdfs:subClassOf" ];
+	"pdstruct:OrderedLineList" -> "olo:OrderedList" [ label = "rdfs:subClassOf" ];
+	"pdstruct:OrderedStanzaList" -> "olo:OrderedList" [ label = "rdfs:subClassOf" ];
+	"pdstruct:Word" -> "pdstruct:Token" [ label = "rdfs:subClassOf" ];
+	"pdstruct:Word" -> "raop:Word" [ label = "rdfs:subClassOf" ];
+	"pdstruct:SyllableItem" -> "olo:Slot" [ label = "rdfs:subClassOf" ];
+	"olo:OrderedList" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"olo:Slot" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"pdstruct:Syllable" -> "gold:Syllable" [ label = "rdfs:subClassOf" ];
+	"pdstruct:StanzaItem" -> "olo:Slot" [ label = "rdfs:subClassOf" ];
+	"pdstruct:LineItem" -> "olo:Slot" [ label = "rdfs:subClassOf" ];
+	"pdstruct:Punctuation" -> "pdstruct:Token" [ label = "rdfs:subClassOf" ];
+
+}
