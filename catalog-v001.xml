@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="Imports Wizard Entry" name="http://postdata.linhd.uned.es/ontology/POSTDATA-core" uri="http://postdata.linhd.uned.es/ontology/postdata-core"/>
-    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1563162876995" name="duplicate:http://postdata.linhd.uned.es/ontology/" uri="Untitled.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1563162876995" name="duplicate:http://postdata.linhd.uned.es/ontology/" uri="postdata-structuralElements.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1563162876995" name="http://postdata.linhd.uned.es/ontology/postdata-structuralElements" uri="OnToology/postdata-structuralElements.owl/documentation/ontology.xml"/>
-    </group>
-</catalog>
