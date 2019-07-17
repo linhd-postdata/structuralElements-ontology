@@ -5,7 +5,7 @@
    <key for="edge" id="d2" yfiles.type="edgegraphics" />
    <key attr.name="description" attr.type="string" for="edge" id="d3" />
    <key for="graphml" id="d4" yfiles.type="resources" />
-   <graph edgedefault="directed" id="G" parse.edges="196" parse.nodes="141" parse.order="free">
+   <graph edgedefault="directed" id="G" parse.edges="197" parse.nodes="138" parse.order="free">
       <node id="nid_pdstruct:isDialepha">
          <data key="d0">
             <y:ShapeNode>
@@ -1130,52 +1130,6 @@
          </data>
          <data key="d1" />
       </node>
-      <node id="nid_-5c64f52f:16bf3caff75:-7ffa">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-5c64f52f:16bf3caff75:-7ffa</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:unionOf40" source="nid_NULL" target="nid_-5c64f52f:16bf3caff75:-7ffa">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:unionOf</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_-5c64f52f:16bf3caff75:-7ff3">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-5c64f52f:16bf3caff75:-7ff3</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdf:rest41" source="nid_NULL" target="nid_-5c64f52f:16bf3caff75:-7ff3">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:rest</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
       <node id="nid_olo:index">
          <data key="d0">
             <y:ShapeNode>
@@ -1188,7 +1142,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty42" source="nid_NULL" target="nid_olo:index">
+    <edge id="eid_owl:onProperty40" source="nid_NULL" target="nid_olo:index">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1199,19 +1153,19 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_http://postdata.linhd.uned.es/kos/grammatical-category">
+      <node id="nid_pdskos:grammatical-category">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="540.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://postdata.linhd.uned.es/kos/grammatical-category</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">pdskos:grammatical-category</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:hasValue43" source="nid_NULL" target="nid_http://postdata.linhd.uned.es/kos/grammatical-category">
+    <edge id="eid_owl:hasValue41" source="nid_NULL" target="nid_pdskos:grammatical-category">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1234,7 +1188,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty44" source="nid_NULL" target="nid_pdstruct:previousToken">
+    <edge id="eid_owl:onProperty42" source="nid_NULL" target="nid_pdstruct:previousToken">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1257,7 +1211,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:allValuesFrom45" source="nid_NULL" target="nid_pdstruct:OrderedSyllableList">
+    <edge id="eid_owl:allValuesFrom43" source="nid_NULL" target="nid_pdstruct:OrderedSyllableList">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1280,7 +1234,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty46" source="nid_NULL" target="nid_olo:ordered_list">
+    <edge id="eid_owl:onProperty44" source="nid_NULL" target="nid_olo:ordered_list">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1303,7 +1257,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty47" source="nid_NULL" target="nid_pdstruct:phoneticTranscription">
+    <edge id="eid_owl:onProperty45" source="nid_NULL" target="nid_pdstruct:phoneticTranscription">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1314,24 +1268,24 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_http://postdata.linhd.uned.es/kos/stanzaType">
+      <node id="nid_6d5e4741:16c024e4412:-7ff9">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="440.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://postdata.linhd.uned.es/kos/stanzaType</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">6d5e4741:16c024e4412:-7ff9</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:hasValue48" source="nid_NULL" target="nid_http://postdata.linhd.uned.es/kos/stanzaType">
+    <edge id="eid_rdf:rest46" source="nid_NULL" target="nid_6d5e4741:16c024e4412:-7ff9">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:hasValue</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:rest</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -1349,12 +1303,35 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty49" source="nid_NULL" target="nid_pdstruct:altStanzaNumber">
+    <edge id="eid_owl:onProperty47" source="nid_NULL" target="nid_pdstruct:altStanzaNumber">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_pdskos:poeticLicense-type">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="250.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">pdskos:poeticLicense-type</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:hasValue48" source="nid_NULL" target="nid_pdskos:poeticLicense-type">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:hasValue</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -1372,7 +1349,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty50" source="nid_NULL" target="nid_pdstruct:isInflectedForm">
+    <edge id="eid_owl:onProperty49" source="nid_NULL" target="nid_pdstruct:isInflectedForm">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1395,7 +1372,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty51" source="nid_NULL" target="nid_olo:length">
+    <edge id="eid_owl:onProperty50" source="nid_NULL" target="nid_olo:length">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1406,47 +1383,24 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_-5c64f52f:16bf3caff75:-7ff4">
+      <node id="nid_6d5e4741:16c024e4412:-7ff3">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-5c64f52f:16bf3caff75:-7ff4</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">6d5e4741:16c024e4412:-7ff3</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:unionOf52" source="nid_NULL" target="nid_-5c64f52f:16bf3caff75:-7ff4">
+    <edge id="eid_rdf:rest51" source="nid_NULL" target="nid_6d5e4741:16c024e4412:-7ff3">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:unionOf</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_http://postdata.linhd.uned.es/kos/enjambmentType">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="480.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://postdata.linhd.uned.es/kos/enjambmentType</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:hasValue53" source="nid_NULL" target="nid_http://postdata.linhd.uned.es/kos/enjambmentType">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:hasValue</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:rest</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -1464,7 +1418,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onClass54" source="nid_NULL" target="nid_pdstruct:Token">
+    <edge id="eid_owl:onClass52" source="nid_NULL" target="nid_pdstruct:Token">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1487,7 +1441,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty55" source="nid_NULL" target="nid_pdstruct:isFirstSyllable">
+    <edge id="eid_owl:onProperty53" source="nid_NULL" target="nid_pdstruct:isFirstSyllable">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1498,7 +1452,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:onProperty56" source="nid_NULL" target="nid_pdstruct:hasSynizesis">
+    <edge id="eid_owl:onProperty54" source="nid_NULL" target="nid_pdstruct:hasSynizesis">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1521,7 +1475,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onClass57" source="nid_NULL" target="nid_pdstruct:Stanza">
+    <edge id="eid_owl:onClass55" source="nid_NULL" target="nid_pdstruct:Stanza">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1544,7 +1498,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdf:rest58" source="nid_NULL" target="nid_rdf:nil">
+    <edge id="eid_rdf:rest56" source="nid_NULL" target="nid_rdf:nil">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1555,7 +1509,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:onProperty59" source="nid_NULL" target="nid_pdstruct:nextPart">
+    <edge id="eid_owl:onProperty57" source="nid_NULL" target="nid_pdstruct:nextPart">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1566,7 +1520,30 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:onProperty60" source="nid_NULL" target="nid_pdstruct:morphologicalAnnotation">
+      <node id="nid_pdskos:stanza-type">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="180.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">pdskos:stanza-type</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:hasValue58" source="nid_NULL" target="nid_pdskos:stanza-type">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:hasValue</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_owl:onProperty59" source="nid_NULL" target="nid_pdstruct:morphologicalAnnotation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1589,7 +1566,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty61" source="nid_NULL" target="nid_pdstruct:hasSyllables">
+    <edge id="eid_owl:onProperty60" source="nid_NULL" target="nid_pdstruct:hasSyllables">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1612,7 +1589,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdf:first62" source="nid_NULL" target="nid_pdstruct:Line">
+    <edge id="eid_rdf:first61" source="nid_NULL" target="nid_pdstruct:Line">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1635,7 +1612,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty63" source="nid_NULL" target="nid_pdstruct:nextToken">
+    <edge id="eid_owl:onProperty62" source="nid_NULL" target="nid_pdstruct:nextToken">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1646,19 +1623,19 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_http://postdata.linhd.uned.es/kos/stanzaEditionType">
+      <node id="nid_pdskos:stanzaEdition-type">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="510.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="250.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://postdata.linhd.uned.es/kos/stanzaEditionType</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">pdskos:stanzaEdition-type</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:hasValue64" source="nid_NULL" target="nid_http://postdata.linhd.uned.es/kos/stanzaEditionType">
+    <edge id="eid_owl:hasValue63" source="nid_NULL" target="nid_pdskos:stanzaEdition-type">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1681,7 +1658,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty65" source="nid_NULL" target="nid_pdstruct:hasHiatus">
+    <edge id="eid_owl:onProperty64" source="nid_NULL" target="nid_pdstruct:hasHiatus">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1692,7 +1669,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:onProperty66" source="nid_NULL" target="nid_pdstruct:coda">
+    <edge id="eid_owl:onProperty65" source="nid_NULL" target="nid_pdstruct:coda">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1715,7 +1692,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onClass67" source="nid_NULL" target="nid_pdstruct:Word">
+    <edge id="eid_owl:onClass66" source="nid_NULL" target="nid_pdstruct:Word">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1726,7 +1703,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:onProperty68" source="nid_NULL" target="nid_pdstruct:lineNumber">
+    <edge id="eid_owl:onProperty67" source="nid_NULL" target="nid_pdstruct:lineNumber">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1737,7 +1714,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:onProperty69" source="nid_NULL" target="nid_pdstruct:lemma">
+    <edge id="eid_owl:onProperty68" source="nid_NULL" target="nid_pdstruct:lemma">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1748,7 +1725,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdf:first70" source="nid_NULL" target="nid_pdstruct:Word">
+    <edge id="eid_rdf:first69" source="nid_NULL" target="nid_pdstruct:Word">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1771,7 +1748,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty71" source="nid_NULL" target="nid_pdstruct:hasFirstSyllable">
+    <edge id="eid_owl:onProperty70" source="nid_NULL" target="nid_pdstruct:hasFirstSyllable">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1794,12 +1771,35 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onDataRange72" source="nid_NULL" target="nid_xsd:string">
+    <edge id="eid_owl:onDataRange71" source="nid_NULL" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onDataRange</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_6d5e4741:16c024e4412:-7ffa">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">6d5e4741:16c024e4412:-7ffa</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:unionOf72" source="nid_NULL" target="nid_6d5e4741:16c024e4412:-7ffa">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:unionOf</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -1874,6 +1874,29 @@
          </data>
          <data key="d3" />
       </edge>
+      <node id="nid_6d5e4741:16c024e4412:-7ff4">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">6d5e4741:16c024e4412:-7ff4</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:unionOf76" source="nid_NULL" target="nid_6d5e4741:16c024e4412:-7ff4">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:unionOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
       <node id="nid_xsd:boolean">
          <data key="d0">
             <y:ShapeNode>
@@ -1886,7 +1909,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onDataRange76" source="nid_NULL" target="nid_xsd:boolean">
+    <edge id="eid_owl:onDataRange77" source="nid_NULL" target="nid_xsd:boolean">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1909,7 +1932,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty77" source="nid_NULL" target="nid_skos:inScheme">
+    <edge id="eid_owl:onProperty78" source="nid_NULL" target="nid_skos:inScheme">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1932,35 +1955,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty78" source="nid_NULL" target="nid_olo:next">
+    <edge id="eid_owl:onProperty79" source="nid_NULL" target="nid_olo:next">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_-5c64f52f:16bf3caff75:-7ff9">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-5c64f52f:16bf3caff75:-7ff9</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdf:rest79" source="nid_NULL" target="nid_-5c64f52f:16bf3caff75:-7ff9">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:rest</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -2010,42 +2010,19 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_base:postdata-structuralElements">
+      <node id="nid_http://postdata.linhd.uned.es/ontology/postdata-structuralElements">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="320.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="660.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">base:postdata-structuralElements</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://postdata.linhd.uned.es/ontology/postdata-structuralElements</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:imports84" source="nid_base:postdata-structuralElements" target="nid_olo:">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:imports</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_base:POSTDATA-core">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="180.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">base:POSTDATA-core</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:imports85" source="nid_base:postdata-structuralElements" target="nid_base:POSTDATA-core">
+    <edge id="eid_owl:imports84" source="nid_http://postdata.linhd.uned.es/ontology/postdata-structuralElements" target="nid_olo:">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2068,7 +2045,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf86" source="nid_pdstruct:belongsToStanzaList" target="nid_olo:ordered_list">
+    <edge id="eid_rdfs:subPropertyOf85" source="nid_pdstruct:belongsToStanzaList" target="nid_olo:ordered_list">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2091,7 +2068,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf87" source="nid_pdstruct:hasStanzaItem" target="nid_olo:slot">
+    <edge id="eid_rdfs:subPropertyOf86" source="nid_pdstruct:hasStanzaItem" target="nid_olo:slot">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2102,7 +2079,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subPropertyOf88" source="nid_pdstruct:isInflectedForm" target="nid_owl:topObjectProperty">
+    <edge id="eid_rdfs:subPropertyOf87" source="nid_pdstruct:isInflectedForm" target="nid_owl:topObjectProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2137,7 +2114,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dcterms:hasVersion89" source="nid_dc:relation" target="nid_http://dublincore.org/usage/terms/history/#relation-006">
+    <edge id="eid_dcterms:hasVersion88" source="nid_dc:relation" target="nid_http://dublincore.org/usage/terms/history/#relation-006">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2160,7 +2137,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf90" source="nid_pdstruct:onset" target="nid_owl:topDataProperty">
+    <edge id="eid_rdfs:subPropertyOf89" source="nid_pdstruct:onset" target="nid_owl:topDataProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2183,7 +2160,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf91" source="nid_pdstruct:nextLine" target="nid_olo:next">
+    <edge id="eid_rdfs:subPropertyOf90" source="nid_pdstruct:nextLine" target="nid_olo:next">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2218,7 +2195,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dcterms:hasVersion92" source="nid_dc:date" target="nid_http://dublincore.org/usage/terms/history/#date-006">
+    <edge id="eid_dcterms:hasVersion91" source="nid_dc:date" target="nid_http://dublincore.org/usage/terms/history/#date-006">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2241,7 +2218,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf93" source="nid_pdstruct:nextStanza" target="nid_olo:next">
+    <edge id="eid_rdfs:subPropertyOf92" source="nid_pdstruct:nextStanza" target="nid_olo:next">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2264,7 +2241,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf94" source="nid_pdstruct:isRefrainOmitted" target="nid_owl:topDataProperty">
+    <edge id="eid_rdfs:subPropertyOf93" source="nid_pdstruct:isRefrainOmitted" target="nid_owl:topDataProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2287,7 +2264,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf95" source="nid_pdstruct:secondOfSynalepha" target="nid_owl:topObjectProperty">
+    <edge id="eid_rdfs:subPropertyOf94" source="nid_pdstruct:secondOfSynalepha" target="nid_owl:topObjectProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2298,7 +2275,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subPropertyOf96" source="nid_pdstruct:phoneticTranscription" target="nid_owl:topDataProperty">
+    <edge id="eid_rdfs:subPropertyOf95" source="nid_pdstruct:phoneticTranscription" target="nid_owl:topDataProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2321,7 +2298,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf97" source="nid_pdstruct:hasFirstToken" target="nid_owl:topObjectProperty">
+    <edge id="eid_rdfs:subPropertyOf96" source="nid_pdstruct:hasFirstToken" target="nid_owl:topObjectProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2332,7 +2309,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subPropertyOf98" source="nid_pdstruct:regularisedSpelling" target="nid_owl:topDataProperty">
+    <edge id="eid_rdfs:subPropertyOf97" source="nid_pdstruct:regularisedSpelling" target="nid_owl:topDataProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2343,7 +2320,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subPropertyOf99" source="nid_pdstruct:hasHiatus" target="nid_owl:topDataProperty">
+    <edge id="eid_rdfs:subPropertyOf98" source="nid_pdstruct:hasHiatus" target="nid_owl:topDataProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2366,7 +2343,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf100" source="nid_pdstruct:belongsToLineList" target="nid_olo:ordered_list">
+    <edge id="eid_rdfs:subPropertyOf99" source="nid_pdstruct:belongsToLineList" target="nid_olo:ordered_list">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2389,7 +2366,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf101" source="nid_pdstruct:belongsToSylableList" target="nid_olo:ordered_list">
+    <edge id="eid_rdfs:subPropertyOf100" source="nid_pdstruct:belongsToSylableList" target="nid_olo:ordered_list">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2412,7 +2389,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf102" source="nid_pdstruct:hasEditor" target="nid_owl:topObjectProperty">
+    <edge id="eid_rdfs:subPropertyOf101" source="nid_pdstruct:hasEditor" target="nid_owl:topObjectProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2435,7 +2412,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf103" source="nid_pdstruct:containsMentionToAgent" target="nid_pdstruct:containsMentionTo">
+    <edge id="eid_rdfs:subPropertyOf102" source="nid_pdstruct:containsMentionToAgent" target="nid_pdstruct:containsMentionTo">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2470,7 +2447,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dcterms:hasVersion104" source="nid_dc:contributor" target="nid_http://dublincore.org/usage/terms/history/#contributor-006">
+    <edge id="eid_dcterms:hasVersion103" source="nid_dc:contributor" target="nid_http://dublincore.org/usage/terms/history/#contributor-006">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2505,7 +2482,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dcterms:hasVersion105" source="nid_dc:coverage" target="nid_http://dublincore.org/usage/terms/history/#coverage-006">
+    <edge id="eid_dcterms:hasVersion104" source="nid_dc:coverage" target="nid_http://dublincore.org/usage/terms/history/#coverage-006">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2528,7 +2505,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf106" source="nid_pdstruct:weight" target="nid_owl:topDataProperty">
+    <edge id="eid_rdfs:subPropertyOf105" source="nid_pdstruct:weight" target="nid_owl:topDataProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2551,7 +2528,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf107" source="nid_pdstruct:hasStanzas" target="nid_owl:topObjectProperty">
+    <edge id="eid_rdfs:subPropertyOf106" source="nid_pdstruct:hasStanzas" target="nid_owl:topObjectProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2574,7 +2551,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf108" source="nid_pdstruct:hasElision" target="nid_owl:topDataProperty">
+    <edge id="eid_rdfs:subPropertyOf107" source="nid_pdstruct:hasElision" target="nid_owl:topDataProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2597,7 +2574,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf109" source="nid_pdstruct:sense" target="nid_owl:topDataProperty">
+    <edge id="eid_rdfs:subPropertyOf108" source="nid_pdstruct:sense" target="nid_owl:topDataProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2620,7 +2597,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf110" source="nid_pdstruct:correspondsTo" target="nid_owl:topObjectProperty">
+    <edge id="eid_rdfs:subPropertyOf109" source="nid_pdstruct:correspondsTo" target="nid_owl:topObjectProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2643,7 +2620,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf111" source="nid_pdstruct:positionInWord" target="nid_owl:topDataProperty">
+    <edge id="eid_rdfs:subPropertyOf110" source="nid_pdstruct:positionInWord" target="nid_owl:topDataProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2678,7 +2655,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dcterms:hasVersion112" source="nid_dc:rights" target="nid_http://dublincore.org/usage/terms/history/#rights-006">
+    <edge id="eid_dcterms:hasVersion111" source="nid_dc:rights" target="nid_http://dublincore.org/usage/terms/history/#rights-006">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2689,7 +2666,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subPropertyOf113" source="nid_pdstruct:nextToken" target="nid_owl:topObjectProperty">
+    <edge id="eid_rdfs:subPropertyOf112" source="nid_pdstruct:nextToken" target="nid_owl:topObjectProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2712,7 +2689,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf114" source="nid_pdstruct:nextSyllable" target="nid_olo:next">
+    <edge id="eid_rdfs:subPropertyOf113" source="nid_pdstruct:nextSyllable" target="nid_olo:next">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2747,7 +2724,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dcterms:hasVersion115" source="nid_dc:title" target="nid_http://dublincore.org/usage/terms/history/#title-006">
+    <edge id="eid_dcterms:hasVersion114" source="nid_dc:title" target="nid_http://dublincore.org/usage/terms/history/#title-006">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2758,7 +2735,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subPropertyOf116" source="nid_pdstruct:hasFirstSyllable" target="nid_owl:topObjectProperty">
+    <edge id="eid_rdfs:subPropertyOf115" source="nid_pdstruct:hasFirstSyllable" target="nid_owl:topObjectProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2769,7 +2746,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:isNotMetricStanza117" source="nid_pdstruct:Stanza" target="nid_xsd:boolean">
+    <edge id="eid_pdstruct:isNotMetricStanza116" source="nid_pdstruct:Stanza" target="nid_xsd:boolean">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2780,7 +2757,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:isRefrainOmitted118" source="nid_pdstruct:Stanza" target="nid_xsd:boolean">
+    <edge id="eid_pdstruct:isRefrainOmitted117" source="nid_pdstruct:Stanza" target="nid_xsd:boolean">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2803,7 +2780,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_pdstruct:lineNumber119" source="nid_pdstruct:Line" target="nid_xsd:integer">
+    <edge id="eid_pdstruct:lineNumber118" source="nid_pdstruct:Line" target="nid_xsd:integer">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2814,7 +2791,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:phoneticTranscription120" source="nid_pdstruct:Word" target="nid_xsd:string">
+    <edge id="eid_pdstruct:phoneticTranscription119" source="nid_pdstruct:Word" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2837,7 +2814,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_pdstruct:nextSyllable121" source="nid_pdstruct:SyllableItem" target="nid_pdstruct:SyllableItem">
+    <edge id="eid_pdstruct:nextSyllable120" source="nid_pdstruct:SyllableItem" target="nid_pdstruct:SyllableItem">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2872,7 +2849,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_olo:slot122" source="nid_olo:OrderedList" target="nid_olo:Slot">
+    <edge id="eid_olo:slot121" source="nid_olo:OrderedList" target="nid_olo:Slot">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2883,7 +2860,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:paraphrasis123" source="nid_pdstruct:Stanza" target="nid_xsd:string">
+    <edge id="eid_pdstruct:paraphrasis122" source="nid_pdstruct:Stanza" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2894,7 +2871,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:hasSystole124" source="nid_pdstruct:Word" target="nid_xsd:boolean">
+    <edge id="eid_pdstruct:hasSystole123" source="nid_pdstruct:Word" target="nid_xsd:boolean">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2905,7 +2882,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:previousToken125" source="nid_pdstruct:Token" target="nid_pdstruct:Token">
+    <edge id="eid_pdstruct:previousToken124" source="nid_pdstruct:Token" target="nid_pdstruct:Token">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2916,58 +2893,12 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:hasFirstLine126" source="nid_pdstruct:Stanza" target="nid_pdstruct:Line">
+    <edge id="eid_pdstruct:hasFirstLine125" source="nid_pdstruct:Stanza" target="nid_pdstruct:Line">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">pdstruct:hasFirstLine</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_pdstruct:Enjambment">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="190.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFA500" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">pdstruct:Enjambment</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-      <node id="nid_skos:Concept">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="120.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFA500" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">skos:Concept</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_pdstruct:secondOfEnjambment127" source="nid_pdstruct:Enjambment" target="nid_skos:Concept">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">pdstruct:secondOfEnjambment</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_olo:next128" source="nid_olo:Slot" target="nid_olo:Slot">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">olo:next</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -2985,7 +2916,41 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:topObjectProperty129" source="nid_owl:Thing" target="nid_owl:Thing">
+      <node id="nid_skos:Concept">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="120.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">skos:Concept</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_pdstruct:secondOfEnjambment126" source="nid_owl:Thing" target="nid_skos:Concept">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">pdstruct:secondOfEnjambment</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_olo:next127" source="nid_olo:Slot" target="nid_olo:Slot">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">olo:next</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_owl:topObjectProperty128" source="nid_owl:Thing" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3008,7 +2973,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_pdstruct:previousLine130" source="nid_pdstruct:LineItem" target="nid_pdstruct:LineItem">
+    <edge id="eid_pdstruct:previousLine129" source="nid_pdstruct:LineItem" target="nid_pdstruct:LineItem">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3019,7 +2984,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:onset131" source="nid_pdstruct:Syllable" target="nid_xsd:string">
+    <edge id="eid_pdstruct:onset130" source="nid_pdstruct:Syllable" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3030,7 +2995,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:firstOfSynalepha132" source="nid_pdstruct:Syllable" target="nid_pdstruct:Syllable">
+    <edge id="eid_pdstruct:firstOfSynalepha131" source="nid_pdstruct:Syllable" target="nid_pdstruct:Syllable">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3041,7 +3006,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:isEchoOf133" source="nid_pdstruct:Word" target="nid_pdstruct:Word">
+    <edge id="eid_pdstruct:isEchoOf132" source="nid_pdstruct:Word" target="nid_pdstruct:Word">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3064,7 +3029,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_pdstruct:hasLineItem134" source="nid_pdstruct:OrderedLineList" target="nid_pdstruct:LineItem">
+    <edge id="eid_pdstruct:hasLineItem133" source="nid_pdstruct:OrderedLineList" target="nid_pdstruct:LineItem">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3087,7 +3052,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_pdstruct:previousStanza135" source="nid_pdstruct:StanzaItem" target="nid_pdstruct:StanzaItem">
+    <edge id="eid_pdstruct:previousStanza134" source="nid_pdstruct:StanzaItem" target="nid_pdstruct:StanzaItem">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3098,7 +3063,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:sense136" source="nid_pdstruct:Word" target="nid_xsd:string">
+    <edge id="eid_pdstruct:sense135" source="nid_pdstruct:Word" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3109,7 +3074,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:isRefrain137" source="nid_pdstruct:Line" target="nid_xsd:boolean">
+    <edge id="eid_pdstruct:isRefrain136" source="nid_pdstruct:Line" target="nid_xsd:boolean">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3120,7 +3085,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:belongsToLineList138" source="nid_pdstruct:LineItem" target="nid_pdstruct:OrderedLineList">
+    <edge id="eid_pdstruct:belongsToLineList137" source="nid_pdstruct:LineItem" target="nid_pdstruct:OrderedLineList">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3131,12 +3096,35 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:hasElision139" source="nid_pdstruct:Word" target="nid_xsd:boolean">
+    <edge id="eid_pdstruct:hasElision138" source="nid_pdstruct:Word" target="nid_xsd:boolean">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">pdstruct:hasElision</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_pdstruct:PoeticLicense">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="220.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFA500" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">pdstruct:PoeticLicense</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_pdstruct:licenseFinalPosition139" source="nid_pdstruct:PoeticLicense" target="nid_xsd:integer">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">pdstruct:licenseFinalPosition</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -3175,23 +3163,11 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_pdcore:Redaction">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="160.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFA500" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">pdcore:Redaction</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
       <node id="nid_pdstruct:OrderedStanzaList">
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFA500" transparent="false" />
+               <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">pdstruct:OrderedStanzaList</y:NodeLabel>
                <y:Shape type="rectangle" />
@@ -3199,7 +3175,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_pdstruct:hasStanzas143" source="nid_pdcore:Redaction" target="nid_pdstruct:OrderedStanzaList">
+    <edge id="eid_pdstruct:hasStanzas143" source="nid_owl:Thing" target="nid_pdstruct:OrderedStanzaList">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3232,7 +3208,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:hasFirstStanza146" source="nid_pdcore:Redaction" target="nid_pdstruct:Stanza">
+    <edge id="eid_pdstruct:hasFirstStanza146" source="nid_owl:Thing" target="nid_pdstruct:Stanza">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3331,7 +3307,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:isFirstStanza155" source="nid_pdstruct:Stanza" target="nid_pdcore:Redaction">
+    <edge id="eid_pdstruct:isFirstStanza155" source="nid_pdstruct:Stanza" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3375,7 +3351,18 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:isInflectedForm159" source="nid_pdstruct:Word" target="nid_pdstruct:Word">
+    <edge id="eid_pdstruct:licenseInitialPosition159" source="nid_pdstruct:PoeticLicense" target="nid_xsd:integer">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">pdstruct:licenseInitialPosition</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_pdstruct:isInflectedForm160" source="nid_pdstruct:Word" target="nid_pdstruct:Word">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3386,7 +3373,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:hasSyllables160" source="nid_owl:Thing" target="nid_pdstruct:OrderedSyllableList">
+    <edge id="eid_pdstruct:hasSyllables161" source="nid_owl:Thing" target="nid_pdstruct:OrderedSyllableList">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3397,7 +3384,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:nextToken161" source="nid_pdstruct:Token" target="nid_pdstruct:Token">
+    <edge id="eid_pdstruct:nextToken162" source="nid_pdstruct:Token" target="nid_pdstruct:Token">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3408,7 +3395,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:previousSyllable162" source="nid_pdstruct:SyllableItem" target="nid_pdstruct:SyllableItem">
+    <edge id="eid_pdstruct:previousSyllable163" source="nid_pdstruct:SyllableItem" target="nid_pdstruct:SyllableItem">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3431,7 +3418,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_olo:index163" source="nid_olo:Slot" target="nid_xsd:positiveInteger">
+    <edge id="eid_olo:index164" source="nid_olo:Slot" target="nid_xsd:positiveInteger">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3442,35 +3429,12 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:translation164" source="nid_pdstruct:Word" target="nid_xsd:string">
+    <edge id="eid_pdstruct:translation165" source="nid_pdstruct:Word" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">pdstruct:translation</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_pdcore:Place">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="120.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">pdcore:Place</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_pdstruct:containsMentionToPlace165" source="nid_owl:Thing" target="nid_pdcore:Place">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">pdstruct:containsMentionToPlace</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -3521,19 +3485,30 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_-5c64f52f:16bf3caff75:-7ffb">
+    <edge id="eid_pdstruct:hasLicense169" source="nid_pdstruct:Line" target="nid_pdstruct:PoeticLicense">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">pdstruct:hasLicense</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_6d5e4741:16c024e4412:-7ffb">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
                <y:Fill color="#FFA500" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-5c64f52f:16bf3caff75:-7ffb</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">6d5e4741:16c024e4412:-7ffb</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_pdstruct:hasFirstSyllable169" source="nid_-5c64f52f:16bf3caff75:-7ffb" target="nid_pdstruct:Syllable">
+    <edge id="eid_pdstruct:hasFirstSyllable170" source="nid_6d5e4741:16c024e4412:-7ffb" target="nid_pdstruct:Syllable">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3544,7 +3519,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:containsMentionTo170" source="nid_pdstruct:Line" target="nid_owl:Thing">
+    <edge id="eid_pdstruct:containsMentionTo171" source="nid_pdstruct:Line" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3555,7 +3530,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:typeOfEnjambment171" source="nid_pdstruct:Enjambment" target="nid_skos:Concept">
+    <edge id="eid_pdstruct:typeOfEnjambment172" source="nid_owl:Thing" target="nid_skos:Concept">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3566,7 +3541,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:hasHiatus172" source="nid_owl:Thing" target="nid_xsd:boolean">
+    <edge id="eid_pdstruct:hasHiatus173" source="nid_owl:Thing" target="nid_xsd:boolean">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3577,7 +3552,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:typeOfStanzaEdition173" source="nid_pdstruct:Stanza" target="nid_skos:Concept">
+    <edge id="eid_pdstruct:typeOfStanzaEdition174" source="nid_pdstruct:Stanza" target="nid_skos:Concept">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3588,7 +3563,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:hasLines174" source="nid_pdcore:Redaction" target="nid_pdstruct:OrderedLineList">
+    <edge id="eid_pdstruct:hasLines175" source="nid_owl:Thing" target="nid_pdstruct:OrderedLineList">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3599,7 +3574,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:belongsToSylableList175" source="nid_pdstruct:SyllableItem" target="nid_pdstruct:OrderedSyllableList">
+    <edge id="eid_pdstruct:belongsToSylableList176" source="nid_pdstruct:SyllableItem" target="nid_pdstruct:OrderedSyllableList">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3610,7 +3585,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:positionInWord176" source="nid_pdstruct:Syllable" target="nid_xsd:string">
+    <edge id="eid_pdstruct:positionInWord177" source="nid_pdstruct:Syllable" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3621,7 +3596,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:typeOfStanza177" source="nid_pdstruct:Stanza" target="nid_skos:Concept">
+    <edge id="eid_pdstruct:typeOfStanza178" source="nid_pdstruct:Stanza" target="nid_skos:Concept">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3632,7 +3607,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:belongsToStanzaList178" source="nid_pdstruct:StanzaItem" target="nid_pdstruct:OrderedStanzaList">
+    <edge id="eid_pdstruct:belongsToStanzaList179" source="nid_pdstruct:StanzaItem" target="nid_pdstruct:OrderedStanzaList">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3643,7 +3618,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:isFirstToken179" source="nid_pdstruct:Token" target="nid_pdstruct:Line">
+    <edge id="eid_pdstruct:isFirstToken180" source="nid_pdstruct:Token" target="nid_pdstruct:Line">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3654,7 +3629,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_olo:ordered_list180" source="nid_olo:Slot" target="nid_olo:OrderedList">
+    <edge id="eid_olo:ordered_list181" source="nid_olo:Slot" target="nid_olo:OrderedList">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3665,7 +3640,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:isDialepha181" source="nid_pdstruct:Syllable" target="nid_xsd:boolean">
+    <edge id="eid_pdstruct:isDialepha182" source="nid_pdstruct:Syllable" target="nid_xsd:boolean">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3688,7 +3663,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_olo:length182" source="nid_olo:OrderedList" target="nid_xsd:nonNegativeInteger">
+    <edge id="eid_olo:length183" source="nid_olo:OrderedList" target="nid_xsd:nonNegativeInteger">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3699,7 +3674,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:hasStanzaItem183" source="nid_pdstruct:OrderedStanzaList" target="nid_pdstruct:StanzaItem">
+    <edge id="eid_pdstruct:hasStanzaItem184" source="nid_pdstruct:OrderedStanzaList" target="nid_pdstruct:StanzaItem">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3710,7 +3685,18 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:content184" source="nid_owl:Thing" target="nid_xsd:string">
+    <edge id="eid_pdstruct:licenseType185" source="nid_pdstruct:PoeticLicense" target="nid_skos:Concept">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">pdstruct:licenseType</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_pdstruct:content186" source="nid_owl:Thing" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3721,7 +3707,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:isFirstLine185" source="nid_pdstruct:Line" target="nid_pdstruct:Stanza">
+    <edge id="eid_pdstruct:isFirstLine187" source="nid_pdstruct:Line" target="nid_pdstruct:Stanza">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3732,7 +3718,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:hasSynizesis186" source="nid_owl:Thing" target="nid_xsd:boolean">
+    <edge id="eid_pdstruct:hasSynizesis188" source="nid_owl:Thing" target="nid_xsd:boolean">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3743,7 +3729,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdcore:notes187" source="nid_owl:Thing" target="nid_xsd:string">
+    <edge id="eid_pdcore:notes189" source="nid_owl:Thing" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3754,19 +3740,19 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_-5c64f52f:16bf3caff75:-7ff5">
+      <node id="nid_6d5e4741:16c024e4412:-7ff5">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
                <y:Fill color="#FFA500" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-5c64f52f:16bf3caff75:-7ff5</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">6d5e4741:16c024e4412:-7ff5</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_pdstruct:isFirstSyllable188" source="nid_pdstruct:Syllable" target="nid_-5c64f52f:16bf3caff75:-7ff5">
+    <edge id="eid_pdstruct:isFirstSyllable190" source="nid_pdstruct:Syllable" target="nid_6d5e4741:16c024e4412:-7ff5">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3777,7 +3763,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:firstOfEnjambment189" source="nid_pdstruct:Enjambment" target="nid_skos:Concept">
+    <edge id="eid_pdstruct:firstOfEnjambment191" source="nid_owl:Thing" target="nid_skos:Concept">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3788,7 +3774,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:hasFirstToken190" source="nid_pdstruct:Line" target="nid_pdstruct:Token">
+    <edge id="eid_pdstruct:hasFirstToken192" source="nid_pdstruct:Line" target="nid_pdstruct:Token">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3799,18 +3785,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:hasEnjambment191" source="nid_pdstruct:Line" target="nid_xsd:boolean">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">pdstruct:hasEnjambment</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_pdstruct:weight192" source="nid_pdstruct:Syllable" target="nid_xsd:string">
+    <edge id="eid_pdstruct:weight193" source="nid_pdstruct:Syllable" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3821,7 +3796,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:coda193" source="nid_pdstruct:Syllable" target="nid_xsd:string">
+    <edge id="eid_pdstruct:coda194" source="nid_pdstruct:Syllable" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3832,7 +3807,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:nextStanza194" source="nid_pdstruct:StanzaItem" target="nid_pdstruct:StanzaItem">
+    <edge id="eid_pdstruct:nextStanza195" source="nid_pdstruct:StanzaItem" target="nid_pdstruct:StanzaItem">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3843,7 +3818,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pdstruct:nucleusType195" source="nid_pdstruct:Syllable" target="nid_skos:Concept">
+    <edge id="eid_pdstruct:nucleusType196" source="nid_pdstruct:Syllable" target="nid_skos:Concept">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />

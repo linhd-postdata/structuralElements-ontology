@@ -7,8 +7,7 @@
 @base <http://postdata.linhd.uned.es/ontology/postdata-structuralElements> .
 
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements> rdf:type owl:Ontology ;
-                                                                      owl:imports <http://postdata.linhd.uned.es/ontology/POSTDATA-core> ,
-                                                                                  <http://purl.org/ontology/olo/core#> ;
+                                                                      owl:imports <http://purl.org/ontology/olo/core#> ;
                                                                       <http://purl.org/dc/elements/1.1/contributors> """Alvaro Pérez (LINHD_POSTDATA-UNED)
 https://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/"""@en ,
                                                                                                                      """Bruno Sartini (Bolonia University)
@@ -129,7 +128,6 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#containsMentionToPlace
 :containsMentionToPlace rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf :containsMentionTo ;
-                        rdfs:range <http://postdata.linhd.uned.es/ontology/postdata-core#Place> ;
                         rdfs:comment "Place that is mentioned on the line"@en ;
                         rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
                         rdfs:label "containsMentionToPlace"@en .
@@ -154,7 +152,6 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#firstOfEnjambment
 :firstOfEnjambment rdf:type owl:ObjectProperty ;
-                   rdfs:domain :Enjambment ;
                    rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
@@ -192,7 +189,6 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasFirstStanza
 :hasFirstStanza rdf:type owl:ObjectProperty ;
-                rdfs:domain <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> ;
                 rdfs:range :Stanza ;
                 rdfs:comment "This property points to the first group of lines (an instance of Stanza) which form the current element under analysis"@en ;
                 rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
@@ -230,6 +226,12 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                rdfs:label "hasFirstToken"@en .
 
 
+###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLicense
+:hasLicense rdf:type owl:ObjectProperty ;
+            rdfs:domain :Line ;
+            rdfs:range :PoeticLicense .
+
+
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLineItem
 :hasLineItem rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf <http://purl.org/ontology/olo/core#slot> ;
@@ -242,7 +244,6 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLines
 :hasLines rdf:type owl:ObjectProperty ;
-          rdfs:domain <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> ;
           rdfs:range :OrderedLineList .
 
 
@@ -259,7 +260,6 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanzas
 :hasStanzas rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf owl:topObjectProperty ;
-            rdfs:domain <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> ;
             rdfs:range :OrderedStanzaList ;
             rdfs:comment "List of stanzas of a redaction"@en ;
             rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
@@ -308,7 +308,6 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isFirstStanza
 :isFirstStanza rdf:type owl:ObjectProperty ;
                rdfs:domain :Stanza ;
-               rdfs:range <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> ;
                rdfs:comment "This property points to the text (an instance of Redaction) of which the current item under analysis is its first line grouping"@en ;
                rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
                rdfs:label "isFirstStanza"@en .
@@ -392,6 +391,16 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
              rdfs:comment "This property points to another instance of Stanza which belongs to another work or ensemble but that has the same contents as the current item at hand"@en ;
              rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
              rdfs:label "isTheSameAs"@en .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#licenseType
+:licenseType rdf:type owl:ObjectProperty ;
+             rdfs:domain :PoeticLicense ;
+             rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                          owl:hasValue <http://postdata.linhd.uned.es/kos/poeticLicense-type>
+                        ] .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#mentions
@@ -523,7 +532,6 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#secondOfEnjambment
 :secondOfEnjambment rdf:type owl:ObjectProperty ;
-                    rdfs:domain :Enjambment ;
                     rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
                                [ rdf:type owl:Restriction ;
                                  owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
@@ -543,12 +551,7 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#typeOfEnjambment
 :typeOfEnjambment rdf:type owl:ObjectProperty ;
-                  rdfs:domain :Enjambment ;
-                  rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                               owl:hasValue <http://postdata.linhd.uned.es/kos/enjambmentType>
-                             ] .
+                  rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#typeOfStanza
@@ -557,7 +560,7 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
               rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                           owl:hasValue <http://postdata.linhd.uned.es/kos/stanzaType>
+                           owl:hasValue <http://postdata.linhd.uned.es/kos/stanza-type>
                          ] ;
               rdfs:comment "Type of stanza, but not in relation to its metrics. E.g. tornada, refrain"@en ;
               rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
@@ -570,7 +573,7 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                      rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                  owl:hasValue <http://postdata.linhd.uned.es/kos/stanzaEditionType>
+                                  owl:hasValue <http://postdata.linhd.uned.es/kos/stanzaEdition-type>
                                 ] ;
                      rdfs:comment """The type of the text provided in the Stanza 
 Eg.: Diplomatic edition, critical edition, translation"""@en ;
@@ -667,15 +670,6 @@ owl:topObjectProperty rdfs:domain owl:Thing .
             rdfs:comment "If it presents the combination of two syllables into one for the purposes of poetic scansion"@en ;
             rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#"@en ;
             rdfs:label "hasElision"@en .
-
-
-###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasEnjambment
-:hasEnjambment rdf:type owl:DatatypeProperty ;
-               rdfs:domain :Line ;
-               rdfs:range xsd:boolean ;
-               rdfs:comment "If the line has Enjambment"@en ;
-               rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
-               rdfs:label "hasEnjambment"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasHiatus
@@ -789,6 +783,18 @@ owl:topObjectProperty rdfs:domain owl:Thing .
        rdfs:comment "Citation form, the particular form that is chosen by convention to represent the lexeme"@en ;
        rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
        rdfs:label "lemma"@en .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#licenseFinalPosition
+:licenseFinalPosition rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :PoeticLicense ;
+                      rdfs:range xsd:integer .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#licenseInitialPosition
+:licenseInitialPosition rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :PoeticLicense ;
+                        rdfs:range xsd:integer .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#lineNumber
@@ -918,19 +924,8 @@ Eg.: 3/4 (= third syllable in a four-syllable word)"""@en ;
 <http://bakulf.github.io/raop/0.1#Word> rdf:type owl:Class .
 
 
-###  http://postdata.linhd.uned.es/ontology/postdata-core#Place
-<http://postdata.linhd.uned.es/ontology/postdata-core#Place> rdf:type owl:Class .
-
-
 ###  http://postdata.linhd.uned.es/ontology/postdata-core#Redaction
 <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> rdf:type owl:Class .
-
-
-###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Enjambment
-:Enjambment rdf:type owl:Class ;
-            rdfs:comment "Enjambment class  that informs of the type and the grammatical elements that form it"@en ;
-            rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
-            rdfs:label "Enjambment"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line
@@ -988,6 +983,15 @@ Eg.: “As armas e os barões assinalados” - from Os Lusíadas""" ;
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedSyllableList
 :OrderedSyllableList rdf:type owl:Class ;
                      rdfs:subClassOf <http://purl.org/ontology/olo/core#OrderedList> .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#PoeticLicense
+:PoeticLicense rdf:type owl:Class ;
+               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                 owl:onProperty :content ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:string
+                               ] .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Punctuation
@@ -1150,29 +1154,29 @@ Eg.: The word “life”"""@en ;
 #    Individuals
 #################################################################
 
-###  http://postdata.linhd.uned.es/kos/enjambmentType
-<http://postdata.linhd.uned.es/kos/enjambmentType> rdf:type owl:NamedIndividual ,
-                                                            <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
-
-
 ###  http://postdata.linhd.uned.es/kos/grammatical-category
 <http://postdata.linhd.uned.es/kos/grammatical-category> rdf:type owl:NamedIndividual ,
                                                                   <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
-###  http://postdata.linhd.uned.es/kos/nucleusType
-<http://postdata.linhd.uned.es/kos/nucleusType> rdf:type owl:NamedIndividual ,
+###  http://postdata.linhd.uned.es/kos/nucleus-type
+<http://postdata.linhd.uned.es/kos/nucleus-type> rdf:type owl:NamedIndividual ,
+                                                          <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+
+###  http://postdata.linhd.uned.es/kos/poeticLicense-type
+<http://postdata.linhd.uned.es/kos/poeticLicense-type> rdf:type owl:NamedIndividual ,
+                                                                <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+
+###  http://postdata.linhd.uned.es/kos/stanza-type
+<http://postdata.linhd.uned.es/kos/stanza-type> rdf:type owl:NamedIndividual ,
                                                          <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
-###  http://postdata.linhd.uned.es/kos/stanzaEditionType
-<http://postdata.linhd.uned.es/kos/stanzaEditionType> rdf:type owl:NamedIndividual ,
-                                                               <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
-
-
-###  http://postdata.linhd.uned.es/kos/stanzaType
-<http://postdata.linhd.uned.es/kos/stanzaType> rdf:type owl:NamedIndividual ,
-                                                        <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+###  http://postdata.linhd.uned.es/kos/stanzaEdition-type
+<http://postdata.linhd.uned.es/kos/stanzaEdition-type> rdf:type owl:NamedIndividual ,
+                                                                <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
 #################################################################
