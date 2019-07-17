@@ -342,6 +342,15 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLicense -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLicense">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#PoeticLicense"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLineItem -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLineItem">
@@ -561,6 +570,21 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
         <rdfs:comment xml:lang="en">This property points to another instance of Stanza which belongs to another work or ensemble but that has the same contents as the current item at hand</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-structuralElements</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">isTheSameAs</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#licenseType -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#licenseType">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#PoeticLicense"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                <owl:hasValue rdf:resource="http://postdata.linhd.uned.es/kos/poeticLicense-type"/>
+            </owl:Restriction>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -936,18 +960,6 @@ Eg.: Diplomatic edition, critical edition, translation</rdfs:comment>
     
 
 
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasEnjambment -->
-
-    <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasEnjambment">
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:comment xml:lang="en">If the line has Enjambment</rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-structuralElements</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">hasEnjambment</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasHiatus -->
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasHiatus">
@@ -1090,6 +1102,24 @@ Eg.: Diplomatic edition, critical edition, translation</rdfs:comment>
         <rdfs:comment xml:lang="en">Citation form, the particular form that is chosen by convention to represent the lexeme</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-structuralElements</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">lemma</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#licenseFinalPosition -->
+
+    <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#licenseFinalPosition">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#PoeticLicense"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#licenseInitialPosition -->
+
+    <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#licenseInitialPosition">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#PoeticLicense"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
 
@@ -1349,6 +1379,20 @@ Eg.: “As armas e os barões assinalados” - from Os Lusíadas</rdfs:comment>
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#PoeticLicense -->
+
+    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#PoeticLicense">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#content"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Punctuation -->
 
     <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Punctuation">
@@ -1586,6 +1630,14 @@ Eg.: The word “life”</rdfs:comment>
     <!-- http://postdata.linhd.uned.es/kos/nucleus-type -->
 
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/nucleus-type">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/kos/poeticLicense-type -->
+
+    <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/poeticLicense-type">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
     
