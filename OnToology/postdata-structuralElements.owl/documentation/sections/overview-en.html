@@ -12,12 +12,6 @@ This ontology has the following classes and properties.</span>
          title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#LineItem">LineItem</a>
    </li>
    <li>
-      <a href="#OrderedSyllableList"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedSyllableList">
-         <span>ordered syllable list</span>
-      </a>
-   </li>
-   <li>
       <a href="#OrderedLineList"
          title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedLineList">OrderedLineList</a>
    </li>
@@ -26,10 +20,12 @@ This ontology has the following classes and properties.</span>
          title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedStanzaList">OrderedStanzaList</a>
    </li>
    <li>
+      <a href="#OrderedSyllableList"
+         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedSyllableList">OrderedSyllableList</a>
+   </li>
+   <li>
       <a href="#PoeticLicense"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#PoeticLicense">
-         <span>poetic license</span>
-      </a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#PoeticLicense">PoeticLicense</a>
    </li>
    <li>
       <a href="#Punctuation"
@@ -49,9 +45,7 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#SyllableItem"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#SyllableItem">
-         <span>syllable item</span>
-      </a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#SyllableItem">SyllableItem</a>
    </li>
    <li>
       <a href="#Token"
@@ -63,18 +57,20 @@ This ontology has the following classes and properties.</span>
    </li>
 </ul><h4>Object Properties</h4><ul class="hlist">
    <li>
-      <a href="#belongsToSylableList"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToSylableList">
-         <span>belongs to sylable list</span>
-      </a>
-   </li>
-   <li>
       <a href="#belongsToLineList"
          title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToLineList">belongsToLineList</a>
    </li>
    <li>
       <a href="#belongsToStanzaList"
          title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToStanzaList">belongsToStanzaList</a>
+   </li>
+   <li>
+      <a href="#belongsToSylableList"
+         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToSylableList">belongsToSyllableList</a>
+   </li>
+   <li>
+      <a href="#contains"
+         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#contains">contains</a>
    </li>
    <li>
       <a href="#containsMentionTo"
@@ -96,45 +92,15 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#creates"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#creates">
-         <span>creates</span>
-      </a>
-   </li>
-   <li>
-      <a href="#firstOfEnjambment"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#firstOfEnjambment">
-         <span>first of enjambment</span>
-      </a>
-   </li>
-   <li>
-      <a href="#firstOfSynalepha"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#firstOfSynalepha">
-         <span>first of synalepha</span>
-      </a>
-   </li>
-   <li>
-      <a href="#hasEditor"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasEditor">
-         <span>has editor</span>
-      </a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#creates">creates</a>
    </li>
    <li>
       <a href="#hasFirstSyllable"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasFirstSyllable">
-         <span>has first syllable</span>
-      </a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasFirstSyllable">firstSyllable</a>
    </li>
    <li>
-      <a href="#hasLicense"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLicense">
-         <span>has license</span>
-      </a>
-   </li>
-   <li>
-      <a href="#hasLines"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLines">
-         <span>has lines</span>
-      </a>
+      <a href="#isFirstSyllable"
+         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isFirstSyllable">firstSyllable</a>
    </li>
    <li>
       <a href="#hasStanzaItem"
@@ -143,16 +109,8 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#hasSyllableItem"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSyllableItem">
-         <span>has syllable item</span>
-      </a>
-   </li>
-   <li>
-      <a href="#hasSyllables"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSyllables">
-         <span>has syllables</span>
-      </a>
+      <a href="#hasEditor"
+         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasEditor">hasEditor</a>
    </li>
    <li>
       <a href="#hasFirstLine"
@@ -171,32 +129,28 @@ This ontology has the following classes and properties.</span>
          title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLineItem">hasLineItem</a>
    </li>
    <li>
+      <a href="#hasLines"
+         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLines">hasLines</a>
+   </li>
+   <li>
+      <a href="#hasPoeticLicense"
+         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasPoeticLicense">hasPoeticLicense</a>
+   </li>
+   <li>
       <a href="#hasStanzas"
          title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanzas">hasStanzas</a>
    </li>
    <li>
-      <a href="#isFirstSyllable"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isFirstSyllable">
-         <span>is first syllable</span>
-      </a>
+      <a href="#hasSyllableItem"
+         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSyllableItem">hasSyllableItem</a>
+   </li>
+   <li>
+      <a href="#hasSyllables"
+         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSyllables">hasSyllables</a>
    </li>
    <li>
       <a href="#isInflectedForm"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isInflectedForm">
-         <span>is inflected form</span>
-      </a>
-   </li>
-   <li>
-      <a href="#isLemmaOfApp"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isLemmaOfApp">
-         <span>is lemma of app</span>
-      </a>
-   </li>
-   <li>
-      <a href="#isLemmaOfWord"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isLemmaOfWord">
-         <span>is lemma of word</span>
-      </a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isInflectedForm">inflectedForm</a>
    </li>
    <li>
       <a href="#isCallOf"
@@ -219,6 +173,18 @@ This ontology has the following classes and properties.</span>
          title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isFirstToken">isFirstToken</a>
    </li>
    <li>
+      <a href="#isLemma"
+         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isLemma">isLemma</a>
+   </li>
+   <li>
+      <a href="#isLemmaOfApp"
+         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isLemmaOfApp">isLemmaOfApp</a>
+   </li>
+   <li>
+      <a href="#isLemmaOfWord"
+         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isLemmaOfWord">isLemmaOfWord</a>
+   </li>
+   <li>
       <a href="#isPart"
          title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isPart">isPart</a>
    </li>
@@ -228,89 +194,55 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#licenseType"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#licenseType">
-         <span>license type</span>
-      </a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#licenseType">licenseType</a>
    </li>
    <li>
       <a href="#mentions"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#mentions">
-         <span>mentions</span>
-      </a>
-   </li>
-   <li>
-      <a href="#nextPart"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextPart">
-         <span>next part</span>
-      </a>
-   </li>
-   <li>
-      <a href="#nextSyllable"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextSyllable">
-         <span>next syllable</span>
-      </a>
-   </li>
-   <li>
-      <a href="#nextToken"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextToken">
-         <span>next token</span>
-      </a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#mentions">mentions</a>
    </li>
    <li>
       <a href="#nextLine"
          title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextLine">nextLine</a>
    </li>
    <li>
+      <a href="#nextPart"
+         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextPart">nextPart</a>
+   </li>
+   <li>
       <a href="#nextStanza"
          title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextStanza">nextStanza</a>
+   </li>
+   <li>
+      <a href="#nextSyllable"
+         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextSyllable">nextSyllable</a>
+   </li>
+   <li>
+      <a href="#nextToken"
+         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextToken">nextToken</a>
    </li>
    <li>
       <a href="#nucleusType"
          title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nucleusType">nucleusType</a>
    </li>
    <li>
-      <a href="#previousPart"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousPart">
-         <span>previous part</span>
-      </a>
-   </li>
-   <li>
-      <a href="#previousSyllable"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousSyllable">
-         <span>previous syllable</span>
-      </a>
-   </li>
-   <li>
-      <a href="#previousToken"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousToken">
-         <span>previous token</span>
-      </a>
-   </li>
-   <li>
       <a href="#previousLine"
          title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousLine">previousLine</a>
+   </li>
+   <li>
+      <a href="#previousPart"
+         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousPart">previousPart</a>
    </li>
    <li>
       <a href="#previousStanza"
          title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousStanza">previousStanza</a>
    </li>
    <li>
-      <a href="#secondOfEnjambment"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#secondOfEnjambment">
-         <span>second of enjambment</span>
-      </a>
+      <a href="#previousSyllable"
+         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousSyllable">previousSyllable</a>
    </li>
    <li>
-      <a href="#secondOfSynalepha"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#secondOfSynalepha">
-         <span>second of synalepha</span>
-      </a>
-   </li>
-   <li>
-      <a href="#typeOfEnjambment"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#typeOfEnjambment">
-         <span>type of enjambment</span>
-      </a>
+      <a href="#previousToken"
+         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousToken">previousToken</a>
    </li>
    <li>
       <a href="#typeOfStanza"
@@ -334,20 +266,8 @@ This ontology has the following classes and properties.</span>
          title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#content">content</a>
    </li>
    <li>
-      <a href="#editionNotes"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#editionNotes">
-         <span>edition notes</span>
-      </a>
-   </li>
-   <li>
       <a href="#firstHemistich"
          title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#firstHemistich">firstHemistich</a>
-   </li>
-   <li>
-      <a href="#hasSystole"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSystole">
-         <span>has systole</span>
-      </a>
    </li>
    <li>
       <a href="#hasDiastole"
@@ -364,6 +284,10 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#hasSynizesis"
          title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSynizesis">hasSynizesis</a>
+   </li>
+   <li>
+      <a href="#hasSystole"
+         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSystole">hasSystole</a>
    </li>
    <li>
       <a href="#hiatusPart1"
@@ -399,15 +323,11 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#licenseFinalPosition"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#licenseFinalPosition">
-         <span>license final position</span>
-      </a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#licenseFinalPosition">licenseFinalPosition</a>
    </li>
    <li>
       <a href="#licenseInitialPosition"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#licenseInitialPosition">
-         <span>license initial position</span>
-      </a>
+         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#licenseInitialPosition">licenseInitialPosition</a>
    </li>
    <li>
       <a href="#lineNumber"
