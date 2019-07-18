@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "pdstruct:Line" "6d5e4741:16c024e4412:-7ffb" "pdstruct:OrderedStanzaList" "pdstruct:PoeticLicense" "pdstruct:LineItem" "pdstruct:StanzaItem" "pdstruct:Word" "pdstruct:Stanza" "pdstruct:Token" "pdstruct:OrderedSyllableList" "pdstruct:SyllableItem" "pdstruct:Syllable" "raop:Word" "skos:Concept" "pdstruct:OrderedLineList" "6d5e4741:16c024e4412:-7ff5" "olo:Slot" "olo:OrderedList" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "-1fc351b4:16c0264a8c0:-7ffc" "pdstruct:Line" "pdstruct:OrderedStanzaList" "pdstruct:PoeticLicense" "pdstruct:LineItem" "pdstruct:StanzaItem" "pdstruct:Word" "pdstruct:Stanza" "pdstruct:Token" "pdstruct:OrderedSyllableList" "pdstruct:SyllableItem" "pdstruct:Syllable" "raop:Word" "skos:Concept" "pdstruct:OrderedLineList" "-1fc351b4:16c0264a8c0:-7ff6" "olo:Slot" "olo:OrderedList" ; /*classes style*/
 	"pdstruct:isDialepha" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"pdstruct:coda" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"pdstruct:nextPart" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
@@ -28,7 +28,6 @@ node [shape = rectangle, color="orange"]; "pdstruct:Line" "6d5e4741:16c024e4412:
 	"dc:source" -> "http://dublincore.org/usage/terms/history/#source-006" [ label = "dcterms:hasVersion" ];
 	"dc:creator" -> "http://dublincore.org/usage/terms/history/#creator-006" [ label = "dcterms:hasVersion" ];
 	"pdstruct:morphologicalAnnotation" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
-	"pdstruct:editionNotes" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"pdstruct:content" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"olo:" -> "http://www.w3.org/2003/06/sw-vocab-status/ns" [ label = "owl:imports" ];
 	"olo:" -> "dc:" [ label = "owl:imports" ];
@@ -43,19 +42,18 @@ node [shape = rectangle, color="orange"]; "pdstruct:Line" "6d5e4741:16c024e4412:
 	"pdstruct:isLemmaOfApp" -> "pdstruct:isLemma" [ label = "rdfs:subPropertyOf" ];
 	"pdstruct:hasSystole" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"NULL" -> "olo:index" [ label = "owl:onProperty" ];
-	"NULL" -> "pdskos:grammatical-category" [ label = "owl:hasValue" ];
 	"NULL" -> "pdstruct:previousToken" [ label = "owl:onProperty" ];
 	"NULL" -> "pdstruct:OrderedSyllableList" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "-1fc351b4:16c0264a8c0:-7ffa" [ label = "rdf:rest" ];
 	"NULL" -> "olo:ordered_list" [ label = "owl:onProperty" ];
 	"NULL" -> "pdstruct:phoneticTranscription" [ label = "owl:onProperty" ];
-	"NULL" -> "6d5e4741:16c024e4412:-7ff9" [ label = "rdf:rest" ];
 	"NULL" -> "pdstruct:altStanzaNumber" [ label = "owl:onProperty" ];
 	"NULL" -> "pdskos:poeticLicense-type" [ label = "owl:hasValue" ];
 	"NULL" -> "pdstruct:isInflectedForm" [ label = "owl:onProperty" ];
 	"NULL" -> "olo:length" [ label = "owl:onProperty" ];
-	"NULL" -> "6d5e4741:16c024e4412:-7ff3" [ label = "rdf:rest" ];
 	"NULL" -> "pdstruct:Token" [ label = "owl:onClass" ];
 	"NULL" -> "pdstruct:isFirstSyllable" [ label = "owl:onProperty" ];
+	"NULL" -> "-1fc351b4:16c0264a8c0:-7ff4" [ label = "rdf:rest" ];
 	"NULL" -> "pdstruct:hasSynizesis" [ label = "owl:onProperty" ];
 	"NULL" -> "pdstruct:Stanza" [ label = "owl:onClass" ];
 	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
@@ -72,13 +70,13 @@ node [shape = rectangle, color="orange"]; "pdstruct:Line" "6d5e4741:16c024e4412:
 	"NULL" -> "pdstruct:lineNumber" [ label = "owl:onProperty" ];
 	"NULL" -> "pdstruct:lemma" [ label = "owl:onProperty" ];
 	"NULL" -> "pdstruct:Word" [ label = "rdf:first" ];
+	"NULL" -> "-1fc351b4:16c0264a8c0:-7ff5" [ label = "owl:unionOf" ];
 	"NULL" -> "pdstruct:hasFirstSyllable" [ label = "owl:onProperty" ];
 	"NULL" -> "xsd:string" [ label = "owl:onDataRange" ];
-	"NULL" -> "6d5e4741:16c024e4412:-7ffa" [ label = "owl:unionOf" ];
 	"NULL" -> "pdstruct:regularisedSpelling" [ label = "owl:onProperty" ];
+	"NULL" -> "-1fc351b4:16c0264a8c0:-7ffb" [ label = "owl:unionOf" ];
 	"NULL" -> "pdstruct:previousPart" [ label = "owl:onProperty" ];
 	"NULL" -> "pdstruct:Syllable" [ label = "owl:onClass" ];
-	"NULL" -> "6d5e4741:16c024e4412:-7ff4" [ label = "owl:unionOf" ];
 	"NULL" -> "xsd:boolean" [ label = "owl:onDataRange" ];
 	"NULL" -> "skos:inScheme" [ label = "owl:onProperty" ];
 	"NULL" -> "olo:next" [ label = "owl:onProperty" ];
@@ -96,7 +94,6 @@ node [shape = rectangle, color="orange"]; "pdstruct:Line" "6d5e4741:16c024e4412:
 	"dc:date" -> "http://dublincore.org/usage/terms/history/#date-006" [ label = "dcterms:hasVersion" ];
 	"pdstruct:nextStanza" -> "olo:next" [ label = "rdfs:subPropertyOf" ];
 	"pdstruct:isRefrainOmitted" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
-	"pdstruct:secondOfSynalepha" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
 	"pdstruct:phoneticTranscription" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"pdstruct:hasFirstToken" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
 	"pdstruct:regularisedSpelling" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
@@ -128,12 +125,10 @@ node [shape = rectangle, color="orange"]; "pdstruct:Line" "6d5e4741:16c024e4412:
 	"pdstruct:Word" -> "xsd:boolean" [ label = "pdstruct:hasSystole" ];
 	"pdstruct:Token" -> "pdstruct:Token" [ label = "pdstruct:previousToken" ];
 	"pdstruct:Stanza" -> "pdstruct:Line" [ label = "pdstruct:hasFirstLine" ];
-	"owl:Thing" -> "skos:Concept" [ label = "pdstruct:secondOfEnjambment" ];
 	"olo:Slot" -> "olo:Slot" [ label = "olo:next" ];
 	"owl:Thing" -> "owl:Thing" [ label = "owl:topObjectProperty" ];
 	"pdstruct:LineItem" -> "pdstruct:LineItem" [ label = "pdstruct:previousLine" ];
 	"pdstruct:Syllable" -> "xsd:string" [ label = "pdstruct:onset" ];
-	"pdstruct:Syllable" -> "pdstruct:Syllable" [ label = "pdstruct:firstOfSynalepha" ];
 	"pdstruct:Word" -> "pdstruct:Word" [ label = "pdstruct:isEchoOf" ];
 	"pdstruct:OrderedLineList" -> "pdstruct:LineItem" [ label = "pdstruct:hasLineItem" ];
 	"pdstruct:StanzaItem" -> "pdstruct:StanzaItem" [ label = "pdstruct:previousStanza" ];
@@ -146,7 +141,6 @@ node [shape = rectangle, color="orange"]; "pdstruct:Line" "6d5e4741:16c024e4412:
 	"owl:Thing" -> "xsd:string" [ label = "pdstruct:regularisedSpelling" ];
 	"pdstruct:Stanza" -> "pdstruct:Stanza" [ label = "pdstruct:isTheSameAs" ];
 	"owl:Thing" -> "pdstruct:OrderedStanzaList" [ label = "pdstruct:hasStanzas" ];
-	"owl:Thing" -> "xsd:string" [ label = "pdstruct:editionNotes" ];
 	"pdstruct:Word" -> "xsd:string" [ label = "pdstruct:morphologicalAnnotation" ];
 	"owl:Thing" -> "pdstruct:Stanza" [ label = "pdstruct:hasFirstStanza" ];
 	"pdstruct:Syllable" -> "xsd:boolean" [ label = "pdstruct:isStressed" ];
@@ -160,7 +154,6 @@ node [shape = rectangle, color="orange"]; "pdstruct:Line" "6d5e4741:16c024e4412:
 	"pdstruct:Stanza" -> "owl:Thing" [ label = "pdstruct:isFirstStanza" ];
 	"pdstruct:Word" -> "xsd:string" [ label = "pdstruct:hiatusPart2" ];
 	"pdstruct:Word" -> "xsd:string" [ label = "pdstruct:hiatusPart1" ];
-	"pdstruct:Syllable" -> "pdstruct:Syllable" [ label = "pdstruct:secondOfSynalepha" ];
 	"pdstruct:PoeticLicense" -> "xsd:integer" [ label = "pdstruct:licenseInitialPosition" ];
 	"pdstruct:Word" -> "pdstruct:Word" [ label = "pdstruct:isInflectedForm" ];
 	"owl:Thing" -> "pdstruct:OrderedSyllableList" [ label = "pdstruct:hasSyllables" ];
@@ -171,10 +164,9 @@ node [shape = rectangle, color="orange"]; "pdstruct:Line" "6d5e4741:16c024e4412:
 	"raop:Word" -> "raop:Word" [ label = "pdstruct:isLemmaOfWord" ];
 	"pdstruct:Word" -> "xsd:string" [ label = "pdstruct:lemma" ];
 	"pdstruct:LineItem" -> "pdstruct:LineItem" [ label = "pdstruct:nextLine" ];
-	"pdstruct:Line" -> "pdstruct:PoeticLicense" [ label = "pdstruct:hasLicense" ];
-	"6d5e4741:16c024e4412:-7ffb" -> "pdstruct:Syllable" [ label = "pdstruct:hasFirstSyllable" ];
+	"-1fc351b4:16c0264a8c0:-7ffc" -> "pdstruct:Syllable" [ label = "pdstruct:hasFirstSyllable" ];
+	"pdstruct:Line" -> "pdstruct:PoeticLicense" [ label = "pdstruct:hasPoeticLicense" ];
 	"pdstruct:Line" -> "owl:Thing" [ label = "pdstruct:containsMentionTo" ];
-	"owl:Thing" -> "skos:Concept" [ label = "pdstruct:typeOfEnjambment" ];
 	"owl:Thing" -> "xsd:boolean" [ label = "pdstruct:hasHiatus" ];
 	"pdstruct:Stanza" -> "skos:Concept" [ label = "pdstruct:typeOfStanzaEdition" ];
 	"owl:Thing" -> "pdstruct:OrderedLineList" [ label = "pdstruct:hasLines" ];
@@ -192,8 +184,7 @@ node [shape = rectangle, color="orange"]; "pdstruct:Line" "6d5e4741:16c024e4412:
 	"pdstruct:Line" -> "pdstruct:Stanza" [ label = "pdstruct:isFirstLine" ];
 	"owl:Thing" -> "xsd:boolean" [ label = "pdstruct:hasSynizesis" ];
 	"owl:Thing" -> "xsd:string" [ label = "pdcore:notes" ];
-	"pdstruct:Syllable" -> "6d5e4741:16c024e4412:-7ff5" [ label = "pdstruct:isFirstSyllable" ];
-	"owl:Thing" -> "skos:Concept" [ label = "pdstruct:firstOfEnjambment" ];
+	"pdstruct:Syllable" -> "-1fc351b4:16c0264a8c0:-7ff6" [ label = "pdstruct:isFirstSyllable" ];
 	"pdstruct:Line" -> "pdstruct:Token" [ label = "pdstruct:hasFirstToken" ];
 	"pdstruct:Syllable" -> "xsd:string" [ label = "pdstruct:weight" ];
 	"pdstruct:Syllable" -> "xsd:string" [ label = "pdstruct:coda" ];

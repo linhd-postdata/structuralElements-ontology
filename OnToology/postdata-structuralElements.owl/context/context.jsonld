@@ -12,10 +12,6 @@
       "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isFirstLine",
       "@type" : "@id"
     },
-    "firstOfSynalepha" : {
-      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#firstOfSynalepha",
-      "@type" : "@id"
-    },
     "hasFirstLine" : {
       "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasFirstLine",
       "@type" : "@id"
@@ -48,10 +44,6 @@
     },
     "license" : {
       "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#license"
-    },
-    "hasLicense" : {
-      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLicense",
-      "@type" : "@id"
     },
     "nextPart" : {
       "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextPart",
@@ -127,14 +119,6 @@
     "hiatusPart1" : {
       "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hiatusPart1",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "secondOfEnjambment" : {
-      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#secondOfEnjambment",
-      "@type" : "@id"
-    },
-    "typeOfEnjambment" : {
-      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#typeOfEnjambment",
-      "@type" : "@id"
     },
     "slot" : {
       "@id" : "http://purl.org/ontology/olo/core#slot",
@@ -255,20 +239,12 @@
       "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousPart",
       "@type" : "@id"
     },
-    "secondOfSynalepha" : {
-      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#secondOfSynalepha",
-      "@type" : "@id"
-    },
     "isInflectedForm" : {
       "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isInflectedForm",
       "@type" : "@id"
     },
     "previous" : {
       "@id" : "http://purl.org/ontology/olo/core#previous",
-      "@type" : "@id"
-    },
-    "firstOfEnjambment" : {
-      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#firstOfEnjambment",
       "@type" : "@id"
     },
     "belongsToLineList" : {
@@ -340,6 +316,10 @@
       "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isFirstStanza",
       "@type" : "@id"
     },
+    "hasPoeticLicense" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasPoeticLicense",
+      "@type" : "@id"
+    },
     "Word" : {
       "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word"
     },
@@ -376,10 +356,6 @@
     "isPart" : {
       "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isPart",
       "@type" : "@id"
-    },
-    "editionNotes" : {
-      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#editionNotes",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "positionInWord" : {
       "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#positionInWord",
