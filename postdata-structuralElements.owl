@@ -170,6 +170,19 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToSyllableList -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToSyllableList">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#ordered_list"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedSyllableList"/>
+        <rdfs:comment xml:lang="en">Item that belongs to a lines list</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-structuralElements</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">belongsToSyllableList</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToTokenList -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToTokenList">
@@ -316,6 +329,19 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSyllable -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSyllable">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#slot"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedSyllableList"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable"/>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-structuralElements</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">The list of  items of Syllable</rdfs:label>
+        <rdfs:label xml:lang="en">hasSyllable</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasToken -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasToken">
@@ -394,6 +420,15 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isFirstSyllable -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isFirstSyllable">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isFirstToken -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isFirstToken">
@@ -452,7 +487,7 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#next"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line"/>
-        <rdfs:comment xml:lang="en">This property points to list item that contains an instance of Line that follows the current item under analysis</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property points to Line that follows the Line under analysis</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-structuralElements</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">nextLine</rdfs:label>
     </owl:ObjectProperty>
@@ -467,9 +502,22 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mluisadiez</dc:creator>
-        <rdfs:comment xml:lang="en">This property points to list item that contains an instance of Stanza that follows the current item under analysis</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property points to  Stanza that follows the Stanza under analysis</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-structuralElements</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">nextStanza</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextSyllable -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextSyllable">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#next"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable"/>
+        <rdfs:comment xml:lang="en">This property points to the Syllale that follows the Syllable under analysis</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-structuralElements</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">nextSyllable</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -482,9 +530,27 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Token"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mluisadiez</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-16T20:30:43Z</dc:date>
-        <rdfs:comment xml:lang="en">This property points to an instance of Punctuation that follows the current item under analysis</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property points to a Token that follows the current Token under analysis</rdfs:comment>
         <rdfs:comment xml:lang="en">This property points to an instance of Word that follows the current item under analysis</rdfs:comment>
         <rdfs:label xml:lang="en">nextToken</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nucleusType -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nucleusType">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                <owl:hasValue rdf:resource="http://postdata.linhd.uned.es/kos/nucleus-type"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Type of syllabic nucleus (linguistic typology)</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-structuralElements</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">nucleusType</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -511,6 +577,19 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
         <rdfs:comment xml:lang="en">This property points to the previous item of a list that contains a group of lines (an instance of Stanza) which, together with the current element under analysis</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-structuralElements</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">previousStanza</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousSyllable -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousSyllable">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#previous"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable"/>
+        <rdfs:comment xml:lang="en">This property points to the previous Syllable of a list that contains an instance of Syllable</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-structuralElements</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">previousSyllable</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -618,6 +697,7 @@ Eg.: Diplomatic edition, critical edition, translation</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#coda">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mluisadiez</dc:creator>
         <rdfs:comment>Sound or sounds that follow the nucleus</rdfs:comment>
@@ -648,89 +728,6 @@ Eg.: Diplomatic edition, critical edition, translation</rdfs:comment>
         <rdfs:comment xml:lang="en">This property points to the first division of the line (an instance of Line), such as the first hemistich</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-structuralElements</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">firstHemistich</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasDiastole -->
-
-    <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasDiastole">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mluisadiez</dc:creator>
-        <rdfs:comment xml:lang="en">If it contains the lengthening of a normally short syllable</rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-structuralElements</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">hasDiastole</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasElision -->
-
-    <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasElision">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mluisadiez</dc:creator>
-        <rdfs:comment xml:lang="en">If it presents the combination of two syllables into one for the purposes of poetic scansion</rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-structuralElements</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">hasElision</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasHiatus -->
-
-    <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasHiatus">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mluisadiez</dc:creator>
-        <rdfs:comment xml:lang="en">If it contains the separate pronunciation of the two vowels in a diphthong for the sake of meter</rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-structuralElements</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">hasHiatus</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSynizesis -->
-
-    <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSynizesis">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mluisadiez</dc:creator>
-        <rdfs:comment xml:lang="en">If it presents the union in pronunciation of two adjacent vowels into one syllable without forming a diphthong</rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-structuralElements</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">hasSynizesis</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSystole -->
-
-    <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSystole">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mluisadiez</dc:creator>
-        <rdfs:comment xml:lang="en">If it contains the shortening of a syllable regularly long</rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-structuralElements</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">hasSystole</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isDialepha -->
-
-    <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isDialepha">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mluisadiez</dc:creator>
-        <rdfs:comment xml:lang="en">The current instance of Syllable together with the following one form a dialepha</rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-structuralElements</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">isDialepha</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -771,19 +768,6 @@ Eg.: Diplomatic edition, critical edition, translation</rdfs:comment>
         <rdfs:comment xml:lang="en">Whether the copy of the refrain was omitted</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-structuralElements</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">isRefrainOmitted</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isStressed -->
-
-    <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isStressed">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mluisadiez</dc:creator>
-        <rdfs:comment xml:lang="en">Whether the syllable is stressed</rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-structuralElements</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">isStressed</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -834,6 +818,7 @@ Eg.: Diplomatic edition, critical edition, translation</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#onset">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mluisadiez</dc:creator>
         <rdfs:comment xml:lang="en">Sound or sounds occurring before the nucleus, a consonant or consonant cluster</rdfs:comment>
@@ -875,6 +860,7 @@ Eg.: Diplomatic edition, critical edition, translation</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#positionInWord">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mluisadiez</dc:creator>
         <rdfs:comment xml:lang="en">Position of the syllable in the word 
@@ -942,6 +928,7 @@ Eg.: 3/4 (= third syllable in a four-syllable word)</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#weight">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mluisadiez</dc:creator>
         <rdfs:comment xml:lang="en">Pattern according to the number and/or duration of segments in the syllabic rime, that is, the nucleus and coda</rdfs:comment>
@@ -1056,11 +1043,22 @@ Eg.: “As armas e os barões assinalados” - from Os Lusíadas</rdfs:comment>
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedSyllableList -->
+
+    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedSyllableList">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/olo/core#OrderedList"/>
+        <rdfs:comment xml:lang="en">Ordered list of lines  of a redaction</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-structuralElements</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">OrderedLineList</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedTokenList -->
 
     <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedTokenList">
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/olo/core#OrderedList"/>
-        <rdfs:comment xml:lang="en">Ordered list of tokens  of a redaction</rdfs:comment>
+        <rdfs:comment xml:lang="en">Ordered list of tokens  of a line</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-structuralElements</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">OrderedTokenList</rdfs:label>
     </owl:Class>
@@ -1141,6 +1139,41 @@ Novo Reino, que tanto sublimaram;</rdfs:comment>
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable -->
+
+    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/olo/core#Slot"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#content"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isRefrain"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#lineNumber"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mluisadiez</dc:creator>
+        <rdfs:comment>A linguistic analysis using the syllable as the unit of reference
+Eg.: The onset and coda of the rhyme vowel</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://postdata.linhd.uned.es/ontology/postdata-structuralElements</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Syllable</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Token -->
 
     <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Token">
@@ -1169,20 +1202,6 @@ Novo Reino, que tanto sublimaram;</rdfs:comment>
                 <owl:onProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#content"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasHiatus"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSynizesis"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1293,10 +1312,10 @@ Eg.: The word “life”</rdfs:comment>
      -->
 
     <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/CLP104_subject_to">
-        <rdfs:label xml:lang="en">subject to</rdfs:label>
         <rdfs:comment xml:lang="en">This property associates a publication, i.e. an instance of F3 Manifestation Product Type, with an instance of E30 Right, which applies to all exemplars of that publication, as long as they are recognised as exemplars of that publication.
 The rights covered by this property may include: acquisition or access authorisation; terms of availability; access restrictions on the Manifestation Product Type; etc.
 </rdfs:comment>
+        <rdfs:label xml:lang="en">subject to</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/CLP104i_applies_to">
         <rdfs:comment xml:lang="en">
@@ -1854,9 +1873,9 @@ This property is a shortcut of: F2 Expression P165i is incorporated in F24 Publi
 </rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R55_has_nomen_form">
-        <rdfs:label xml:lang="en">has nomen form</rdfs:label>
         <rdfs:comment xml:lang="en">This property associates an instance of F35 Nomen Use Statement with the instance of E55 Type that characterizes the Nomen referred to in the Nomen Use Statement, such as abbreviation, full name etc. In the case of abbreviations, the source of this form may or may not be explicitly mentioned.
 </rdfs:comment>
+        <rdfs:label xml:lang="en">has nomen form</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R55i_is_nomen_form_in">
         <rdfs:label xml:lang="en">is nomen form in</rdfs:label>
