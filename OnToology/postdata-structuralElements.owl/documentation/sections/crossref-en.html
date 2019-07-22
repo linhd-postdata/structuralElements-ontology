@@ -8,8 +8,10 @@ This section provides details for each class and property defined by postdata-st
             title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line">Line</a>
       </li>
       <li>
-         <a href="#LineItem"
-            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#LineItem">LineItem</a>
+         <a href="#OrderedTokenList"
+            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedTokenList">
+            <span>ordered token list</span>
+         </a>
       </li>
       <li>
          <a href="#OrderedLineList"
@@ -24,28 +26,18 @@ This section provides details for each class and property defined by postdata-st
             title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedSyllableList">OrderedSyllableList</a>
       </li>
       <li>
-         <a href="#PoeticLicense"
-            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#PoeticLicense">PoeticLicense</a>
-      </li>
-      <li>
          <a href="#Punctuation"
             title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Punctuation">Punctuation</a>
       </li>
       <li>
+         <a href="#http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"
+            title="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction">
+            <span>redaction</span>
+         </a>
+      </li>
+      <li>
          <a href="#Stanza"
             title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza">Stanza</a>
-      </li>
-      <li>
-         <a href="#StanzaItem"
-            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#StanzaItem">StanzaItem</a>
-      </li>
-      <li>
-         <a href="#Syllable"
-            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable">Syllable</a>
-      </li>
-      <li>
-         <a href="#SyllableItem"
-            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#SyllableItem">SyllableItem</a>
       </li>
       <li>
          <a href="#Token"
@@ -77,72 +69,74 @@ Eg.: “As armas e os barões assinalados” - from Os Lusíadas</span>
       </dl>
       <dl class="description">
          <dt>has super-classes</dt>
-         <dd/>
+         <dd>
+            <span class="dotted" title="http://purl.org/ontology/olo/core#Slot">slot</span>, <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#containsMentionTo"
+            <a href="#belongsToLineList"
+               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToLineList">belongsToLineList</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#containsMentionTo"
                title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#containsMentionTo">containsMentionTo</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#firstHemistich"
                title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#firstHemistich">firstHemistich</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasFirstToken"
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasTokens"
+               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasTokens">has tokens</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasFirstToken"
                title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasFirstToken">hasFirstToken</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasPoeticLicense"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasPoeticLicense">hasPoeticLicense</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isFirstLine"
                title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isFirstLine">isFirstLine</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isRefrain"
                title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isRefrain">isRefrain</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#lineNumber"
                title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#lineNumber">lineNumber</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#nextLine"
+               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextLine">nextLine</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#previousLine"
+               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousLine">previousLine</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#secondHemistich"
+               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#secondHemistich">secondHemistich</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#hasFirstLine"
                title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasFirstLine">hasFirstLine</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasLine"
+               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLine">hasLineItem</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isFirstToken"
                title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isFirstToken">isFirstToken</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#nextLine"
+               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextLine">nextLine</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#previousLine"
+               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousLine">previousLine</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="LineItem">
-      <h3>LineItem<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="OrderedTokenList">
+      <h3>ordered token list<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#LineItem</p>
-      <div class="comment">
-         <span class="markdown">An item in the lines list</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>http://postdata.linhd.uned.es/ontology/postdata-structuralElements</dd>
-      </dl>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedTokenList</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="http://purl.org/ontology/olo/core#Slot">slot</span>
+            <span class="dotted" title="http://purl.org/ontology/olo/core#OrderedList">ordered list</span>
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#belongsToLineList"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToLineList">belongsToLineList</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#nextLine"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextLine">nextLine</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#previousLine"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousLine">previousLine</a>
+            <a href="#hasToken"
+               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasToken">has token</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#hasLineItem"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLineItem">hasLineItem</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#nextLine"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextLine">nextLine</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#previousLine"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousLine">previousLine</a>
+            <a href="#hasTokens"
+               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasTokens">has tokens</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -168,8 +162,8 @@ Eg.: “As armas e os barões assinalados” - from Os Lusíadas</span>
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#hasLineItem"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLineItem">hasLineItem</a>
+            <a href="#hasLine"
+               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLine">hasLineItem</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
@@ -203,8 +197,8 @@ Eg.: “As armas e os barões assinalados” - from Os Lusíadas</span>
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#hasStanzaItem"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanzaItem">has stanza item</a>
+            <a href="#hasStanza"
+               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanza">has stanza</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
@@ -212,7 +206,7 @@ Eg.: “As armas e os barões assinalados” - from Os Lusíadas</span>
             <a href="#belongsToStanzaList"
                title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToStanzaList">belongsToStanzaList</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasStanzas"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanzas">hasStanzas</a>
+               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanzas">has stanzas</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -238,51 +232,14 @@ Eg.: “As armas e os barões assinalados” - from Os Lusíadas</span>
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#hasSyllableItem"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSyllableItem">hasSyllableItem</a>
+            <a href="#hasSyllable"
+               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSyllable">hasSyllableItem</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#belongsToSylableList"
                title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToSylableList">belongsToSyllableList</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasSyllables"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSyllables">hasSyllables</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="PoeticLicense">
-      <h3>PoeticLicense<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#PoeticLicense</p>
-      <div class="comment">
-         <span class="markdown">Poetic license, the right assumed by poets to alter or invert standard syntax or depart from common diction or pronunciation to comply with the metrical or tonal requirements of their writing.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>http://postdata.linhd.uned.es/ontology/postdata-structuralElements</dd>
-      </dl>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd/>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#licenseFinalPosition"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#licenseFinalPosition">licenseFinalPosition</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#licenseInitialPosition"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#licenseInitialPosition">licenseInitialPosition</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#licenseType"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#licenseType">licenseType</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#hasPoeticLicense"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasPoeticLicense">hasPoeticLicense</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -314,6 +271,34 @@ Eg.: “As armas e os barões assinalados” - from Os Lusíadas</span>
          </dd>
       </dl>
    </div>
+   <div class="entity" id="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction">
+      <h3>redaction<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-core#Redaction</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasStanzas"
+               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanzas">has stanzas</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasFirstLine"
+               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasFirstLine">hasFirstLine</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasFirstStanza"
+               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasFirstStanza">hasFirstStanza</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#isFirstStanza"
+               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isFirstStanza">isFirstStanza</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="Stanza">
       <h3>Stanza<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -338,13 +323,16 @@ Novo Reino, que tanto sublimaram;</span>
       </dl>
       <dl class="description">
          <dt>has super-classes</dt>
-         <dd/>
+         <dd>
+            <span class="dotted" title="http://purl.org/ontology/olo/core#Slot">slot</span>, <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#altStanzaNumber"
                title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#altStanzaNumber">altStanzaNumber</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasFirstLine"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasFirstLine">hasFirstLine</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#belongsToStanzaList"
+               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToStanzaList">belongsToStanzaList</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isFirstStanza"
                title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isFirstStanza">isFirstStanza</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isNotMetricStanza"
@@ -353,9 +341,13 @@ Novo Reino, que tanto sublimaram;</span>
                title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isRefrainOmitted">isRefrainOmitted</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#isTheSameAs"
                title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isTheSameAs">isTheSameAs</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#nextStanza"
+               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextStanza">nextStanza</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#paraphrasis"
                title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#paraphrasis">paraphrasis</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#stanzaNumber"
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#previousStanza"
+               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousStanza">previousStanza</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#stanzaNumber"
                title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#stanzaNumber">stanzaNumber</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#typeOfStanza"
                title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#typeOfStanza">typeOfStanza</a>
@@ -365,147 +357,16 @@ Novo Reino, que tanto sublimaram;</span>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#hasFirstStanza"
+            <a href="#hasStanza"
+               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanza">has stanza</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasFirstStanza"
                title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasFirstStanza">hasFirstStanza</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#isFirstLine"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isFirstLine">isFirstLine</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isTheSameAs"
                title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isTheSameAs">isTheSameAs</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="StanzaItem">
-      <h3>StanzaItem<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#StanzaItem</p>
-      <div class="comment">
-         <span class="markdown">An item in the stanzas list</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>http://postdata.linhd.uned.es/ontology/postdata-structuralElements</dd>
-      </dl>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <span class="dotted" title="http://purl.org/ontology/olo/core#Slot">slot</span>
-         </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#belongsToStanzaList"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToStanzaList">belongsToStanzaList</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#nextStanza"
                title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextStanza">nextStanza</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#previousStanza"
                title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousStanza">previousStanza</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#hasStanzaItem"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanzaItem">has stanza item</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#nextStanza"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextStanza">nextStanza</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#previousStanza"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousStanza">previousStanza</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="Syllable">
-      <h3>Syllable<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable</p>
-      <div class="comment">
-         <span class="markdown">A linguistic analysis using the syllable as the unit of reference
-Eg.: The onset and coda of the rhyme vowel</span>
-      </div>
-      <dl>
-         <dt>Authors:</dt>
-         <dd>mluisadiez</dd>
-      </dl>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>http://postdata.linhd.uned.es/ontology/postdata-structuralElements</dd>
-      </dl>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <span class="dotted" title="http://purl.org/linguistics/gold/Syllable">syllable</span>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#coda"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#coda">coda</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#isFirstSyllable"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isFirstSyllable">firstSyllable</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#isDialepha"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isDialepha">isDialepha</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#isStressed"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isStressed">isStressed</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#nucleusType"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nucleusType">nucleusType</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#onset"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#onset">onset</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#positionInWord"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#positionInWord">positionInWord</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#weight"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#weight">weight</a>
-            <sup class="type-dp" title="data property">dp</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#hasFirstSyllable"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasFirstSyllable">firstSyllable</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="SyllableItem">
-      <h3>SyllableItem<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#SyllableItem</p>
-      <div class="comment">
-         <span class="markdown">An item in the syllable list</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>http://postdata.linhd.uned.es/ontology/postdata-structuralElements</dd>
-      </dl>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <span class="dotted" title="http://purl.org/ontology/olo/core#Slot">slot</span>
-         </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#belongsToSylableList"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToSylableList">belongsToSyllableList</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#nextSyllable"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextSyllable">nextSyllable</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#previousSyllable"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousSyllable">previousSyllable</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#hasSyllableItem"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSyllableItem">hasSyllableItem</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#nextSyllable"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextSyllable">nextSyllable</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#previousSyllable"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousSyllable">previousSyllable</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -579,7 +440,7 @@ Eg.: The word “life”</span>
          <dd>
             <a href="#Token"
                title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Token">Token</a>
-            <sup class="type-c" title="class">c</sup>, <span class="dotted" title="http://bakulf.github.io/raop/0.1#Word">word</span>
+            <sup class="type-c" title="class">c</sup>, <span class="dotted" title="http://purl.org/ontology/olo/core#Slot">slot</span>, <span class="dotted" title="http://bakulf.github.io/raop/0.1#Word">word</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -588,18 +449,20 @@ Eg.: The word “life”</span>
                title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasDiastole">hasDiastole</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#hasElision"
                title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasElision">hasElision</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasHiatus"
+               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasHiatus">hasHiatus</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasSynizesis"
+               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSynizesis">hasSynizesis</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#hasSystole"
                title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSystole">hasSystole</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hiatusPart1"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hiatusPart1">hiatusPart1</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hiatusPart2"
-               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hiatusPart2">hiatusPart2</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#isInflectedForm"
                title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isInflectedForm">inflectedForm</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isCallOf"
                title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isCallOf">isCallOf</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isEchoOf"
                title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isEchoOf">isEchoOf</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isLemma"
+               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isLemma">isLemma</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#lemma"
                title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#lemma">lemma</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#morphologicalAnnotation"
@@ -610,16 +473,22 @@ Eg.: The word “life”</span>
                title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#sense">sense</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#translation"
                title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#translation">translation</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#wordNUmber"
+               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#wordNUmber">word n umber</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#isInflectedForm"
+            <a href="#hasToken"
+               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasToken">has token</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isInflectedForm"
                title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isInflectedForm">inflectedForm</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isCallOf"
                title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isCallOf">isCallOf</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isEchoOf"
                title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isEchoOf">isEchoOf</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isLemma"
+               title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isLemma">isLemma</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -627,6 +496,12 @@ Eg.: The word “life”</span>
 </div><div id="objectproperties">
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
+      <li>
+         <a href="#belongsToTokenList"
+            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToTokenList">
+            <span>belongs to token list</span>
+         </a>
+      </li>
       <li>
          <a href="#belongsToLineList"
             title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToLineList">belongsToLineList</a>
@@ -638,10 +513,6 @@ Eg.: The word “life”</span>
       <li>
          <a href="#belongsToSylableList"
             title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToSylableList">belongsToSyllableList</a>
-      </li>
-      <li>
-         <a href="#contains"
-            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#contains">contains</a>
       </li>
       <li>
          <a href="#containsMentionTo"
@@ -656,32 +527,28 @@ Eg.: The word “life”</span>
             title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#containsMentionToPlace">containsMentionToPlace</a>
       </li>
       <li>
-         <a href="#correspondsTo"
-            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#correspondsTo">
-            <span>corresponds to</span>
+         <a href="#hasStanza"
+            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanza">
+            <span>has stanza</span>
          </a>
       </li>
       <li>
-         <a href="#creates"
-            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#creates">creates</a>
-      </li>
-      <li>
-         <a href="#hasFirstSyllable"
-            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasFirstSyllable">firstSyllable</a>
-      </li>
-      <li>
-         <a href="#isFirstSyllable"
-            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isFirstSyllable">firstSyllable</a>
-      </li>
-      <li>
-         <a href="#hasStanzaItem"
-            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanzaItem">
-            <span>has stanza item</span>
+         <a href="#hasStanzas"
+            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanzas">
+            <span>has stanzas</span>
          </a>
       </li>
       <li>
-         <a href="#hasEditor"
-            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasEditor">hasEditor</a>
+         <a href="#hasToken"
+            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasToken">
+            <span>has token</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasTokens"
+            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasTokens">
+            <span>has tokens</span>
+         </a>
       </li>
       <li>
          <a href="#hasFirstLine"
@@ -696,28 +563,16 @@ Eg.: The word “life”</span>
             title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasFirstToken">hasFirstToken</a>
       </li>
       <li>
-         <a href="#hasLineItem"
-            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLineItem">hasLineItem</a>
+         <a href="#hasLine"
+            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLine">hasLineItem</a>
       </li>
       <li>
          <a href="#hasLines"
             title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLines">hasLines</a>
       </li>
       <li>
-         <a href="#hasPoeticLicense"
-            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasPoeticLicense">hasPoeticLicense</a>
-      </li>
-      <li>
-         <a href="#hasStanzas"
-            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanzas">hasStanzas</a>
-      </li>
-      <li>
-         <a href="#hasSyllableItem"
-            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSyllableItem">hasSyllableItem</a>
-      </li>
-      <li>
-         <a href="#hasSyllables"
-            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSyllables">hasSyllables</a>
+         <a href="#hasSyllable"
+            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSyllable">hasSyllableItem</a>
       </li>
       <li>
          <a href="#isInflectedForm"
@@ -748,68 +603,28 @@ Eg.: The word “life”</span>
             title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isLemma">isLemma</a>
       </li>
       <li>
-         <a href="#isLemmaOfApp"
-            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isLemmaOfApp">isLemmaOfApp</a>
-      </li>
-      <li>
-         <a href="#isLemmaOfWord"
-            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isLemmaOfWord">isLemmaOfWord</a>
-      </li>
-      <li>
-         <a href="#isPart"
-            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isPart">isPart</a>
-      </li>
-      <li>
          <a href="#isTheSameAs"
             title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isTheSameAs">isTheSameAs</a>
-      </li>
-      <li>
-         <a href="#licenseType"
-            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#licenseType">licenseType</a>
-      </li>
-      <li>
-         <a href="#mentions"
-            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#mentions">mentions</a>
       </li>
       <li>
          <a href="#nextLine"
             title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextLine">nextLine</a>
       </li>
       <li>
-         <a href="#nextPart"
-            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextPart">nextPart</a>
-      </li>
-      <li>
          <a href="#nextStanza"
             title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextStanza">nextStanza</a>
-      </li>
-      <li>
-         <a href="#nextSyllable"
-            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextSyllable">nextSyllable</a>
       </li>
       <li>
          <a href="#nextToken"
             title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextToken">nextToken</a>
       </li>
       <li>
-         <a href="#nucleusType"
-            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nucleusType">nucleusType</a>
-      </li>
-      <li>
          <a href="#previousLine"
             title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousLine">previousLine</a>
       </li>
       <li>
-         <a href="#previousPart"
-            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousPart">previousPart</a>
-      </li>
-      <li>
          <a href="#previousStanza"
             title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousStanza">previousStanza</a>
-      </li>
-      <li>
-         <a href="#previousSyllable"
-            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousSyllable">previousSyllable</a>
       </li>
       <li>
          <a href="#previousToken"
@@ -824,6 +639,22 @@ Eg.: The word “life”</span>
             title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#typeOfStanzaEdition">typeOfStanzaEdition</a>
       </li>
    </ul>
+   <div class="entity" id="belongsToTokenList">
+      <h3>belongs to token list<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToTokenList</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/ontology/olo/core#ordered_list">ordered list</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="belongsToLineList">
       <h3>belongsToLineList<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -846,8 +677,8 @@ Eg.: The word “life”</span>
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#LineItem"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#LineItem">LineItem</a>
+               <a href="#Line"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line">Line</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -879,8 +710,8 @@ Eg.: The word “life”</span>
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#StanzaItem"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#StanzaItem">StanzaItem</a>
+               <a href="#Stanza"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza">Stanza</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -891,8 +722,8 @@ Eg.: The word “life”</span>
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#hasStanzaItem"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanzaItem">has stanza item</a>
+               <a href="#hasStanza"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanza">has stanza</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -918,12 +749,6 @@ Eg.: The word “life”</span>
             <dd>
                <span class="dotted" title="http://purl.org/ontology/olo/core#ordered_list">ordered list</span>
             </dd>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#SyllableItem"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#SyllableItem">SyllableItem</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <a href="#OrderedSyllableList"
@@ -932,18 +757,6 @@ Eg.: The word “life”</span>
             </dd>
          </dl>
       </div>
-   </div>
-   <div class="entity" id="contains">
-      <h3>contains<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#contains</p>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>http://postdata.linhd.uned.es/ontology/postdata-structuralElements</dd>
-      </dl>
    </div>
    <div class="entity" id="containsMentionTo">
       <h3>containsMentionTo<sup class="type-op" title="object property">op</sup>
@@ -1000,6 +813,11 @@ Eg.: The word “life”</span>
                   title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#containsMentionTo">containsMentionTo</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://postdata.linhd.uned.es/ontology/postdata-core#Agent">agent</span>
+            </dd>
          </dl>
       </div>
    </div>
@@ -1025,152 +843,21 @@ Eg.: The word “life”</span>
                   title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#containsMentionTo">containsMentionTo</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="correspondsTo">
-      <h3>corresponds to<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#correspondsTo</p>
-      <div class="comment">
-         <span class="markdown">This property points to a Place that is equivalent to the item at hand</span>
-      </div>
-      <dl>
-         <dt>Date:</dt>
-         <dd>16T20:30:43Z/06/2018</dd>
-      </dl>
-      <dl>
-         <dt>Authors:</dt>
-         <dd>mluisadiez</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="creates">
-      <h3>creates<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#creates</p>
-      <div class="comment">
-         <span class="markdown">This property points to a bibliographic item (an instance of BibliographicSource, Ensemble, Intertextuality, Melody, Opus, Paratext, Redaction, Stanza) which was authored by the current Creator</span>
-      </div>
-   </div>
-   <div class="entity" id="hasFirstSyllable">
-      <h3>firstSyllable<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasFirstSyllable</p>
-      <div class="comment">
-         <span class="markdown">This property points to the first syllable of the word (an instance of Syllable)</span>
-      </div>
-      <dl>
-         <dt>Date:</dt>
-         <dd>16T20:30:43Z/06/2018</dd>
-      </dl>
-      <dl>
-         <dt>Authors:</dt>
-         <dd>mluisadiez</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Line"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line">Line</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <a href="#Word"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word">Word</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
-               <a href="#hasFirstSyllable"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasFirstSyllable">firstSyllable</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">max</span> 1 <a href="#Syllable"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable">Syllable</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Syllable"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable">Syllable</a>
-               <sup class="type-c" title="class">c</sup>
+               <span class="dotted"
+                     title="http://postdata.linhd.uned.es/ontology/postdata-core#Place">place</span>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="isFirstSyllable">
-      <h3>firstSyllable<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="hasStanza">
+      <h3>has stanza<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isFirstSyllable</p>
-      <div class="comment">
-         <span class="markdown">This property points to the word (an instance of Line) of which the item at hand is its first syllable</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Syllable"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable">Syllable</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
-               <a href="#isFirstSyllable"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isFirstSyllable">firstSyllable</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">max</span> 1 <a href="#Line"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line">Line</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
-               <a href="#isFirstSyllable"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isFirstSyllable">firstSyllable</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">max</span> 1 <a href="#Word"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word">Word</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Line"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line">Line</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <a href="#Word"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word">Word</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasStanzaItem">
-      <h3>has stanza item<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanzaItem</p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanza</p>
       <div class="comment">
          <span class="markdown">The list of  items  of Stanza</span>
       </div>
@@ -1192,8 +879,8 @@ Eg.: The word “life”</span>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#StanzaItem"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#StanzaItem">StanzaItem</a>
+               <a href="#Stanza"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza">Stanza</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -1205,29 +892,78 @@ Eg.: The word “life”</span>
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasEditor">
-      <h3>hasEditor<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="hasStanzas">
+      <h3>has stanzas<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasEditor</p>
-      <div class="comment">
-         <span class="markdown">This property points to the Person who has edited the current instance of the Stanza</span>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanzas</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction">redaction</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#OrderedStanzaList"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedStanzaList">OrderedStanzaList</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
       </div>
-      <dl>
-         <dt>Date:</dt>
-         <dd>16T20:30:43Z/06/2018</dd>
-      </dl>
-      <dl>
-         <dt>Authors:</dt>
-         <dd>mluisadiez</dd>
-      </dl>
+   </div>
+   <div class="entity" id="hasToken">
+      <h3>has token<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasToken</p>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+               <span class="dotted" title="http://purl.org/ontology/olo/core#slot">slot</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#OrderedTokenList"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedTokenList">ordered token list</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Word"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word">Word</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasTokens">
+      <h3>has tokens<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasTokens</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Line"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line">Line</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#OrderedTokenList"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedTokenList">ordered token list</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -1258,8 +994,8 @@ Eg.: The word “life”</span>
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#Stanza"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza">Stanza</a>
+               <a href="#http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction">redaction</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1293,6 +1029,12 @@ Eg.: The word “life”</span>
       </dl>
       <div class="description">
          <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction">redaction</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>has range</dt>
             <dd>
                <a href="#Stanza"
@@ -1347,13 +1089,13 @@ Eg.: The word “life”</span>
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasLineItem">
+   <div class="entity" id="hasLine">
       <h3>hasLineItem<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLineItem</p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLine</p>
       <div class="comment">
          <span class="markdown">The list of  items of Line</span>
       </div>
@@ -1375,8 +1117,8 @@ Eg.: The word “life”</span>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#LineItem"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#LineItem">LineItem</a>
+               <a href="#Line"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line">Line</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1389,26 +1131,8 @@ Eg.: The word “life”</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLines</p>
-      <div class="description">
-         <dl>
-            <dt>has range</dt>
-            <dd>
-               <a href="#OrderedLineList"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedLineList">OrderedLineList</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasPoeticLicense">
-      <h3>hasPoeticLicense<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasPoeticLicense</p>
       <div class="comment">
-         <span class="markdown">The poetic license uses in a line</span>
+         <span class="markdown">The ordered line list of the redaction</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -1418,55 +1142,30 @@ Eg.: The word “life”</span>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Line"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line">Line</a>
+               <a href="#http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction">redaction</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Stanza"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza">Stanza</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#PoeticLicense"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#PoeticLicense">PoeticLicense</a>
+               <a href="#OrderedLineList"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedLineList">OrderedLineList</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasStanzas">
-      <h3>hasStanzas<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanzas</p>
-      <div class="comment">
-         <span class="markdown">List of stanzas of a redaction</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>http://postdata.linhd.uned.es/ontology/postdata-structuralElements</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#OrderedStanzaList"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedStanzaList">OrderedStanzaList</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasSyllableItem">
+   <div class="entity" id="hasSyllable">
       <h3>hasSyllableItem<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSyllableItem</p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSyllable</p>
       <div class="comment">
          <span class="markdown">List of items of Syllable</span>
       </div>
@@ -1481,30 +1180,6 @@ Eg.: The word “life”</span>
                <span class="dotted" title="http://purl.org/ontology/olo/core#slot">slot</span>
             </dd>
             <dt>has domain</dt>
-            <dd>
-               <a href="#OrderedSyllableList"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedSyllableList">OrderedSyllableList</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#SyllableItem"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#SyllableItem">SyllableItem</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasSyllables">
-      <h3>hasSyllables<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSyllables</p>
-      <div class="description">
-         <dl>
-            <dt>has range</dt>
             <dd>
                <a href="#OrderedSyllableList"
                   title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedSyllableList">OrderedSyllableList</a>
@@ -1539,14 +1214,6 @@ Eg.: The word “life”</span>
                   title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word">Word</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
-            <dd>
-               <a href="#isInflectedForm"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isInflectedForm">inflectedForm</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">max</span> 1 <a href="#Word"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word">Word</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <a href="#Word"
@@ -1555,8 +1222,8 @@ Eg.: The word “life”</span>
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#isLemmaOfWord"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isLemmaOfWord">isLemmaOfWord</a>
+               <a href="#isLemma"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isLemma">isLemma</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -1648,6 +1315,10 @@ Eg.: The word “life”</span>
             </dd>
             <dt>has range</dt>
             <dd>
+               <a href="#http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction">redaction</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
                <a href="#Stanza"
                   title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza">Stanza</a>
                <sup class="type-c" title="class">c</sup>
@@ -1681,6 +1352,12 @@ Eg.: The word “life”</span>
             <dd>
                <a href="#Stanza"
                   title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza">Stanza</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction">redaction</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1730,66 +1407,25 @@ Eg.: The word “life”</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isLemma</p>
-      <div class="description">
-         <dl>
-            <dt>has sub-properties</dt>
-            <dd>
-               <a href="#isLemmaOfApp"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isLemmaOfApp">isLemmaOfApp</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isLemmaOfWord"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isLemmaOfWord">isLemmaOfWord</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isLemmaOfApp">
-      <h3>isLemmaOfApp<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isLemmaOfApp</p>
-      <div class="comment">
-         <span class="markdown">This property points to the instance of Reading that contains a variant reading</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#isLemma"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isLemma">isLemma</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isLemmaOfWord">
-      <h3>isLemmaOfWord<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isLemmaOfWord</p>
       <div class="comment">
          <span class="markdown">This property points to one of the inflected forms (an instance of Word) of the current headword (the Word at hand)</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://postdata.linhd.uned.es/ontology/postdata-structuralElements</dd>
+      </dl>
       <div class="description">
          <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#isLemma"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isLemma">isLemma</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://bakulf.github.io/raop/0.1#Word">word</span>
+               <a href="#Word"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word">Word</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://bakulf.github.io/raop/0.1#Word">word</span>
+               <a href="#Word"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word">Word</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -1800,18 +1436,6 @@ Eg.: The word “life”</span>
             </dd>
          </dl>
       </div>
-   </div>
-   <div class="entity" id="isPart">
-      <h3>isPart<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isPart</p>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>http://postdata.linhd.uned.es/ontology/postdata-structuralElements</dd>
-      </dl>
    </div>
    <div class="entity" id="isTheSameAs">
       <h3>isTheSameAs<sup class="type-op" title="object property">op</sup>
@@ -1852,62 +1476,6 @@ Eg.: The word “life”</span>
          </dl>
       </div>
    </div>
-   <div class="entity" id="licenseType">
-      <h3>licenseType<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#licenseType</p>
-      <div class="comment">
-         <span class="markdown">Type of Poetic License</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>http://postdata.linhd.uned.es/ontology/postdata-structuralElements</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#PoeticLicense"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#PoeticLicense">PoeticLicense</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</span>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">value</span> 
-               <a href="#http://postdata.linhd.uned.es/kos/poeticLicense-type"
-                  title="http://postdata.linhd.uned.es/kos/poeticLicense-type">poetic license type</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="mentions">
-      <h3>mentions<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#mentions</p>
-      <div class="comment">
-         <span class="markdown">This property points to an instance of Event that is referred in the current under analysis</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="nextLine">
       <h3>nextLine<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1930,50 +1498,14 @@ Eg.: The word “life”</span>
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#LineItem"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#LineItem">LineItem</a>
+               <a href="#Line"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line">Line</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#LineItem"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#LineItem">LineItem</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="nextPart">
-      <h3>nextPart<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextPart</p>
-      <div class="comment">
-         <span class="markdown">nextPart</span>
-      </div>
-      <dl>
-         <dt>Date:</dt>
-         <dd>16T20:30:43Z/06/2018</dd>
-      </dl>
-      <dl>
-         <dt>Authors:</dt>
-         <dd>mluisadiez</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#nextPart"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextPart">nextPart</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">max</span> 1 <a href="#Stanza"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza">Stanza</a>
+               <a href="#Line"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line">Line</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2005,14 +1537,14 @@ Eg.: The word “life”</span>
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#StanzaItem"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#StanzaItem">StanzaItem</a>
+               <a href="#Stanza"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza">Stanza</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#StanzaItem"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#StanzaItem">StanzaItem</a>
+               <a href="#Stanza"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza">Stanza</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -2020,45 +1552,6 @@ Eg.: The word “life”</span>
                <a href="#previousStanza"
                   title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousStanza">previousStanza</a>
                <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="nextSyllable">
-      <h3>nextSyllable<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextSyllable</p>
-      <div class="comment">
-         <span class="markdown">This property points to an instance of Syllable in order to analyse the syllable that comes after the syllable at hand</span>
-      </div>
-      <dl>
-         <dt>Date:</dt>
-         <dd>16T20:30:43Z/06/2018</dd>
-      </dl>
-      <dl>
-         <dt>Authors:</dt>
-         <dd>mluisadiez</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <span class="dotted" title="http://purl.org/ontology/olo/core#next">next</span>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#SyllableItem"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#SyllableItem">SyllableItem</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#SyllableItem"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#SyllableItem">SyllableItem</a>
-               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -2085,7 +1578,7 @@ Eg.: The word “life”</span>
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+               <span class="dotted" title="http://purl.org/ontology/olo/core#next">next</span>
             </dd>
             <dt>has domain</dt>
             <dd>
@@ -2093,48 +1586,10 @@ Eg.: The word “life”</span>
                   title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Token">Token</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
-            <dd>
-               <a href="#nextToken"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextToken">nextToken</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">max</span> 1 <a href="#Token"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Token">Token</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <a href="#Token"
                   title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Token">Token</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="nucleusType">
-      <h3>nucleusType<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nucleusType</p>
-      <div class="comment">
-         <span class="markdown">Type of syllabic nucleus (linguistic typology)</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>http://postdata.linhd.uned.es/ontology/postdata-structuralElements</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Syllable"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable">Syllable</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2162,38 +1617,14 @@ Eg.: The word “life”</span>
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#LineItem"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#LineItem">LineItem</a>
+               <a href="#Line"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line">Line</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#LineItem"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#LineItem">LineItem</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="previousPart">
-      <h3>previousPart<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousPart</p>
-      <div class="comment">
-         <span class="markdown">This property points to the previous group of lines (an instance of Stanza) which, together with the current element under analysis, is part of the same textual unit</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#previousPart"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousPart">previousPart</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">max</span> 1 <a href="#Stanza"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza">Stanza</a>
+               <a href="#Line"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line">Line</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2221,14 +1652,14 @@ Eg.: The word “life”</span>
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#StanzaItem"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#StanzaItem">StanzaItem</a>
+               <a href="#Stanza"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza">Stanza</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#StanzaItem"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#StanzaItem">StanzaItem</a>
+               <a href="#Stanza"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza">Stanza</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -2236,41 +1667,6 @@ Eg.: The word “life”</span>
                <a href="#nextStanza"
                   title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextStanza">nextStanza</a>
                <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="previousSyllable">
-      <h3>previousSyllable<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousSyllable</p>
-      <div class="comment">
-         <span class="markdown">This property points to an instance of Syllable in order to analyse the syllable that comes before the syllable at hand</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>http://postdata.linhd.uned.es/ontology/postdata-structuralElements</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <span class="dotted" title="http://purl.org/ontology/olo/core#previous">previous</span>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#SyllableItem"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#SyllableItem">SyllableItem</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#SyllableItem"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#SyllableItem">SyllableItem</a>
-               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -2287,17 +1683,13 @@ Eg.: The word “life”</span>
       </div>
       <div class="description">
          <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/ontology/olo/core#previous">previous</span>
+            </dd>
             <dt>has domain</dt>
             <dd>
                <a href="#Token"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Token">Token</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
-               <a href="#previousToken"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousToken">previousToken</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">max</span> 1 <a href="#Token"
                   title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Token">Token</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
@@ -2424,14 +1816,6 @@ Eg.: Diplomatic edition, critical edition, translation</span>
             title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSystole">hasSystole</a>
       </li>
       <li>
-         <a href="#hiatusPart1"
-            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hiatusPart1">hiatusPart1</a>
-      </li>
-      <li>
-         <a href="#hiatusPart2"
-            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hiatusPart2">hiatusPart2</a>
-      </li>
-      <li>
          <a href="#isDialepha"
             title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isDialepha">isDialepha</a>
       </li>
@@ -2454,14 +1838,6 @@ Eg.: Diplomatic edition, critical edition, translation</span>
       <li>
          <a href="#lemma"
             title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#lemma">lemma</a>
-      </li>
-      <li>
-         <a href="#licenseFinalPosition"
-            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#licenseFinalPosition">licenseFinalPosition</a>
-      </li>
-      <li>
-         <a href="#licenseInitialPosition"
-            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#licenseInitialPosition">licenseInitialPosition</a>
       </li>
       <li>
          <a href="#lineNumber"
@@ -2492,8 +1868,8 @@ Eg.: Diplomatic edition, critical edition, translation</span>
             title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#positionInWord">positionInWord</a>
       </li>
       <li>
-         <a href="#regularisedSpelling"
-            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#regularisedSpelling">regularisedSpelling</a>
+         <a href="#secondHemistich"
+            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#secondHemistich">secondHemistich</a>
       </li>
       <li>
          <a href="#sense"
@@ -2510,6 +1886,12 @@ Eg.: Diplomatic edition, critical edition, translation</span>
       <li>
          <a href="#weight"
             title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#weight">weight</a>
+      </li>
+      <li>
+         <a href="#wordNUmber"
+            title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#wordNUmber">
+            <span>word n umber</span>
+         </a>
       </li>
    </ul>
    <div class="entity" id="altStanzaNumber">
@@ -2532,6 +1914,10 @@ Eg.: Diplomatic edition, critical edition, translation</span>
       </dl>
       <div class="description">
          <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/ontology/olo/core#index">index</span>
+            </dd>
             <dt>has domain</dt>
             <dd>
                <a href="#Stanza"
@@ -2540,7 +1926,7 @@ Eg.: Diplomatic edition, critical edition, translation</span>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#integer">integer</span>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#positiveInteger">positive integer</span>
             </dd>
          </dl>
       </div>
@@ -2568,12 +1954,6 @@ Eg.: Diplomatic edition, critical edition, translation</span>
             <dt>has super-properties</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Syllable"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable">Syllable</a>
-               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -2740,6 +2120,12 @@ Eg.: Diplomatic edition, critical edition, translation</span>
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
             </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Word"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word">Word</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
@@ -2770,6 +2156,12 @@ Eg.: Diplomatic edition, critical edition, translation</span>
             <dt>has super-properties</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Word"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word">Word</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -2815,64 +2207,6 @@ Eg.: Diplomatic edition, critical edition, translation</span>
          </dl>
       </div>
    </div>
-   <div class="entity" id="hiatusPart1">
-      <h3>hiatusPart1<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hiatusPart1</p>
-      <div class="comment">
-         <span class="markdown">First vowel affected in a hiatus phenomenon</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>http://postdata.linhd.uned.es/ontology/postdata-structuralElements</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Word"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word">Word</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hiatusPart2">
-      <h3>hiatusPart2<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hiatusPart2</p>
-      <div class="comment">
-         <span class="markdown">Second vowel affected in a hiatus phenomenon</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>http://postdata.linhd.uned.es/ontology/postdata-structuralElements</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Word"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word">Word</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="isDialepha">
       <h3>isDialepha<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -2896,12 +2230,6 @@ Eg.: Diplomatic edition, critical edition, translation</span>
             <dt>has super-properties</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Syllable"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable">Syllable</a>
-               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -3037,12 +2365,6 @@ Eg.: Diplomatic edition, critical edition, translation</span>
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
             </dd>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Syllable"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable">Syllable</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
@@ -3087,64 +2409,6 @@ Eg.: Diplomatic edition, critical edition, translation</span>
          </dl>
       </div>
    </div>
-   <div class="entity" id="licenseFinalPosition">
-      <h3>licenseFinalPosition<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#licenseFinalPosition</p>
-      <div class="comment">
-         <span class="markdown">The final position of a poetic license</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>http://postdata.linhd.uned.es/ontology/postdata-structuralElements</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#PoeticLicense"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#PoeticLicense">PoeticLicense</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#integer">integer</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="licenseInitialPosition">
-      <h3>licenseInitialPosition<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#licenseInitialPosition</p>
-      <div class="comment">
-         <span class="markdown">The initial position of a poetic license</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>http://postdata.linhd.uned.es/ontology/postdata-structuralElements</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#PoeticLicense"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#PoeticLicense">PoeticLicense</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#integer">integer</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="lineNumber">
       <h3>lineNumber<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -3167,7 +2431,7 @@ Eg.: Diplomatic edition, critical edition, translation</span>
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+               <span class="dotted" title="http://purl.org/ontology/olo/core#index">index</span>
             </dd>
             <dt>has domain</dt>
             <dd>
@@ -3177,7 +2441,7 @@ Eg.: Diplomatic edition, critical edition, translation</span>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#integer">integer</span>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#positiveInteger">positive integer</span>
             </dd>
          </dl>
       </div>
@@ -3265,12 +2529,6 @@ Eg.: Diplomatic edition, critical edition, translation</span>
             <dt>has super-properties</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Syllable"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable">Syllable</a>
-               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -3378,12 +2636,6 @@ Eg.: 3/4 (= third syllable in a four-syllable word)</span>
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
             </dd>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Syllable"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable">Syllable</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
@@ -3391,29 +2643,27 @@ Eg.: 3/4 (= third syllable in a four-syllable word)</span>
          </dl>
       </div>
    </div>
-   <div class="entity" id="regularisedSpelling">
-      <h3>regularisedSpelling<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="secondHemistich">
+      <h3>secondHemistich<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#regularisedSpelling</p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#secondHemistich</p>
       <div class="comment">
-         <span class="markdown">Contains a reading which has been regularised or normalised regarding its orthography</span>
+         <span class="markdown">This property points to the first division of the line (an instance of Line), such as the second hemistich</span>
       </div>
-      <dl>
-         <dt>Authors:</dt>
-         <dd>mluisadiez</dd>
-      </dl>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>http://postdata.linhd.uned.es/ontology/postdata-structuralElements</dd>
       </dl>
       <div class="description">
          <dl>
-            <dt>has super-properties</dt>
+            <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+               <a href="#Line"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line">Line</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -3475,6 +2725,10 @@ Eg.: 3/4 (= third syllable in a four-syllable word)</span>
       </dl>
       <div class="description">
          <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/ontology/olo/core#index">index</span>
+            </dd>
             <dt>has domain</dt>
             <dd>
                <a href="#Stanza"
@@ -3483,7 +2737,7 @@ Eg.: 3/4 (= third syllable in a four-syllable word)</span>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#integer">integer</span>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#positiveInteger">positive integer</span>
             </dd>
          </dl>
       </div>
@@ -3549,15 +2803,35 @@ Eg.: 3/4 (= third syllable in a four-syllable word)</span>
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
             </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="wordNUmber">
+      <h3>word n umber<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-structuralElements#wordNUmber</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/ontology/olo/core#index">index</span>
+            </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#Syllable"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable">Syllable</a>
+               <a href="#Word"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word">Word</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#positiveInteger">positive integer</span>
             </dd>
          </dl>
       </div>
