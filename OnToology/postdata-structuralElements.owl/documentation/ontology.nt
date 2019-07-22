@@ -1,5 +1,4 @@
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements> <http://www.w3.org/2002/07/owl#imports> <http://postdata.linhd.uned.es/ontology/postdata-core> .
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/ontology/olo/core#> .
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements> <http://purl.org/dc/elements/1.1/contributors> "Alvaro Pérez (LINHD_POSTDATA-UNED)\nhttps://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements> <http://purl.org/dc/elements/1.1/contributors> "Bruno Sartini (Bolonia University)\nhttps://orcid.org/0000-0002-9152-4402"@en .
@@ -75,21 +74,18 @@
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToStanzaList> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanza> .
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToStanzaList> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza> .
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToStanzaList> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedStanzaList> .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToStanzaList> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Item that belongs to a stanzas list"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToStanzaList> <http://www.w3.org/2000/01/rdf-schema#comment> "Item that belongs to a stanzas list"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToStanzaList> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToStanzaList> <http://www.w3.org/2000/01/rdf-schema#label> "belongsToStanzaList"@en .
-# 
-# http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToSylableList
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToSylableList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToSylableList> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/olo/core#ordered_list> .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToSylableList> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedSyllableList> .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToSylableList> <http://www.w3.org/2000/01/rdf-schema#comment> "Item that belongs to a list of Syllable"@en .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToSylableList> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToSylableList> <http://www.w3.org/2000/01/rdf-schema#label> "belongsToSyllableList"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToTokenList
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToTokenList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToTokenList> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/olo/core#ordered_list> .
+<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToTokenList> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Token> .
+<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToTokenList> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedTokenList> .
+<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToTokenList> <http://www.w3.org/2000/01/rdf-schema#comment> "Item that belongs to a token list"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToTokenList> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToTokenList> <http://www.w3.org/2000/01/rdf-schema#label> "belongsToTokenList"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-structuralElements#containsMentionTo
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#containsMentionTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -151,7 +147,7 @@
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLine> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line> .
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLine> <http://www.w3.org/2000/01/rdf-schema#comment> "The list of  items of Line"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLine> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLine> <http://www.w3.org/2000/01/rdf-schema#label> "hasLineItem"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLine> <http://www.w3.org/2000/01/rdf-schema#label> "hasLine"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLines
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLines> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -175,32 +171,30 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanza> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedStanzaList> .
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanza> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza> .
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanza> <http://www.w3.org/2000/01/rdf-schema#comment> "The list of  items  of Stanza"@en .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanza> <http://www.w3.org/2000/01/rdf-schema#comment> "hasStanzaItem"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanza> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanza> <http://www.w3.org/2000/01/rdf-schema#label> "hasStanza"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanzas
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanzas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanzas> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> .
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanzas> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedStanzaList> .
-# 
-# http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSyllable
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSyllable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSyllable> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/olo/core#slot> .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSyllable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedSyllableList> .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSyllable> <http://www.w3.org/2000/01/rdf-schema#comment> "List of items of Syllable"@en .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSyllable> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSyllable> <http://www.w3.org/2000/01/rdf-schema#label> "hasSyllableItem"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanzas> <http://www.w3.org/2000/01/rdf-schema#comment> "The ordered stanza list of the redaction"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanzas> <http://www.w3.org/2000/01/rdf-schema#label> "hasStanzas"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasToken
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasToken> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasToken> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/olo/core#slot> .
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasToken> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedTokenList> .
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasToken> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word> .
+<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasToken> <http://www.w3.org/2000/01/rdf-schema#comment> "The list of  items  of Token"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasToken> <http://www.w3.org/2000/01/rdf-schema#label> "hasToken"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasTokens
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasTokens> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasTokens> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line> .
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasTokens> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedTokenList> .
+<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasTokens> <http://www.w3.org/2000/01/rdf-schema#comment> "The ordered token list of the redaction"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasTokens> <http://www.w3.org/2000/01/rdf-schema#label> "hasTokens"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isCallOf
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isCallOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -645,6 +639,12 @@ _:genid8 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es
 # http://bakulf.github.io/raop/0.1#Word
 <http://bakulf.github.io/raop/0.1#Word> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
+# http://postdata.linhd.uned.es/ontology/postdata-core#Agent
+<http://postdata.linhd.uned.es/ontology/postdata-core#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-core#Place
+<http://postdata.linhd.uned.es/ontology/postdata-core#Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # http://postdata.linhd.uned.es/ontology/postdata-core#Redaction
 <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
@@ -692,20 +692,16 @@ _:genid13 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 # http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedStanzaList
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedStanzaList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedStanzaList> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/olo/core#OrderedList> .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedStanzaList> <http://www.w3.org/2000/01/rdf-schema#comment> "Ordered list of stanzas  of a redaction"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedStanzaList> <http://www.w3.org/2000/01/rdf-schema#comment> "Ordered list of stanzas  of a redaction."@en .
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedStanzaList> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedStanzaList> <http://www.w3.org/2000/01/rdf-schema#label> "OrderedStanzaList"@en .
-# 
-# http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedSyllableList
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedSyllableList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedSyllableList> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/olo/core#OrderedList> .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedSyllableList> <http://www.w3.org/2000/01/rdf-schema#comment> "Ordered list of syllables  of a redaction"@en .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedSyllableList> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedSyllableList> <http://www.w3.org/2000/01/rdf-schema#label> "OrderedSyllableList"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedTokenList
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedTokenList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedTokenList> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/olo/core#OrderedList> .
+<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedTokenList> <http://www.w3.org/2000/01/rdf-schema#comment> "Ordered list of tokens  of a redaction"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedTokenList> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedTokenList> <http://www.w3.org/2000/01/rdf-schema#label> "OrderedTokenList"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Punctuation
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Punctuation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

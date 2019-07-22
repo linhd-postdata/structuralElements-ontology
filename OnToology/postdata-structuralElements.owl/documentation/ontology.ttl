@@ -7,8 +7,7 @@
 @base <http://postdata.linhd.uned.es/ontology/postdata-structuralElements> .
 
 <http://postdata.linhd.uned.es/ontology/postdata-structuralElements> rdf:type owl:Ontology ;
-                                                                      owl:imports <http://postdata.linhd.uned.es/ontology/postdata-core> ,
-                                                                                  <http://purl.org/ontology/olo/core#> ;
+                                                                      owl:imports <http://purl.org/ontology/olo/core#> ;
                                                                       <http://purl.org/dc/elements/1.1/contributors> """Alvaro Pérez (LINHD_POSTDATA-UNED)
 https://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/"""@en ,
                                                                                                                      """Bruno Sartini (Bolonia University)
@@ -94,23 +93,19 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                      owl:inverseOf :hasStanza ;
                      rdfs:domain :Stanza ;
                      rdfs:range :OrderedStanzaList ;
-                     rdfs:isDefinedBy "Item that belongs to a stanzas list"@en ,
-                                      "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
+                     rdfs:comment "Item that belongs to a stanzas list"@en ;
+                     rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
                      rdfs:label "belongsToStanzaList"@en .
-
-
-###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToSylableList
-:belongsToSylableList rdf:type owl:ObjectProperty ;
-                      rdfs:subPropertyOf <http://purl.org/ontology/olo/core#ordered_list> ;
-                      rdfs:range :OrderedSyllableList ;
-                      rdfs:comment "Item that belongs to a list of Syllable"@en ;
-                      rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
-                      rdfs:label "belongsToSyllableList"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToTokenList
 :belongsToTokenList rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf <http://purl.org/ontology/olo/core#ordered_list> .
+                    rdfs:subPropertyOf <http://purl.org/ontology/olo/core#ordered_list> ;
+                    rdfs:domain :Token ;
+                    rdfs:range :OrderedTokenList ;
+                    rdfs:comment "Item that belongs to a token list"@en ;
+                    rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
+                    rdfs:label "belongsToTokenList"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#containsMentionTo
@@ -179,7 +174,7 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
          rdfs:range :Line ;
          rdfs:comment "The list of  items of Line"@en ;
          rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
-         rdfs:label "hasLineItem"@en .
+         rdfs:label "hasLine"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLines
@@ -200,37 +195,34 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
            rdfs:subPropertyOf <http://purl.org/ontology/olo/core#slot> ;
            rdfs:domain :OrderedStanzaList ;
            rdfs:range :Stanza ;
-           rdfs:comment "The list of  items  of Stanza"@en ,
-                        "hasStanzaItem"@en ;
-           rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en .
+           rdfs:comment "The list of  items  of Stanza"@en ;
+           rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
+           rdfs:label "hasStanza"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanzas
 :hasStanzas rdf:type owl:ObjectProperty ;
             rdfs:domain <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> ;
-            rdfs:range :OrderedStanzaList .
-
-
-###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSyllable
-:hasSyllable rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf <http://purl.org/ontology/olo/core#slot> ;
-             rdfs:domain :OrderedSyllableList ;
-             rdfs:comment "List of items of Syllable"@en ;
-             rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
-             rdfs:label "hasSyllableItem"@en .
+            rdfs:range :OrderedStanzaList ;
+            rdfs:comment "The ordered stanza list of the redaction"@en ;
+            rdfs:label "hasStanzas"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasToken
 :hasToken rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf <http://purl.org/ontology/olo/core#slot> ;
           rdfs:domain :OrderedTokenList ;
-          rdfs:range :Word .
+          rdfs:range :Word ;
+          rdfs:comment "The list of  items  of Token"@en ;
+          rdfs:label "hasToken"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasTokens
 :hasTokens rdf:type owl:ObjectProperty ;
            rdfs:domain :Line ;
-           rdfs:range :OrderedTokenList .
+           rdfs:range :OrderedTokenList ;
+           rdfs:comment "The ordered token list of the redaction"@en ;
+           rdfs:label "hasTokens"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isCallOf
@@ -711,6 +703,14 @@ Eg.: 3/4 (= third syllable in a four-syllable word)"""@en ;
 <http://bakulf.github.io/raop/0.1#Word> rdf:type owl:Class .
 
 
+###  http://postdata.linhd.uned.es/ontology/postdata-core#Agent
+<http://postdata.linhd.uned.es/ontology/postdata-core#Agent> rdf:type owl:Class .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-core#Place
+<http://postdata.linhd.uned.es/ontology/postdata-core#Place> rdf:type owl:Class .
+
+
 ###  http://postdata.linhd.uned.es/ontology/postdata-core#Redaction
 <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> rdf:type owl:Class ;
                                                                  rdfs:subClassOf [ rdf:type owl:Restriction ;
@@ -762,22 +762,17 @@ Eg.: “As armas e os barões assinalados” - from Os Lusíadas""" ;
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedStanzaList
 :OrderedStanzaList rdf:type owl:Class ;
                    rdfs:subClassOf <http://purl.org/ontology/olo/core#OrderedList> ;
-                   rdfs:comment "Ordered list of stanzas  of a redaction"@en ;
+                   rdfs:comment "Ordered list of stanzas  of a redaction."@en ;
                    rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
                    rdfs:label "OrderedStanzaList"@en .
 
 
-###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedSyllableList
-:OrderedSyllableList rdf:type owl:Class ;
-                     rdfs:subClassOf <http://purl.org/ontology/olo/core#OrderedList> ;
-                     rdfs:comment "Ordered list of syllables  of a redaction"@en ;
-                     rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
-                     rdfs:label "OrderedSyllableList"@en .
-
-
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedTokenList
 :OrderedTokenList rdf:type owl:Class ;
-                  rdfs:subClassOf <http://purl.org/ontology/olo/core#OrderedList> .
+                  rdfs:subClassOf <http://purl.org/ontology/olo/core#OrderedList> ;
+                  rdfs:comment "Ordered list of tokens  of a redaction"@en ;
+                  rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
+                  rdfs:label "OrderedTokenList"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Punctuation
