@@ -30,10 +30,6 @@
     "versionInfo" : {
       "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
     },
-    "belongsToSylableList" : {
-      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToSylableList",
-      "@type" : "@id"
-    },
     "previousToken" : {
       "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousToken",
       "@type" : "@id"
@@ -127,19 +123,12 @@
       "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isLemma",
       "@type" : "@id"
     },
-    "OrderedSyllableList" : {
-      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedSyllableList"
-    },
     "hasSynizesis" : {
       "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSynizesis",
       "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
     },
     "previousStanza" : {
       "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousStanza",
-      "@type" : "@id"
-    },
-    "hasSyllable" : {
-      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSyllable",
       "@type" : "@id"
     },
     "coda" : {

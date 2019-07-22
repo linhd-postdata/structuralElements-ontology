@@ -1692,6 +1692,12 @@
   "@id" : "http://postdata.linhd.uned.es/kos/stanzaEdition-type",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
 }, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Place",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Redaction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -1762,8 +1768,6 @@
     "@value" : "pdstruct"
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core"
-  }, {
     "@id" : "http://purl.org/ontology/olo/core#"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
@@ -1823,7 +1827,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Ordered list of stanzas  of a redaction"
+    "@value" : "Ordered list of stanzas  of a redaction."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "en",
@@ -1837,11 +1841,11 @@
     "@id" : "http://purl.org/ontology/olo/core#OrderedList"
   } ]
 }, {
-  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedSyllableList",
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedTokenList",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Ordered list of syllables  of a redaction"
+    "@value" : "Ordered list of tokens  of a redaction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "en",
@@ -1849,14 +1853,8 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "OrderedSyllableList"
+    "@value" : "OrderedTokenList"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/ontology/olo/core#OrderedList"
-  } ]
-}, {
-  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedTokenList",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/ontology/olo/core#OrderedList"
   } ]
@@ -2018,13 +2016,14 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToStanzaList",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Item that belongs to a stanzas list"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "Item that belongs to a stanzas list"
-  }, {
     "@language" : "en",
     "@value" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"
   } ],
@@ -2042,11 +2041,14 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanza"
   } ]
 }, {
-  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToSylableList",
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToTokenList",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Item that belongs to a list of Syllable"
+    "@value" : "Item that belongs to a token list"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Token"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "en",
@@ -2054,17 +2056,11 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "belongsToSyllableList"
+    "@value" : "belongsToTokenList"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedSyllableList"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedTokenList"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/ontology/olo/core#ordered_list"
-  } ]
-}, {
-  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToTokenList",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/ontology/olo/core#ordered_list"
   } ]
@@ -2372,7 +2368,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "hasLineItem"
+    "@value" : "hasLine"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line"
@@ -2407,9 +2403,6 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The list of  items  of Stanza"
-  }, {
-    "@language" : "en",
-    "@value" : "hasStanzaItem"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedStanzaList"
@@ -2417,6 +2410,10 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "en",
     "@value" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasStanza"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza"
@@ -2427,32 +2424,19 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanzas",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The ordered stanza list of the redaction"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedStanzaList"
-  } ]
-}, {
-  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSyllable",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "List of items of Syllable"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedSyllableList"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "hasSyllableItem"
+    "@value" : "hasStanzas"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/ontology/olo/core#slot"
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedStanzaList"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSynizesis",
@@ -2511,8 +2495,16 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasToken",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The list of  items  of Token"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedTokenList"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasToken"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word"
@@ -2523,8 +2515,16 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasTokens",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The ordered token list of the redaction"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasTokens"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedTokenList"
