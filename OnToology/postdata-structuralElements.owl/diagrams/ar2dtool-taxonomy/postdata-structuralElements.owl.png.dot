@@ -1,19 +1,50 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "pdstruct:Line" "pdstruct:Punctuation" "pdstruct:OrderedStanzaList" "pdstruct:OrderedTokenList" "pdstruct:Word" "pdstruct:Stanza" "pdstruct:Token" "raop:Word" "pdstruct:OrderedLineList" "olo:Slot" "olo:OrderedList" ; /*classes style*/
-	"pdstruct:Line" -> "olo:Slot" [ label = "rdfs:subClassOf" ];
-	"pdstruct:Line" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
-	"pdstruct:OrderedLineList" -> "olo:OrderedList" [ label = "rdfs:subClassOf" ];
+node [shape = rectangle, color="black"]; "pdstruct:Line" "pdstruct:Punctuation" "pdstruct:OrderedStanzaList" "pdstruct:OrderedTokenList" "pdstruct:Word" "pdstruct:Stanza" "pdstruct:Token" "pdstruct:OrderedSyllableList" "pdcore:Redaction" "pdstruct:Syllable" "raop:Word" "pdstruct:OrderedLineList" "pdcore:Role" "frbroo:F17_Aggregation_Work" "pdcore:OrderedTextUnitList" "agentrole:Agent" "gn:Feature" "edm:Agent" "pdcore:Agent" "pdcore:CreatorRole" "pdcore:Person" "pdcore:Organisation" "edm:Place" "pdcore:Ensemble" "foaf:Person" "frbroo:F22_Self-Contained_Expression" "http://id.loc.gov/ontologies/bibframe/Event" "edm:Event" "pdcore:TextUnit" "foaf:Organization" "edm:ProvidedCHO" "pdcore:Place" "schema1:Place" "pdcore:Event" "pdcore:PoeticWork" "frbroo:F1_Work" "schema1:Role" "olo:Slot" "olo:OrderedList" "owl:Thing" "objectrole:Role" "objectrole:Object" "postdata-dates:OpenedIntervalExpression" "postdata-dates:ClosedIntervalExpression" "postdata-dates:IntervalExpression" "postdata-dates:ExactDateExpression" "edm:TimeSpan" "postdata-dates:DateExpression" "postdata-dates:ApproximateDateExpression" "classification:Concept" ; /*classes style*/
+	"pdstruct:OrderedStanzaList" -> "olo:OrderedList" [ label = "rdfs:subClassOf" ];
+	"pdcore:Person" -> "foaf:Person" [ label = "rdfs:subClassOf" ];
+	"pdcore:Person" -> "pdcore:Agent" [ label = "rdfs:subClassOf" ];
 	"pdstruct:OrderedTokenList" -> "olo:OrderedList" [ label = "rdfs:subClassOf" ];
+	"pdstruct:Punctuation" -> "pdstruct:Token" [ label = "rdfs:subClassOf" ];
+	"agentrole:Agent" -> "objectrole:Object" [ label = "rdfs:subClassOf" ];
 	"pdstruct:Word" -> "olo:Slot" [ label = "rdfs:subClassOf" ];
 	"pdstruct:Word" -> "pdstruct:Token" [ label = "rdfs:subClassOf" ];
 	"pdstruct:Word" -> "raop:Word" [ label = "rdfs:subClassOf" ];
-	"olo:OrderedList" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
-	"olo:Slot" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"pdcore:PoeticWork" -> "frbroo:F1_Work" [ label = "rdfs:subClassOf" ];
+	"pdcore:PoeticWork" -> "edm:ProvidedCHO" [ label = "rdfs:subClassOf" ];
+	"objectrole:Role" -> "classification:Concept" [ label = "rdfs:subClassOf" ];
+	"pdstruct:OrderedSyllableList" -> "olo:OrderedList" [ label = "rdfs:subClassOf" ];
+	"postdata-dates:ClosedIntervalExpression" -> "postdata-dates:IntervalExpression" [ label = "rdfs:subClassOf" ];
 	"pdstruct:Stanza" -> "olo:Slot" [ label = "rdfs:subClassOf" ];
 	"pdstruct:Stanza" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
-	"pdstruct:OrderedStanzaList" -> "olo:OrderedList" [ label = "rdfs:subClassOf" ];
-	"pdstruct:Punctuation" -> "pdstruct:Token" [ label = "rdfs:subClassOf" ];
+	"postdata-dates:ApproximateDateExpression" -> "postdata-dates:DateExpression" [ label = "rdfs:subClassOf" ];
+	"pdcore:Agent" -> "agentrole:Agent" [ label = "rdfs:subClassOf" ];
+	"pdcore:Agent" -> "edm:Agent" [ label = "rdfs:subClassOf" ];
+	"olo:Slot" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"postdata-dates:OpenedIntervalExpression" -> "postdata-dates:IntervalExpression" [ label = "rdfs:subClassOf" ];
+	"pdcore:Organisation" -> "foaf:Organization" [ label = "rdfs:subClassOf" ];
+	"pdcore:Organisation" -> "pdcore:Agent" [ label = "rdfs:subClassOf" ];
+	"pdcore:Ensemble" -> "frbroo:F17_Aggregation_Work" [ label = "rdfs:subClassOf" ];
+	"olo:OrderedList" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"pdcore:TextUnit" -> "olo:Slot" [ label = "rdfs:subClassOf" ];
+	"pdcore:Redaction" -> "frbroo:F22_Self-Contained_Expression" [ label = "rdfs:subClassOf" ];
+	"pdcore:Place" -> "edm:Place" [ label = "rdfs:subClassOf" ];
+	"pdcore:Place" -> "schema1:Place" [ label = "rdfs:subClassOf" ];
+	"pdcore:Place" -> "gn:Feature" [ label = "rdfs:subClassOf" ];
+	"pdstruct:OrderedLineList" -> "olo:OrderedList" [ label = "rdfs:subClassOf" ];
+	"pdcore:CreatorRole" -> "pdcore:Role" [ label = "rdfs:subClassOf" ];
+	"pdcore:Role" -> "objectrole:Role" [ label = "rdfs:subClassOf" ];
+	"pdcore:Role" -> "schema1:Role" [ label = "rdfs:subClassOf" ];
+	"pdstruct:Syllable" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"pdstruct:Syllable" -> "olo:Slot" [ label = "rdfs:subClassOf" ];
+	"pdstruct:Line" -> "olo:Slot" [ label = "rdfs:subClassOf" ];
+	"pdstruct:Line" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"pdcore:OrderedTextUnitList" -> "olo:OrderedList" [ label = "rdfs:subClassOf" ];
+	"postdata-dates:IntervalExpression" -> "edm:TimeSpan" [ label = "rdfs:subClassOf" ];
+	"postdata-dates:IntervalExpression" -> "postdata-dates:DateExpression" [ label = "rdfs:subClassOf" ];
+	"postdata-dates:ExactDateExpression" -> "postdata-dates:DateExpression" [ label = "rdfs:subClassOf" ];
+	"pdcore:Event" -> "edm:Event" [ label = "rdfs:subClassOf" ];
+	"pdcore:Event" -> "http://id.loc.gov/ontologies/bibframe/Event" [ label = "rdfs:subClassOf" ];
 
 }

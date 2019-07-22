@@ -1,6 +1,5 @@
 <html><h2 id="overv" class="list">postdata-structural ontology: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<p> The diagram below describe the main classes and properties in the postdata-core ontology</p>
-<div style="text-align: center"><img src="http://postdata.linhd.uned.es/ontology/structural.png" width="90%"/></div><span class="markdown">
+<span class="markdown">
 This ontology has the following classes and properties.</span>
 <h4>Classes</h4>
 <ul class="hlist">
@@ -11,6 +10,10 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#OrderedLineList"
          title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedLineList">OrderedLineList</a>
+   </li>
+   <li>
+      <a href="#OrderedSyllableList"
+         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedSyllableList">OrderedLineList</a>
    </li>
    <li>
       <a href="#OrderedStanzaList"
@@ -35,6 +38,10 @@ This ontology has the following classes and properties.</span>
          title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza">Stanza</a>
    </li>
    <li>
+      <a href="#Syllable"
+         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable">Syllable</a>
+   </li>
+   <li>
       <a href="#Token"
          title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Token">Token</a>
    </li>
@@ -50,6 +57,10 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#belongsToStanzaList"
          title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToStanzaList">belongsToStanzaList</a>
+   </li>
+   <li>
+      <a href="#belongsToSyllableList"
+         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToSyllableList">belongsToSyllableList</a>
    </li>
    <li>
       <a href="#belongsToTokenList"
@@ -108,6 +119,12 @@ This ontology has the following classes and properties.</span>
          title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isInflectedForm">inflectedForm</a>
    </li>
    <li>
+      <a href="#isFirstSyllable"
+         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isFirstSyllable">
+         <span>is first syllable</span>
+      </a>
+   </li>
+   <li>
       <a href="#isCallOf"
          title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isCallOf">isCallOf</a>
    </li>
@@ -144,8 +161,16 @@ This ontology has the following classes and properties.</span>
          title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextStanza">nextStanza</a>
    </li>
    <li>
+      <a href="#nextSyllable"
+         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextSyllable">nextSyllable</a>
+   </li>
+   <li>
       <a href="#nextToken"
          title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextToken">nextToken</a>
+   </li>
+   <li>
+      <a href="#nucleusType"
+         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nucleusType">nucleusType</a>
    </li>
    <li>
       <a href="#previousLine"
@@ -156,8 +181,16 @@ This ontology has the following classes and properties.</span>
          title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousStanza">previousStanza</a>
    </li>
    <li>
+      <a href="#previousSyllable"
+         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousSyllable">previousSyllable</a>
+   </li>
+   <li>
       <a href="#previousToken"
          title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousToken">previousToken</a>
+   </li>
+   <li>
+      <a href="#hasSyllable"
+         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSyllable">The list of  items of Syllable</a>
    </li>
    <li>
       <a href="#typeOfStanza"
@@ -185,30 +218,6 @@ This ontology has the following classes and properties.</span>
          title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#firstHemistich">firstHemistich</a>
    </li>
    <li>
-      <a href="#hasDiastole"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasDiastole">hasDiastole</a>
-   </li>
-   <li>
-      <a href="#hasElision"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasElision">hasElision</a>
-   </li>
-   <li>
-      <a href="#hasHiatus"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasHiatus">hasHiatus</a>
-   </li>
-   <li>
-      <a href="#hasSynizesis"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSynizesis">hasSynizesis</a>
-   </li>
-   <li>
-      <a href="#hasSystole"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSystole">hasSystole</a>
-   </li>
-   <li>
-      <a href="#isDialepha"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isDialepha">isDialepha</a>
-   </li>
-   <li>
       <a href="#isNotMetricStanza"
          title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isNotMetricStanza">isNotMetricStanza</a>
    </li>
@@ -219,10 +228,6 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#isRefrainOmitted"
          title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isRefrainOmitted">isRefrainOmitted</a>
-   </li>
-   <li>
-      <a href="#isStressed"
-         title="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isStressed">isStressed</a>
    </li>
    <li>
       <a href="#lemma"
