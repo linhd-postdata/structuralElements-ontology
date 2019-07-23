@@ -208,8 +208,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
              rdfs:domain <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> ;
              rdfs:range :OrderedLineList ;
              rdfs:comment "The ordered line list of the redaction"@en ;
-             rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structiralElements"@en ;
-             rdfs:label "hasLines"@en .
+             rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
+             rdfs:label "hasLinesList"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanza
@@ -227,7 +227,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                rdfs:domain <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> ;
                rdfs:range :OrderedStanzaList ;
                rdfs:comment "The ordered stanza list of the redaction"@en ;
-               rdfs:label "hasStanzas"@en .
+               rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
+               rdfs:label "hasStanzaList"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSyllable
@@ -245,6 +246,7 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                  rdfs:domain :Word ;
                  rdfs:range :OrderedSyllableList ;
                  rdfs:comment "The ordered Syllable list of the word"@en ;
+                 rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
                  rdfs:label "hasSyllableList"@en .
 
 
@@ -262,7 +264,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
               rdfs:domain :Line ;
               rdfs:range :OrderedTokenList ;
               rdfs:comment "The ordered token list of the redaction"@en ;
-              rdfs:label "hasTokens"@en .
+              rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
+              rdfs:label "hasTokenList"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isCallOf
