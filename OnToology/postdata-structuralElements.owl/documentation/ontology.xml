@@ -235,7 +235,7 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasFirstLine">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isFirstLine"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line"/>
         <dc:creator>mluisadiez</dc:creator>
         <rdfs:comment>This property points to the first line (an instance of Line) which form the current element under analysis</rdfs:comment>
@@ -249,11 +249,23 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
 
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasFirstStanza">
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isFirstStanza"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza"/>
         <rdfs:comment xml:lang="en">This property points to the first group of lines (an instance of Stanza) which form the current element under analysis</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-structuralElements</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">hasFirstStanza</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasFirstSyllable -->
+
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasFirstSyllable">
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isFirstSyllable"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable"/>
     </owl:ObjectProperty>
     
 
@@ -274,6 +286,17 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLastLine -->
+
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLastLine">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLine -->
 
 
@@ -288,18 +311,11 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
     
 
 
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLines -->
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLineList -->
 
 
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLines">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
-                    <rdf:Description rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLineList">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedLineList"/>
         <rdfs:comment xml:lang="en">The ordered line list of the redaction</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-structiralElements</rdfs:isDefinedBy>
@@ -322,10 +338,10 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
     
 
 
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanzas -->
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanzaList -->
 
 
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanzas">
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanzaList">
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedStanzaList"/>
         <rdfs:comment xml:lang="en">The ordered stanza list of the redaction</rdfs:comment>
@@ -348,6 +364,18 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSyllableList -->
+
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSyllableList">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedSyllableList"/>
+        <rdfs:comment xml:lang="en">The ordered Syllable list of the word</rdfs:comment>
+        <rdfs:label xml:lang="en">hasSyllableList</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasToken -->
 
 
@@ -361,10 +389,10 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
     
 
 
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasTokens -->
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasTokenList -->
 
 
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasTokens">
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasTokenList">
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedTokenList"/>
         <rdfs:comment xml:lang="en">The ordered token list of the redaction</rdfs:comment>
@@ -404,14 +432,7 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isFirstLine">
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
-                    <rdf:Description rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza"/>
         <rdfs:comment xml:lang="en">This property points to the group of lines (an instance of Stanza) of which the current item under analysis is its first line</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-structuralElements</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">isFirstLine</rdfs:label>
@@ -1025,16 +1046,23 @@ Eg.: 3/4 (= third syllable in a four-syllable word)</rdfs:comment>
     <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLines"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasFirstLine"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLineList"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedLineList"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasFirstLine"/>
+                <owl:onProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanzaList"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line"/>
+                <owl:onClass rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedStanzaList"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1133,7 +1161,7 @@ Eg.: “As armas e os barões assinalados” - from Os Lusíadas</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#content"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1154,15 +1182,15 @@ Eg.: “As armas e os barões assinalados” - from Os Lusíadas</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasFirstLine"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLines"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedLineList"/>
+                <owl:onProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLastLine"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1229,7 +1257,8 @@ Novo Reino, que tanto sublimaram;</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:creator>mluisadiez</dc:creator>
-        <rdfs:comment>A linguistic analysis using the syllable as the unit of reference
+        <rdfs:comment>A single unit of speech sound as written or spoken; specifically, a vowel preceded by zero to three consonants (“awl,” “bring,” “strand”), and followed by zero to four consonants (“too,” “brag,” “gloss,” “stings,” “sixths”).
+It is the reference unit of a literary analysis, in some poetic tradicions
 Eg.: The onset and coda of the rhyme vowel</rdfs:comment>
         <rdfs:isDefinedBy>http://postdata.linhd.uned.es/ontology/postdata-structuralElements</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Syllable</rdfs:label>
