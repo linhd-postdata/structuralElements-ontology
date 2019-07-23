@@ -2415,11 +2415,11 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-structiralElements"
+    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "hasLines"
+    "@value" : "hasLinesList"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedLineList"
@@ -2458,9 +2458,13 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "en",
+    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "hasStanzas"
+    "@value" : "hasStanzaList"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedStanzaList"
@@ -2497,6 +2501,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "en",
+    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2535,9 +2543,13 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "en",
+    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "hasTokens"
+    "@value" : "hasTokenList"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedTokenList"
