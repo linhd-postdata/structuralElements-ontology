@@ -293,8 +293,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedLineList"/>
         <rdfs:comment xml:lang="en">The ordered line list of the redaction</rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-structiralElements</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">hasLines</rdfs:label>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-structuralElements</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">hasLinesList</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -318,7 +318,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedStanzaList"/>
         <rdfs:comment xml:lang="en">The ordered stanza list of the redaction</rdfs:comment>
-        <rdfs:label xml:lang="en">hasStanzas</rdfs:label>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-structuralElements</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">hasStanzaList</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -342,6 +343,7 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedSyllableList"/>
         <rdfs:comment xml:lang="en">The ordered Syllable list of the word</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-structuralElements</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">hasSyllableList</rdfs:label>
     </owl:ObjectProperty>
     
@@ -365,7 +367,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedTokenList"/>
         <rdfs:comment xml:lang="en">The ordered token list of the redaction</rdfs:comment>
-        <rdfs:label xml:lang="en">hasTokens</rdfs:label>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-structuralElements</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">hasTokenList</rdfs:label>
     </owl:ObjectProperty>
     
 
