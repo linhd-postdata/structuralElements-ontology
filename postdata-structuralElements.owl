@@ -27,7 +27,7 @@
      xmlns:bibframe="http://id.loc.gov/ontologies/bibframe/"
      xmlns:pdstruct="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
-    <owl:Ontology rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements">
+    <owl:Ontology rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#">
         <owl:imports rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core"/>
         <owl:imports rdf:resource="http://purl.org/ontology/olo/core#"/>
         <dc:contributors xml:lang="en">Alvaro Pérez (LINHD_POSTDATA-UNED)
@@ -1332,10 +1332,10 @@ Eg.: The word “life”</rdfs:comment>
      -->
 
     <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/CLP104_subject_to">
+        <rdfs:label xml:lang="en">subject to</rdfs:label>
         <rdfs:comment xml:lang="en">This property associates a publication, i.e. an instance of F3 Manifestation Product Type, with an instance of E30 Right, which applies to all exemplars of that publication, as long as they are recognised as exemplars of that publication.
 The rights covered by this property may include: acquisition or access authorisation; terms of availability; access restrictions on the Manifestation Product Type; etc.
 </rdfs:comment>
-        <rdfs:label xml:lang="en">subject to</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/CLP104i_applies_to">
         <rdfs:comment xml:lang="en">
@@ -1495,9 +1495,9 @@ It marks the origin of the causality chain that results in a work’s coming int
 </rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R19i_was_realised_through">
+        <rdfs:label xml:lang="en">was realised through</rdfs:label>
         <rdfs:comment xml:lang="en">
 </rdfs:comment>
-        <rdfs:label xml:lang="en">was realised through</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R1_is_logical_successor_of">
         <rdfs:comment xml:lang="en">This property associates an instance of F1 Work which logically continues the content of another instance of F1 Work with the latter.
@@ -1863,9 +1863,9 @@ This property is a shortcut of: F2 Expression P165i is incorporated in F24 Publi
         <rdfs:label xml:lang="en">was assigned by</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R52_used_rule">
+        <rdfs:label xml:lang="en">used rule</rdfs:label>
         <rdfs:comment xml:lang="en">This property associates the event of assigning an instance of F13 Identifier with the instructions followed by an actor, such as a Bibliographic Agency, in creating that identifier.
 </rdfs:comment>
-        <rdfs:label xml:lang="en">used rule</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R52i_was_the_rule_used_in">
         <rdfs:label xml:lang="en">was the rule used in</rdfs:label>
