@@ -16,7 +16,7 @@
      xmlns:schema="http://schema.org/"
      xmlns:postdata-dates="http://postdata.linhd.uned.es/ontology/postdata-dates#"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
-    <owl:Ontology rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements">
+    <owl:Ontology rdf:about="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#">
         <owl:imports rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core"/>
         <owl:imports rdf:resource="http://purl.org/ontology/olo/core#"/>
         <dc:contributors xml:lang="en">Alvaro Pérez (LINHD_POSTDATA-UNED)

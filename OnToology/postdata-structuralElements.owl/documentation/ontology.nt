@@ -1,20 +1,20 @@
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements> <http://www.w3.org/2002/07/owl#imports> <http://postdata.linhd.uned.es/ontology/postdata-core> .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/ontology/olo/core#> .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements> <http://purl.org/dc/elements/1.1/contributors> "Alvaro Pérez (LINHD_POSTDATA-UNED)\nhttps://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/"@en .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements> <http://purl.org/dc/elements/1.1/contributors> "Bruno Sartini (Bolonia University)\nhttps://orcid.org/0000-0002-9152-4402"@en .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements> <http://purl.org/dc/elements/1.1/contributors> "Javier de la Rosa (LINHD_POSTDATA-UNED)\nhttps://www.linkedin.com/in/versae/"@en .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements> <http://purl.org/dc/elements/1.1/contributors> "Oscar Corcho (Universidad Politécnica de Madrid)\nhttp://orcid.org/0000-0002-9260-0753"@en .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements> <http://purl.org/dc/elements/1.1/creator> "Helena Bermúdez Sabel \nhttps://orcid.org/0000-0001-7782-206X"@en .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements> <http://purl.org/dc/elements/1.1/creator> "Mª Luisa Díez Platas \nhttps://orcid.org/0000-0002-9416-3147"@en .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements> <http://purl.org/dc/elements/1.1/date> "2019-07-12"@en .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements> <http://purl.org/dc/elements/1.1/description> "This ontology module contains classes and properties that provide information about the structure of a redaction. It models the structural elements from lexical level like lexical units, for example, word, to more complexity level as line or stanza."@en .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements> <http://purl.org/dc/elements/1.1/title> "postdata-structural ontology"@en .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements> <http://purl.org/dc/terms/publisher> "POSTDATA Project\n\n“This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”\nPrincipal Investigator. Elena González Blanco -- https://orcid.org/0000-0002-0448-1812\nTechnical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958"@en .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements> <http://purl.org/dc/terms/publisher> "POSTDATA Project" .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements> <http://purl.org/vocab/vann/preferredNamespacePrefix> "pdstruct" .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements> <http://www.w3.org/2002/07/owl#versionInfo> "V1.0" .
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements> <http://www.w3.org/2003/06/sw-vocab-status/ns#license> "https://creativecommons.org/licenses/by/4.0/"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#> <http://www.w3.org/2002/07/owl#imports> <http://postdata.linhd.uned.es/ontology/postdata-core> .
+<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/ontology/olo/core#> .
+<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#> <http://purl.org/dc/elements/1.1/contributors> "Alvaro Pérez (LINHD_POSTDATA-UNED)\nhttps://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#> <http://purl.org/dc/elements/1.1/contributors> "Bruno Sartini (Bolonia University)\nhttps://orcid.org/0000-0002-9152-4402"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#> <http://purl.org/dc/elements/1.1/contributors> "Javier de la Rosa (LINHD_POSTDATA-UNED)\nhttps://www.linkedin.com/in/versae/"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#> <http://purl.org/dc/elements/1.1/contributors> "Oscar Corcho (Universidad Politécnica de Madrid)\nhttp://orcid.org/0000-0002-9260-0753"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#> <http://purl.org/dc/elements/1.1/creator> "Helena Bermúdez Sabel \nhttps://orcid.org/0000-0001-7782-206X"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#> <http://purl.org/dc/elements/1.1/creator> "Mª Luisa Díez Platas \nhttps://orcid.org/0000-0002-9416-3147"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#> <http://purl.org/dc/elements/1.1/date> "2019-07-12"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#> <http://purl.org/dc/elements/1.1/description> "This ontology module contains classes and properties that provide information about the structure of a redaction. It models the structural elements from lexical level like lexical units, for example, word, to more complexity level as line or stanza."@en .
+<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#> <http://purl.org/dc/elements/1.1/title> "postdata-structural ontology"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#> <http://purl.org/dc/terms/publisher> "POSTDATA Project\n\n“This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”\nPrincipal Investigator. Elena González Blanco -- https://orcid.org/0000-0002-0448-1812\nTechnical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#> <http://purl.org/dc/terms/publisher> "POSTDATA Project" .
+<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "pdstruct" .
+<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#> <http://www.w3.org/2002/07/owl#versionInfo> "V1.0" .
+<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#> <http://www.w3.org/2003/06/sw-vocab-status/ns#license> "https://creativecommons.org/licenses/by/4.0/"@en .
 # 
 # 
 # #################################################################

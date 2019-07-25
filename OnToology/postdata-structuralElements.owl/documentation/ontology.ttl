@@ -4,35 +4,35 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://postdata.linhd.uned.es/ontology/postdata-structuralElements> .
+@base <http://postdata.linhd.uned.es/ontology/postdata-structuralElements#> .
 
-<http://postdata.linhd.uned.es/ontology/postdata-structuralElements> rdf:type owl:Ontology ;
-                                                                      owl:imports <http://postdata.linhd.uned.es/ontology/postdata-core> ,
-                                                                                  <http://purl.org/ontology/olo/core#> ;
-                                                                      <http://purl.org/dc/elements/1.1/contributors> """Alvaro Pérez (LINHD_POSTDATA-UNED)
+<http://postdata.linhd.uned.es/ontology/postdata-structuralElements#> rdf:type owl:Ontology ;
+                                                                       owl:imports <http://postdata.linhd.uned.es/ontology/postdata-core> ,
+                                                                                   <http://purl.org/ontology/olo/core#> ;
+                                                                       <http://purl.org/dc/elements/1.1/contributors> """Alvaro Pérez (LINHD_POSTDATA-UNED)
 https://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/"""@en ,
-                                                                                                                     """Bruno Sartini (Bolonia University)
+                                                                                                                      """Bruno Sartini (Bolonia University)
 https://orcid.org/0000-0002-9152-4402"""@en ,
-                                                                                                                     """Javier de la Rosa (LINHD_POSTDATA-UNED)
+                                                                                                                      """Javier de la Rosa (LINHD_POSTDATA-UNED)
 https://www.linkedin.com/in/versae/"""@en ,
-                                                                                                                     """Oscar Corcho (Universidad Politécnica de Madrid)
+                                                                                                                      """Oscar Corcho (Universidad Politécnica de Madrid)
 http://orcid.org/0000-0002-9260-0753"""@en ;
-                                                                      <http://purl.org/dc/elements/1.1/creator> """Helena Bermúdez Sabel 
+                                                                       <http://purl.org/dc/elements/1.1/creator> """Helena Bermúdez Sabel 
 https://orcid.org/0000-0001-7782-206X"""@en ,
-                                                                                                                """Mª Luisa Díez Platas 
+                                                                                                                 """Mª Luisa Díez Platas 
 https://orcid.org/0000-0002-9416-3147"""@en ;
-                                                                      <http://purl.org/dc/elements/1.1/date> "2019-07-12"@en ;
-                                                                      <http://purl.org/dc/elements/1.1/description> "This ontology module contains classes and properties that provide information about the structure of a redaction. It models the structural elements from lexical level like lexical units, for example, word, to more complexity level as line or stanza."@en ;
-                                                                      <http://purl.org/dc/elements/1.1/title> "postdata-structural ontology"@en ;
-                                                                      <http://purl.org/dc/terms/publisher> """POSTDATA Project
+                                                                       <http://purl.org/dc/elements/1.1/date> "2019-07-12"@en ;
+                                                                       <http://purl.org/dc/elements/1.1/description> "This ontology module contains classes and properties that provide information about the structure of a redaction. It models the structural elements from lexical level like lexical units, for example, word, to more complexity level as line or stanza."@en ;
+                                                                       <http://purl.org/dc/elements/1.1/title> "postdata-structural ontology"@en ;
+                                                                       <http://purl.org/dc/terms/publisher> """POSTDATA Project
 
 “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”
 Principal Investigator. Elena González Blanco -- https://orcid.org/0000-0002-0448-1812
 Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958"""@en ,
-                                                                                                           "POSTDATA Project" ;
-                                                                      <http://purl.org/vocab/vann/preferredNamespacePrefix> "pdstruct" ;
-                                                                      owl:versionInfo "V1.0" ;
-                                                                      <http://www.w3.org/2003/06/sw-vocab-status/ns#license> "https://creativecommons.org/licenses/by/4.0/"@en .
+                                                                                                            "POSTDATA Project" ;
+                                                                       <http://purl.org/vocab/vann/preferredNamespacePrefix> "pdstruct" ;
+                                                                       owl:versionInfo "V1.0" ;
+                                                                       <http://www.w3.org/2003/06/sw-vocab-status/ns#license> "https://creativecommons.org/licenses/by/4.0/"@en .
 
 #################################################################
 #    Annotation properties
