@@ -49,6 +49,7 @@ Logically, the center of the example is to manage the structural information. Fo
 However, it would also be possible to obtain the next and previous line through the <a href="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextLine">next</a> and <a href="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousLine">previous</a> properties, but this is not always necessary and the implementation of triples would be more tedious and complicated.
 </p>
 </div>
+<div style="text-align: center; padding:10px"><img src="http://postdata.linhd.uned.es/ontology/structuralExample.png" width="50%" align="center"/></div> <br/>
 
 <p>We will show the RDF codes generated with the data of this example. It should be noted that the instances will be represented by their URIs (Uniform Resource Identifier) created according to the following structure <strong>&lt;http://postdata.linhd.uned.es/resource/{Class}/{UUID}&gt;</strong>.<br/>
 For example, the Person is identified by <strong>&lt;http://postdata.linhd.uned.es/resource/Person/ccc591fe0-7f10-11e9-ac29-f2189886299d&gt;</strong><br/>
@@ -87,31 +88,30 @@ font-weight: lighter;
 <dt>@prefix dc: &lt;http://purl.org/dc/elements/1.1/&gt; .</dt>
 
 
-<dt>&lt;http://postdata.linhd.uned.es/resource/PoeticWork/c41b20c6-7f10-11e9-ac29-f2189886299e&gt; a &lt;pdcore:PoeticWork&gt; ;</dt>
+<dt>&lt;http://postdata.linhd.uned.es/resource/PoeticWork/c41b20c6-7f10-11e9-ac29-f2189886289e&gt; a &lt;pdcore:PoeticWork&gt; ;</dt>
 	<dd>dc:title "Mo-chion dot bhronnadh, a Bhriain " ;</dd>
 	<dd>pdcore:function "Thanks mp" ;</dd>
 	<dd>pdcore:theme "Feart feile, poetic miracle " ;</dd>
 	<dd>pdcore:hasCreator &lt;http://postdata.linhd.uned.es/resource/CreatorRole/c41b20c6-7f10-11e9-ac29-f2189886299e&gt; ;</dd>
 	<dd>pdcore:theme "the reading and writing of poetry " .</dd>
 
-<dt>&lt;http://postdata.linhd.uned.es/resource/Redaction/c41b20c6-7f10-11e9-ac29-f2189886299d&gt; a &lt;pdcore:Redaction&gt; ;</dt>
+<dt>&lt;http://postdata.linhd.uned.es/resource/Redaction/c41b20c6-7f10-11e9-ac29-f2189886289d&gt; a &lt;pdcore:Redaction&gt; ;</dt>
 	<dd>pdcore:incipit "Mo-chion dot bhronnadh, a Bhriain " ;</dd>
-	<dd>pdcore:additionalFile &lt;http://127.0.0.1:3333/https%3A%2F%2Fbardic.celt.dias.ie%2Fpdf%2FPOEM1400.pdf+&gt; ;</dd>
 	<dd>pdstruct:hasFirstStanza &lt;http://postdata.linhd.uned.es/resource/Stanza/00000000-0000-0000-0000-000000000001&gt; ;</dd>
-	<dd>pdcore:hasStanzaList &lt;http://postdata.linhd.uned.es/resource/OrderedStanzaList/c41b20c6-7f10-11e9-ac29-f2189886299e&gt; ;</dd>
+	<dd>pdstruct:hasStanzaList &lt;http://postdata.linhd.uned.es/resource/OrderedStanzaList/c41b20c6-7f10-11e9-ac29-f2189886299e&gt; ;</dd>
 	<dd>pdstruct:hasLineList &lt;http://postdata.linhd.uned.es/resource/OrderedLineList/00000000-0000-0000-0000-000000000001&gt; .</dd>
 
-<dt>&lt;http://postdata.linhd.uned.es/resource/CreatorRole/c41b20c6-7f10-11e9-ac29-f2189886299e&gt; a &lt;pdcore:Cretaor&gt; ;</dt>
+<dt>&lt;http://postdata.linhd.uned.es/resource/CreatorRole/c41b20c6-7f10-11e9-ac29-f2189886289e&gt; a &lt;pdcore:Creator&gt; ;</dt>
 	<dd>pdcore:isPerformedBy &lt;http://postdata.linhd.uned.es/resource/Person/c41b20c6-7f10-11e9-ac29-f2189886299e&gt; .
 
 <dt>&lt;http://postdata.linhd.uned.es/resource/Person/c41b20c6-7f10-11e9-ac29-f2189886299e&gt; a &lt;pdcore:Person&gt; ;</dt>
 	<dd>pdstruct:surname "O Corcrain " ;
 	<dd>pdstruct:forename "Brian" .
 
-<dt>&lt;http://postdata.linhd.uned.es/resource/OrderedStanzaList/c41b20c6-7f10-11e9-ac29-f2189886299e&gt; a &lt;pdstruct:OrderedStanzaList&gt; ;</dt>
+<dt>&lt;http://postdata.linhd.uned.es/resource/OrderedStanzaList/c41b20c6-7f10-11e9-ac29-f2189886289e&gt; a &lt;pdstruct:OrderedStanzaList&gt; ;</dt>
 	<dd>pdstruct:hasStanza &lt;http://postdata.linhd.uned.es/resource/Stanza/00000000-0000-0000-0000-000000000001&gt; , &lt;http://postdata.linhd.uned.es/resource/Stanza/00000000-0000-0000-0000-000000000002&gt; .</dd>
 
-<dt>&lt;http://postdata.linhd.uned.es/resource/OrderedLineList/c41b20c6-7f10-11e9-ac29-f2189886299e&gt; a &lt;pdstruct:OrderedLineList&gt; ;</dt>
+<dt>&lt;http://postdata.linhd.uned.es/resource/OrderedLineList/c41b20c6-7f10-11e9-ac29-f2189886289e&gt; a &lt;pdstruct:OrderedLineList&gt; ;</dt>
 	<dd>pdstruct:hasLine &lt;http://postdata.linhd.uned.es/resource/Line/00000000-0000-0000-0000-000000000001&gt; , &lt;http://postdata.linhd.uned.es/resource/Line/00000000-0000-0000-0000-000000000002&gt; , &lt;http://postdata.linhd.uned.es/resource/Line/00000000-0000-0000-0000-000000000003&gt; , &lt;http://postdata.linhd.uned.es/resource/Line/00000000-0000-0000-0000-000000000004&gt; , &lt;http://postdata.linhd.uned.es/resource/Line/00000000-0000-0000-0000-000000000005&gt; , &lt;http://postdata.linhd.uned.es/resource/Line/00000000-0000-0000-0000-000000000006&gt; , &lt;http://postdata.linhd.uned.es/resource/Line/00000000-0000-0000-0000-000000000007&gt; , &lt;http://postdata.linhd.uned.es/resource/Line/00000000-0000-0000-0000-000000000008&gt; .</dd>
 
 <dt>&lt;http://postdata.linhd.uned.es/resource/Stanza/00000000-0000-0000-0000-000000000001&gt; a &lt;pdstruct:Stanza&gt; ;</dt>
