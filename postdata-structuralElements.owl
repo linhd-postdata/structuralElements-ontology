@@ -1325,7 +1325,7 @@ Eg.: “As armas e os barões assinalados” - from Os Lusíadas</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">As a structure, a Stanza can be modelled from two points of view:
-- An item (a subclass of old:slot) of the list of stanzas of the Redaction 
+- An item (a subclass of old:slot) of the list of Stanzas of the Redaction 
 - A list of lines</rdfs:comment>
         <rdfs:comment>Group of lines. Usually, this grouping forms the basic recurring metrical unit of a poem, song or play
 Eg.: As armas e os barões assinalados,
