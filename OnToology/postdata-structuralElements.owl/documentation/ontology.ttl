@@ -81,16 +81,21 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToLine
 :belongsToLine rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf <http://purl.org/ontology/olo/core#ordered_list> ;
+               owl:inverseOf :hasToken ;
                rdfs:domain :Token ;
-               rdfs:range :Line .
+               rdfs:range :Line ;
+               rdfs:comment "This property refers to the Line (viewed as a list of tokens) the token belongs to."@en ;
+               rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
+               rdfs:label "belongsToLine"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToLineList
 :belongsToLineList rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf <http://purl.org/ontology/olo/core#ordered_list> ;
+                   owl:inverseOf :hasLineItem ;
                    rdfs:domain :Line ;
                    rdfs:range :OrderedLineList ;
-                   rdfs:comment "Item that belongs to a lines list"@en ;
+                   rdfs:comment "This property refers to the OrderedLineList , associated with a Redaction; the Line belongs to."@en ;
                    rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
                    rdfs:label "belongsToLineList"@en .
 
@@ -98,17 +103,21 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToStanza
 :belongsToStanza rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf <http://purl.org/ontology/olo/core#ordered_list> ;
+                 owl:inverseOf :hasLine ;
                  rdfs:domain :Line ;
-                 rdfs:range :Stanza .
+                 rdfs:range :Stanza ;
+                 rdfs:comment "This property refers to the Stanza (viewed as a list of lines) theLine belongs to."@en ;
+                 rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
+                 rdfs:label "belongsToStanza"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToStanzaList
 :belongsToStanzaList rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf <http://purl.org/ontology/olo/core#ordered_list> ;
-                     owl:inverseOf :hasStanzaList ;
+                     owl:inverseOf :hasStanzaItem ;
                      rdfs:domain :Stanza ;
                      rdfs:range :OrderedStanzaList ;
-                     rdfs:comment "Item that belongs to a stanzas list"@en ;
+                     rdfs:comment "This property refers to the OrderedStanzaList , associated with a Redaction; the Stanza belongs to."@en ;
                      rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
                      rdfs:label "belongsToStanzaList"@en .
 
@@ -116,9 +125,10 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToWord
 :belongsToWord rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf <http://purl.org/ontology/olo/core#ordered_list> ;
+               owl:inverseOf :hasSyllable ;
                rdfs:domain :Syllable ;
                rdfs:range :Word ;
-               rdfs:comment "Item that belongs to a lines list"@en ;
+               rdfs:comment "This property refers to the Word (viewed as a list of syllables) the Syllable belongs to."@en ;
                rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
                rdfs:label "belongsToWord"@en .
 
@@ -164,7 +174,11 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasFirstStanza
 :hasFirstStanza rdf:type owl:ObjectProperty ;
                 owl:inverseOf :isFirstStanza ;
-                rdfs:domain <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction>
+                                            :OrderedStanzaList
+                                          )
+                            ] ;
                 rdfs:range :Stanza ;
                 rdfs:comment "This property points to the first group of lines (an instance of Stanza) which form the current element under analysis"@en ;
                 rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
@@ -193,42 +207,103 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLastLine
 :hasLastLine rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf owl:topObjectProperty ;
-             rdfs:domain :Stanza ;
-             rdfs:range :Line .
+             owl:inverseOf :isLastLine ;
+             rdfs:domain [ rdf:type owl:Class ;
+                           owl:unionOf ( <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction>
+                                         :OrderedLineList
+                                         :Stanza
+                                       )
+                         ] ;
+             rdfs:range :Line ;
+             rdfs:comment "This property points to the last line (an instance of Line) which form the current element under analysis"@en ;
+             rdfs:label "hasLastLine"@en .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLastStanza
+:hasLastStanza rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               owl:inverseOf :isLastStanza ;
+               rdfs:domain [ rdf:type owl:Class ;
+                             owl:unionOf ( <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction>
+                                           :OrderedStanzaList
+                                         )
+                           ] ;
+               rdfs:range :Stanza ;
+               rdfs:comment "This property points to the last Stanza  which form the current element under analysis"@en ;
+               rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
+               rdfs:label "hasLastStanza"@en .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLastSyllable
+:hasLastSyllable rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 owl:inverseOf :isLastSyllable ;
+                 rdfs:domain :Word ;
+                 rdfs:range :Syllable ;
+                 rdfs:comment "This property points to the last Syllable which form the current element under analysis"@en ;
+                 rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
+                 rdfs:label "hasLastSyllable"@en .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLastToken
+:hasLastToken rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              owl:inverseOf :isLastToken ;
+              rdfs:domain :Line ;
+              rdfs:range :Token ;
+              rdfs:comment "This property points to the last Token  which form the current element under analysis"@en ;
+              rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
+              rdfs:label "hasLastToken"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLine
 :hasLine rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf <http://purl.org/ontology/olo/core#slot> ;
          rdfs:domain :Stanza ;
-         rdfs:range :Line .
+         rdfs:range :Line ;
+         rdfs:comment "Line of a Stanza considered as list"@en ;
+         rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
+         rdfs:label "hasLine"@en .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLineItem
+:hasLineItem rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://purl.org/ontology/olo/core#slot> ;
+             rdfs:domain :OrderedLineList ;
+             rdfs:range :Line ;
+             rdfs:comment "Line of a OrderedLineList associated with a Redaction"@en ;
+             rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
+             rdfs:label "hasLineItem"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLineList
 :hasLineList rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf <http://purl.org/ontology/olo/core#slot> ;
-             rdfs:domain :OrderedLineList ;
-             rdfs:range :Line ,
-                        :OrderedLineList ;
-             rdfs:comment "The list of  items of Line"@en ,
-                          "The ordered line list of the redaction"@en ;
-             rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
-             rdfs:label "hasLine"@en ,
-                        "hasLinesList"@en .
+             owl:inverseOf :isLineListOfRedaction ;
+             rdfs:domain <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> ;
+             rdfs:range :OrderedLineList ;
+             rdfs:comment "This property refers to the list of lines(the poem structured in lines) that the redaction contains to"@en ;
+             rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements/"@en ;
+             rdfs:label "hasLineList"@en .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanzaItem
+:hasStanzaItem rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf <http://purl.org/ontology/olo/core#slot> ;
+               rdfs:domain :OrderedStanzaList ;
+               rdfs:range :Stanza ;
+               rdfs:comment "Stanza of an OrderedStanzaList associated with a Redaction"@en ;
+               rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
+               rdfs:label "hasStanzaItem"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanzaList
 :hasStanzaList rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf <http://purl.org/ontology/olo/core#slot> ;
                owl:inverseOf :isStanzaListOfRedaction ;
-               rdfs:domain :OrderedStanzaList ;
-               rdfs:range :OrderedStanzaList ,
-                          :Stanza ;
-               rdfs:comment "The list of  items  of Stanza"@en ,
-                            "This property points to the ordered stanza list of the redaction"@en ;
-               rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
-               rdfs:label "hasStanza"@en ,
-                          "hasStanzaList"@en .
+               rdfs:domain <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> ;
+               rdfs:range :OrderedStanzaList ;
+               rdfs:comment "This property refers to the list of stanzas (the poem structured in stanzas) that the redaction contains to"@en ;
+               rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements/"@en ;
+               rdfs:label "hasStanzaList"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSyllable
@@ -237,33 +312,18 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
              rdfs:domain :Word ;
              rdfs:range :Syllable ;
              rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
-             rdfs:label "The list of  items of Syllable"@en ,
+             rdfs:label "Syllable of a Word considered as list"@en ,
                         "hasSyllable"@en .
-
-
-###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSyllableList
-:hasSyllableList rdf:type owl:ObjectProperty ;
-                 rdfs:domain :Word ;
-                 rdfs:comment "The ordered Syllable list of the word"@en ;
-                 rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
-                 rdfs:label "hasSyllableList"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasToken
 :hasToken rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf <http://purl.org/ontology/olo/core#slot> ;
           rdfs:domain :Line ;
-          rdfs:range :Word ;
-          rdfs:comment "The list of  items  of Token"@en ;
+          rdfs:range :Token ;
+          rdfs:comment "Token of a Line considered as list"@en ;
+          rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
           rdfs:label "hasToken"@en .
-
-
-###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasTokenList
-:hasTokenList rdf:type owl:ObjectProperty ;
-              rdfs:domain :Line ;
-              rdfs:comment "The ordered token list of the redaction"@en ;
-              rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
-              rdfs:label "hasTokenList"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isCallOf
@@ -288,7 +348,7 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
 :isFirstLine rdf:type owl:ObjectProperty ;
              rdfs:domain :Line ;
              rdfs:range :Stanza ;
-             rdfs:comment "This property points to the group of lines (an instance of Stanza) of which the current item under analysis is its first line"@en ;
+             rdfs:comment "This property points to the group of lines (an instance of Stanza or an instance of OrderedLineList) of which the current item under analysis is its first line"@en ;
              rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
              rdfs:label "isFirstLine"@en .
 
@@ -297,7 +357,7 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
 :isFirstStanza rdf:type owl:ObjectProperty ;
                rdfs:domain :Stanza ;
                rdfs:range <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> ;
-               rdfs:comment "This property points to the text (an instance of Redaction) of which the current item under analysis is its first line grouping"@en ;
+               rdfs:comment "This property points to the text (an instance of OrderedStanzaList) of which the current item under analysis is its first line grouping"@en ;
                rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
                rdfs:label "isFirstStanza"@en .
 
@@ -305,14 +365,17 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isFirstSyllable
 :isFirstSyllable rdf:type owl:ObjectProperty ;
                  rdfs:domain :Syllable ;
-                 rdfs:range :Word .
+                 rdfs:range :Word ;
+                 rdfs:comment "This property points to an instance of Word of which the current item under analysis is its first Syllable"@en ;
+                 rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
+                 rdfs:label "isFirstSyllable"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isFirstToken
 :isFirstToken rdf:type owl:ObjectProperty ;
               rdfs:domain :Token ;
               rdfs:range :Line ;
-              rdfs:comment "This property points to the container (an instance of Line) of which the current item under analysis is its first token" ;
+              rdfs:comment "This property points to an instance of Line of which the current item under analysis is its first Token" ;
               rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
               rdfs:label "isFirstToken"@en .
 
@@ -328,6 +391,55 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                  rdfs:label "inflectedForm"@en .
 
 
+###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isLastLine
+:isLastLine rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain :Line ;
+            rdfs:range [ rdf:type owl:Class ;
+                         owl:unionOf ( <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction>
+                                       :OrderedLineList
+                                       :Stanza
+                                     )
+                       ] ;
+            rdfs:comment "This property points to Stanza or OrderedLineList of which the current item under analysis is its last Line"@en ;
+            rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
+            rdfs:label "isLastLine"@en .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isLastStanza
+:isLastStanza rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain :Stanza ;
+              rdfs:range [ rdf:type owl:Class ;
+                           owl:unionOf ( <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction>
+                                         :OrderedStanzaList
+                                       )
+                         ] ;
+              rdfs:comment "This property points to OrderedStanzaList of which the current item under analysis is its last Stanza"@en ;
+              rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
+              rdfs:label "isLastStanza"@en .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isLastSyllable
+:isLastSyllable rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:domain :Syllable ;
+                rdfs:range :Word ;
+                rdfs:comment "This property points to Word of which the current item under analysis is its last Syllable"@en ;
+                rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
+                rdfs:label "isLastSyllable"@en .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isLastToken
+:isLastToken rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain :Token ;
+             rdfs:range :Line ;
+             rdfs:comment "This property points to Line of which the current item under analysis is its last Token"@en ;
+             rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
+             rdfs:label "isLastToken"@en .
+
+
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isLemma
 :isLemma rdf:type owl:ObjectProperty ;
          rdfs:domain :Word ;
@@ -337,10 +449,22 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
          rdfs:label "isLemma"@en .
 
 
+###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isLineListOfRedaction
+:isLineListOfRedaction rdf:type owl:ObjectProperty ;
+                       rdfs:domain :OrderedLineList ;
+                       rdfs:range <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> ;
+                       rdfs:comment "This property refers to the Redaction that OrderedLineList belongs to"@en ;
+                       rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements/"@en ;
+                       rdfs:label "isLineListOfRedaction"@en .
+
+
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isStanzaListOfRedaction
 :isStanzaListOfRedaction rdf:type owl:ObjectProperty ;
                          rdfs:domain :OrderedStanzaList ;
-                         rdfs:range <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> .
+                         rdfs:range <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> ;
+                         rdfs:comment "This property refers to the Redaction that OrderedStanzaList belongs to"@en ;
+                         rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements/"@en ;
+                         rdfs:label "isStanzaListOfRedaction"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isTheSameAs
@@ -357,9 +481,10 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextLine
 :nextLine rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf <http://purl.org/ontology/olo/core#next> ;
+          owl:inverseOf :previousLine ;
           rdfs:domain :Line ;
           rdfs:range :Line ;
-          rdfs:comment "This property points to Line that follows the Line under analysis"@en ;
+          rdfs:comment "This property points to next Line of the Line under analysis, in a OrderedLineList or in a Stanza"@en ;
           rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
           rdfs:label "nextLine"@en .
 
@@ -371,7 +496,7 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
             rdfs:domain :Stanza ;
             rdfs:range :Stanza ;
             <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-            rdfs:comment "This property points to  Stanza that follows the Stanza under analysis"@en ;
+            rdfs:comment "This property points to  Stanza that follows the Stanza under analysis in a OrderedStanzaList"@en ;
             rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
             rdfs:label "nextStanza"@en .
 
@@ -379,9 +504,10 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextSyllable
 :nextSyllable rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf <http://purl.org/ontology/olo/core#next> ;
+              owl:inverseOf :previousSyllable ;
               rdfs:domain :Syllable ;
               rdfs:range :Syllable ;
-              rdfs:comment "This property points to the Syllale that follows the Syllable under analysis"@en ;
+              rdfs:comment "This property points to the Syllale that follows the Syllable under analysis in a Word"@en ;
               rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
               rdfs:label "nextSyllable"@en .
 
@@ -389,11 +515,12 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextToken
 :nextToken rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf <http://purl.org/ontology/olo/core#next> ;
+           owl:inverseOf :previousToken ;
            rdfs:domain :Token ;
            rdfs:range :Token ;
            <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
            <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^xsd:dateTime ;
-           rdfs:comment "This property points to a Token that follows the current Token under analysis"@en ,
+           rdfs:comment "This property points to a Token that follows the current Token under analysis in a Line"@en ,
                         "This property points to an instance of Word that follows the current item under analysis"@en ;
            rdfs:label "nextToken"@en .
 
@@ -411,6 +538,21 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
              rdfs:label "nucleusType"@en .
 
 
+###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#partOfSpeech
+:partOfSpeech rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain :Word ;
+              rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                           owl:hasValue <http://postdata.linhd.uned.es/kos/part-of-speech>
+                         ] ;
+              rdfs:comment """A category of words (or, more generally, of lexical items) that have similar grammatical properties. 
+Commonly listed  parts of speech are noun, verb, adjective, adverb, pronoun, preposition, conjunction, interjection, and sometimes numeral, article, or determiner."""@en ;
+              rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements/"@en ;
+              rdfs:label "partOfSpeech"@en .
+
+
 ###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousLine
 :previousLine rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf <http://purl.org/ontology/olo/core#previous> ;
@@ -426,7 +568,7 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                 rdfs:subPropertyOf <http://purl.org/ontology/olo/core#previous> ;
                 rdfs:domain :Stanza ;
                 rdfs:range :Stanza ;
-                rdfs:comment "This property points to the previous item of a list that contains a group of lines (an instance of Stanza) which, together with the current element under analysis"@en ;
+                rdfs:comment "This property points to previous Stanza of the Stanza under analysis, in a OrderedLineList or in a Stanza"@en ;
                 rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
                 rdfs:label "previousStanza"@en .
 
@@ -436,7 +578,7 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                   rdfs:subPropertyOf <http://purl.org/ontology/olo/core#previous> ;
                   rdfs:domain :Syllable ;
                   rdfs:range :Syllable ;
-                  rdfs:comment "This property points to the previous Syllable of a list that contains an instance of Syllable"@en ;
+                  rdfs:comment "This property points to previous Syllable of the Syllable under analysis, in a Word"@en ;
                   rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
                   rdfs:label "previousSyllable"@en .
 
@@ -446,7 +588,8 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                rdfs:subPropertyOf <http://purl.org/ontology/olo/core#previous> ;
                rdfs:domain :Token ;
                rdfs:range :Token ;
-               rdfs:comment "This property points to an instance of Punctuation that preceeds the current item under analysis" ;
+               rdfs:comment "This property points to previous Token of the Token under analysis, in a Line" ;
+               rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
                rdfs:label "previousToken"@en .
 
 
@@ -699,11 +842,14 @@ Eg.: 3/4 (= third syllable in a four-syllable word)"""@en ;
         rdfs:label "weight"@en .
 
 
-###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#wordNUmber
-:wordNUmber rdf:type owl:DatatypeProperty ;
+###  http://postdata.linhd.uned.es/ontology/postdata-structuralElements#wordNumber
+:wordNumber rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf <http://purl.org/ontology/olo/core#index> ;
             rdfs:domain :Word ;
-            rdfs:range xsd:positiveInteger .
+            rdfs:range xsd:positiveInteger ;
+            rdfs:comment "Position of the word within the line to which it belongs"@en ;
+            rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements"@en ;
+            rdfs:label "wordNumber"@en .
 
 
 #################################################################
@@ -722,12 +868,12 @@ Eg.: 3/4 (= third syllable in a four-syllable word)"""@en ;
                                                                                    owl:onClass :Line
                                                                                  ] ,
                                                                                  [ rdf:type owl:Restriction ;
-                                                                                   owl:onProperty :hasLineList ;
+                                                                                   owl:onProperty :hasLineItem ;
                                                                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                                                    owl:onClass :OrderedLineList
                                                                                  ] ,
                                                                                  [ rdf:type owl:Restriction ;
-                                                                                   owl:onProperty :hasStanzaList ;
+                                                                                   owl:onProperty :hasStanzaItem ;
                                                                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                                                    owl:onClass :OrderedStanzaList
                                                                                  ] .
@@ -754,7 +900,10 @@ Eg.: 3/4 (= third syllable in a four-syllable word)"""@en ;
                         owl:onDataRange xsd:string
                       ] ;
       <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-      rdfs:comment """A unit of verse that usually ends in a visual or typographic break and generally characterized by its length and meter
+      rdfs:comment """As a structure, a List can be modelled from two points of view:
+- An item (a subclass of old:slot) of the list of lines of the Redaction 
+- A list of tokens"""@en ,
+                   """A unit of verse that usually ends in a visual or typographic break and generally characterized by its length and meter
 Eg.: “As armas e os barões assinalados” - from Os Lusíadas""" ;
       rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements" ;
       rdfs:label "Line"@en .
@@ -820,7 +969,10 @@ Eg.: “As armas e os barões assinalados” - from Os Lusíadas""" ;
                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                           owl:onDataRange xsd:string
                         ] ;
-        rdfs:comment """Group of lines. Usually, this grouping forms the basic recurring metrical unit of a poem, song or play
+        rdfs:comment """As a structure, a Stanza can be modelled from two points of view:
+- An item (a subclass of old:slot) of the list of Stanzas of the Redaction 
+- A list of lines"""@en ,
+                     """Group of lines. Usually, this grouping forms the basic recurring metrical unit of a poem, song or play
 Eg.: As armas e os barões assinalados,
 Que da ocidental praia Lusitana,
 Por mares nunca de antes navegados,
@@ -853,7 +1005,8 @@ Novo Reino, que tanto sublimaram;""" ;
                             owl:onDataRange xsd:string
                           ] ;
           <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-          rdfs:comment """A single unit of speech sound as written or spoken; specifically, a vowel preceded by zero to three consonants (“awl,” “bring,” “strand”), and followed by zero to four consonants (“too,” “brag,” “gloss,” “stings,” “sixths”).
+          rdfs:comment "As a structure, a Syllable is an item (a subclass of old:slot) of a Word"@en ,
+                       """A single unit of speech sound as written or spoken; specifically, a vowel preceded by zero to three consonants (“awl,” “bring,” “strand”), and followed by zero to four consonants (“too,” “brag,” “gloss,” “stings,” “sixths”).
 It is the reference unit of a literary analysis, in some poetic tradicions
 Eg.: The onset and coda of the rhyme vowel""" ;
           rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements" ;
@@ -900,7 +1053,10 @@ Eg.: The onset and coda of the rhyme vowel""" ;
                       ] ;
       <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
       rdfs:comment """A single distinct meaningful element of writing, used with others (or sometimes alone) to form a sentence and typically shown with a space on either side when written or printed
-Eg.: The word “life”"""@en ;
+Eg.: The word “life”"""@en ,
+                   """As a structure, a Word can be modelled from two points of view:
+- An item (a subclass of old:slot) of the Line 
+- A list of Syllables"""@en ;
       rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-structuralElements" ;
       rdfs:label "Word"@en .
 
@@ -921,19 +1077,14 @@ Eg.: The word “life”"""@en ;
 #    Individuals
 #################################################################
 
-###  http://postdata.linhd.uned.es/kos/grammatical-category
-<http://postdata.linhd.uned.es/kos/grammatical-category> rdf:type owl:NamedIndividual ,
-                                                                  <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
-
-
 ###  http://postdata.linhd.uned.es/kos/nucleus-type
 <http://postdata.linhd.uned.es/kos/nucleus-type> rdf:type owl:NamedIndividual ,
                                                           <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
-###  http://postdata.linhd.uned.es/kos/poeticLicense-type
-<http://postdata.linhd.uned.es/kos/poeticLicense-type> rdf:type owl:NamedIndividual ,
-                                                                <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+###  http://postdata.linhd.uned.es/kos/part-of-speech
+<http://postdata.linhd.uned.es/kos/part-of-speech> rdf:type owl:NamedIndividual ,
+                                                            <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
 ###  http://postdata.linhd.uned.es/kos/stanza-type
