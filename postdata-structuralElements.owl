@@ -2044,9 +2044,9 @@ This property is a shortcut of: F2 Expression P165i is incorporated in F24 Publi
         <rdfs:label xml:lang="en">was assigned by</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R52_used_rule">
-        <rdfs:label xml:lang="en">used rule</rdfs:label>
         <rdfs:comment xml:lang="en">This property associates the event of assigning an instance of F13 Identifier with the instructions followed by an actor, such as a Bibliographic Agency, in creating that identifier.
 </rdfs:comment>
+        <rdfs:label xml:lang="en">used rule</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R52i_was_the_rule_used_in">
         <rdfs:label xml:lang="en">was the rule used in</rdfs:label>
@@ -2074,9 +2074,9 @@ This property is a shortcut of: F2 Expression P165i is incorporated in F24 Publi
 </rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R55_has_nomen_form">
+        <rdfs:label xml:lang="en">has nomen form</rdfs:label>
         <rdfs:comment xml:lang="en">This property associates an instance of F35 Nomen Use Statement with the instance of E55 Type that characterizes the Nomen referred to in the Nomen Use Statement, such as abbreviation, full name etc. In the case of abbreviations, the source of this form may or may not be explicitly mentioned.
 </rdfs:comment>
-        <rdfs:label xml:lang="en">has nomen form</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R55i_is_nomen_form_in">
         <rdfs:label xml:lang="en">is nomen form in</rdfs:label>
