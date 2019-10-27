@@ -1,0 +1,177 @@
+<html>
+<h2 id="desc" class="list">postdata-structuralElements ontology: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>As mentioned in previously sections, the objective of this ontology is to cover the aspects relating to the formal structure of a poem, that is to say, the formal structure of a <a href="http://postdata.linhd.uned.es/ontology/postdata-core/documentation/index.html#http://postdata.linhd.uned.es/ontology/postdata-core#Redaction" target="new">Redaction</a>  of a <a href="http://postdata.linhd.uned.es/ontology/postdata-core/documentation/index.html#http://postdata.linhd.uned.es/ontology/postdata-core#PoeticWork" target="new">Poetic Work</a> in the <a href="http://postdata.linhd.uned.es/ontology/postdata-core" target="new">postdata-core ontology</a> .<br/>
+The ontology prefix  is <strong>pdstruct</strong></p> 
+<p>Therefore following classes were modeled:</p>
+<ul><li>
+ The <a href="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line">pdstruct:Line</a> class, that represents a unit of verse that usually ends in a visual or typographic break and generally characterized by its length and meter<br/>
+For example: “As armas e os barões assinalados” - from Os Lusíada.</li>
+<li>The <a href="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza">pdstruct:Stanza</a> class, tGroup of lines. Usually, this grouping forms the basic recurring metrical unit of a poem, song or play.<br/>
+For example: <br/> As armas e os barões assinalados,<br/>
+Que da ocidental praia Lusitana,<br/>
+Por mares nunca de antes navegados,<br/>
+Passaram ainda além da Taprobana,<br/>
+Em perigos e guerras esforçados,<br/>
+Mais do que prometia a força humana,<br/>
+E entre gente remota edificaram<br/>
+Novo Reino, que tanto sublimaram;.<br/>
+</li>
+<li>The <a href="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Token">Token</a> class, a lexical element. This is a base class of <a href="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word">Word</a> class and <a href="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Punctuation">Punctuation </a>class.</li>
+<li>The <a href="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word">Word</a> class, a single distinct meaningful element of writing, used with others (or sometimes alone) to form a sentence and typically shown with a space on either side when written or printed<.br/>
+For example, the word “life”.</li>
+<li>The <a href="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Punctuation">Punctuation</a> class, specific markings, signs and symbols that are used in and around sentences to give them structure and to allow for correct understanding and comprehension.<br/></li>
+<li>The <a href="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable">Syllable</a> class, a single unit of speech sound as written or spoken; specifically, a vowel preceded by zero to three consonants (“awl,” “bring,” “strand”), and followed by zero to four consonants (“too,” “brag,” “gloss,” “stings,” “sixths”).<br/>
+It is the reference unit of a literary analysis, in some poetic tradicions.<br/>
+For example, the onset and coda of the rhyme vowel.<br/></li>
+</ul>
+
+
+<p>The structural elements of the <a href="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction" target="new">Redaction</a> are containers of smaller structures.
+In the <a href="http://postdata.linhd.uned.es/ontology/postdata-structuralElements">structuralElements ontology</a>, the <a href="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction" target="new">Redaction</a> contains a mandatory <a href="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedLineList">list of lines</a> and  also it could contain a <a href="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedStanzaList">list of stanzas</a> if it is necessary.
+In order to obtain, the <a href="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line">lines</a> of each <a href="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza">stanza </a>, mandatory constraints have been define to fix the  first linea (<strong>pdstruct:hasFirstLine exactly 1 pdstruct:Line</strong>) and last line (<strong>pdstruct:hasLastLine exactly 1 pdstruct:Line</strong>) of the <a href="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza">stanza</a>, so that they would be extracted taking into account the range of the line index.<br/>
+Although the <a href="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line">line</a> content could be save as a string through the  <a href="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#content">data property content</a>, also the lines (or verses) could have a <a href="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedTokenList">list of tokens (words and punctuation marks)</a>. This feature could give suport to a  NLP tokenization tools results.<br/>
+The elements in these mentioned lists are ordered, and therefore. Those lists have been modeled  using <a href="http://smiy.sourceforge.net/olo/spec/orderedlistontology.html#" target="new">The Ordered List Ontology ontology</a> as a specialization of Orderedlist class.
+The constituent elements are defined as subclasses of <a href="http://smiy.sourceforge.net/olo/spec/orderedlistontology.html#Slot" target="new">Slot</a> and in this way they have the properties that allow to know their position and to establish the following and previous elements.</p>
+
+<a name="examples"></a>
+<div id="examples">
+<h3 id="ns" class="list">Use examples</h3>
+<p>In order to facilitate the understanding of the some classes and properties of this vocabulary, some examples are provided below.</p>
+<h4>Example 1. Lines and Stanzas</h4>
+<p>The example presented corresponds to the formal structural information about the <a href="http://postdata.linhd.uned.es/ontology/postdata-corePoeticWork" target="new">PoeticWork</a>  "Mo-chion dot bhronnadh, a Bhriain", written by Brian O Corcrain. The information is extracted from <a href="https://bardic.celt.dias.ie" target="new">Bardic Poetry database</a></p> 
+<p>
+	<div style="border:1px dashed #000000; padding: 1%">
+<h4> Example description</h4>
+<p>In order to contextualize, the information about the <a href="http://postdata.linhd.uned.es/ontology/postdata-corePoeticWork" target="new">PoeticWork</a> and one of its manifestations(<a href="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction" target="new">Redaction</a>)  has provided. This redaction can be found at <a href="https://bardic.celt.dias.ie/pdf/POEM1400.pdf" target="new">https://bardic.celt.dias.ie/pdf/POEM1400.pdf</a>.<br/>
+Logically, the center of the example is to manage the structural information. For this, the poem content is showed through the lines content. For this reason, an <a href="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedLineList">ordered line list</a> has been created with all of its lines asociated.<br/>
+
+  In this example, the <a href="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza">stanzas</a> of the poem have also been identified. So, an <a href="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedStanzaList">ordered list of stanzas </a> has been created and associated to the <a href="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction">Redaction</a>.<br/> In order to access to the  lines of a stanza, the properties <a href="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasFirstLine">hasFirstLine</a> and <a href="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLastLine">hasLastLine</a> have been used. <br/>The <a href="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line">lines</a>, that belongs to the general line list, count with a <a href="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#lineNumber">lineNumber property,</a> and this make posible to obtain the next and previous line. An sparql query could extract the next and previous line using the numberLine information.<br/>
+However, it would also be possible to obtain the next and previous line through the <a href="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextLine">next</a> and <a href="http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousLine">previous</a> properties, but this is not always necessary and the implementation of triples would be more tedious and complicated.
+</p>
+</div>
+<div style="text-align: center; padding:10px"><img src="http://postdata.linhd.uned.es/ontology/structuralExample.png" width="50%" align="center"/></div> <br/>
+
+<p>We will show the RDF codes generated with the data of this example. It should be noted that the instances will be represented by their URIs (Uniform Resource Identifier) created according to the following structure <strong>&lt;http://postdata.linhd.uned.es/resource/{Class}/{UUID}&gt;</strong>.<br/>
+For example, the Person is identified by <strong>&lt;http://postdata.linhd.uned.es/resource/Person/ccc591fe0-7f10-11e9-ac29-f2189886299d&gt;</strong><br/>
+The lines and stanzas identifiers have been simplified to facilitate the example understanding .</p>
+
+The next block of RDF code show the triples that corresponds to the described example.<br/>
+<style>.padre {
+  background-color: #fafafa;
+  margin: 0auto;
+  padding: 1rem;
+  border: 1px dashed #ccc;
+  width:80%;
+  /* IMPORTANTE */
+  text-align: center;
+}
+.padre dt{
+text-align: left;
+font-weight: lighter;
+
+}
+.padre dd{
+text-align: left;
+font-weight: lighter;
+
+}
+</style>
+
+<div class="padre"  ><div>
+<dt>@prefix pdstruct: &lt;http://postdata.linhd.uned.es/ontology/postdata-structuralElements#&gt; .</dt>
+<dt>@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .</dt>
+<dt>@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .</dt>
+<dt>@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .</dt>
+<dt>@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .</dt>
+<dt>@prefix pdcore: &lt;http://postdata.linhd.uned.es/ontology/postdata-core#&gt; .</dt>
+<dt>@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .</dt>
+<dt>@prefix dc: &lt;http://purl.org/dc/elements/1.1/&gt; .</dt>
+
+
+<dt>&lt;http://postdata.linhd.uned.es/resource/PoeticWork/c41b20c6-7f10-11e9-ac29-f2189886289e&gt; a &lt;pdcore:PoeticWork&gt; ;</dt>
+	<dd>dc:title "Mo-chion dot bhronnadh, a Bhriain " ;</dd>
+	<dd>pdcore:function "Thanks mp" ;</dd>
+	<dd>pdcore:theme "Feart feile, poetic miracle " ;</dd>
+	<dd>pdcore:hasCreator &lt;http://postdata.linhd.uned.es/resource/CreatorRole/c41b20c6-7f10-11e9-ac29-f2189886299e&gt; ;</dd>
+	<dd>pdcore:theme "the reading and writing of poetry " .</dd>
+
+<dt>&lt;http://postdata.linhd.uned.es/resource/Redaction/c41b20c6-7f10-11e9-ac29-f2189886289d&gt; a &lt;pdcore:Redaction&gt; ;</dt>
+	<dd>pdcore:incipit "Mo-chion dot bhronnadh, a Bhriain " ;</dd>
+	<dd>pdstruct:hasFirstStanza &lt;http://postdata.linhd.uned.es/resource/Stanza/00000000-0000-0000-0000-000000000001&gt; ;</dd>
+	<dd>pdstruct:hasStanzaList &lt;http://postdata.linhd.uned.es/resource/OrderedStanzaList/c41b20c6-7f10-11e9-ac29-f2189886299e&gt; ;</dd>
+	<dd>pdstruct:hasLineList &lt;http://postdata.linhd.uned.es/resource/OrderedLineList/00000000-0000-0000-0000-000000000001&gt; .</dd>
+
+<dt>&lt;http://postdata.linhd.uned.es/resource/CreatorRole/c41b20c6-7f10-11e9-ac29-f2189886289e&gt; a &lt;pdcore:Creator&gt; ;</dt>
+	<dd>pdcore:isPerformedBy &lt;http://postdata.linhd.uned.es/resource/Person/c41b20c6-7f10-11e9-ac29-f2189886299e&gt; .
+
+<dt>&lt;http://postdata.linhd.uned.es/resource/Person/c41b20c6-7f10-11e9-ac29-f2189886299e&gt; a &lt;pdcore:Person&gt; ;</dt>
+	<dd>pdstruct:surname "O Corcrain " ;
+	<dd>pdstruct:forename "Brian" .
+
+<dt>&lt;http://postdata.linhd.uned.es/resource/OrderedStanzaList/c41b20c6-7f10-11e9-ac29-f2189886289e&gt; a &lt;pdstruct:OrderedStanzaList&gt; ;</dt>
+	<dd>pdstruct:hasStanza &lt;http://postdata.linhd.uned.es/resource/Stanza/00000000-0000-0000-0000-000000000001&gt; , &lt;http://postdata.linhd.uned.es/resource/Stanza/00000000-0000-0000-0000-000000000002&gt; .</dd>
+
+<dt>&lt;http://postdata.linhd.uned.es/resource/OrderedLineList/c41b20c6-7f10-11e9-ac29-f2189886289e&gt; a &lt;pdstruct:OrderedLineList&gt; ;</dt>
+	<dd>pdstruct:hasLine &lt;http://postdata.linhd.uned.es/resource/Line/00000000-0000-0000-0000-000000000001&gt; , &lt;http://postdata.linhd.uned.es/resource/Line/00000000-0000-0000-0000-000000000002&gt; , &lt;http://postdata.linhd.uned.es/resource/Line/00000000-0000-0000-0000-000000000003&gt; , &lt;http://postdata.linhd.uned.es/resource/Line/00000000-0000-0000-0000-000000000004&gt; , &lt;http://postdata.linhd.uned.es/resource/Line/00000000-0000-0000-0000-000000000005&gt; , &lt;http://postdata.linhd.uned.es/resource/Line/00000000-0000-0000-0000-000000000006&gt; , &lt;http://postdata.linhd.uned.es/resource/Line/00000000-0000-0000-0000-000000000007&gt; , &lt;http://postdata.linhd.uned.es/resource/Line/00000000-0000-0000-0000-000000000008&gt; .</dd>
+
+<dt>&lt;http://postdata.linhd.uned.es/resource/Stanza/00000000-0000-0000-0000-000000000001&gt; a &lt;pdstruct:Stanza&gt; ;</dt>
+	<dd>pdstruct:stanzaNumber "1"^^xsd:int ;
+	<dd>pdstruct:hasFirstLine &lt;http://postdata.linhd.uned.es/resource/Line/00000000-0000-0000-0000-000000000001&gt; ;</dd>
+	<dd>pdstruct:hasLastLine &lt;http://postdata.linhd.uned.es/resource/Line/00000000-0000-0000-0000-000000000004&gt; .</dd>
+
+<dt>&lt;http://postdata.linhd.uned.es/resource/Stanza/00000000-0000-0000-0000-000000000002&gt; a &lt;pdstruct:Stanza&gt; ;</dt>
+	<dd>pdstruct:stanzaNumber "2"^^xsd:int ;
+	<dd>pdstruct:hasFirstLine &lt;http://postdata.linhd.uned.es/resource/Line/00000000-0000-0000-0000-000000000005&gt; ;</dd>
+	<dd>pdstruct:hasLastLine &lt;http://postdata.linhd.uned.es/resource/Line/00000000-0000-0000-0000-000000000008&gt; .</dd>
+
+<dt>&lt;http://postdata.linhd.uned.es/resource/Line/00000000-0000-0000-0000-000000000001&gt; a &lt;pdstruct:Line&gt; ;</dt>
+	<dd>pdstruct:content "Mo chion dot bhronnadh, a Bhriain, " .</dd>
+	<dd>pdstruct:lineNumber "1"^^xsd:int ;</dd>
+
+
+<dt>&lt;http://postdata.linhd.uned.es/resource/Line/00000000-0000-0000-0000-000000000002&gt; a &lt;pdstruct:Line&gt; ;</dt>
+	<dd>pdstruct:content "a mhic na flatha a finnChliaigh, " .</dd>
+	<dd>pdstruct:lineNumber "2"^^xsd:int ;</dd>
+
+
+<dt>&lt;http://postdata.linhd.uned.es/resource/Line/00000000-0000-0000-0000-000000000003&gt; a &lt;pdstruct:Line&gt; ;</dt>
+	<dd>pdstruct:content "a aistrigh an toirbheirt truim, " .</dd>
+	<dd>pdstruct:lineNumber "3"^^xsd:int ;</dd>
+
+
+<dt>&lt;http://postdata.linhd.uned.es/resource/Line/00000000-0000-0000-0000-000000000004&gt; a &lt;pdstruct:Line&gt; ;</dt>
+	<dd>pdstruct:content "h’aisgidh badh oirdheirc aguinn. " .</dd>
+	<dd>pdstruct:lineNumber "4"^^xsd:int ;</dd>
+
+
+<dt>&lt;http://postdata.linhd.uned.es/resource/Line/00000000-0000-0000-0000-000000000005&gt; a &lt;pdstruct:Line&gt; ;</dt>
+	<dd>pdstruct:content "Ní chuala go bhfuair ollamh " .</dd>
+	<dd>pdstruct:lineNumber "5"^^xsd:int ;</dd>
+
+
+<dt>&lt;http://postdata.linhd.uned.es/resource/Line/00000000-0000-0000-0000-000000000006&gt; a &lt;pdstruct:Line&gt; ;</dt>
+	<dd>pdstruct:content "meadh don aisgidh fhuaramar; " .</dd>
+	<dd>pdstruct:lineNumber "6"^^xsd:int ;</dd>
+
+
+<dt>&lt;http://postdata.linhd.uned.es/resource/Line/00000000-0000-0000-0000-000000000007&gt; a &lt;pdstruct:Line&gt; ;</dt>
+	<dd>pdstruct:content "dot ghruaidh ttaidhleach téid a mheas " .</dd>
+	<dd>pdstruct:lineNumber "7"^^xsd:int ;</dd>
+
+
+<dt>&lt;http://postdata.linhd.uned.es/resource/Line/00000000-0000-0000-0000-000000000008&gt; a &lt;pdstruct:Line&gt; ;</dt>
+	<dd>pdstruct:content "tar mhéid ainbhreath na n-éigeas. " .</dd>
+	<dd>pdstruct:lineNumber "8"^^xsd:int ;</dd>
+
+
+
+
+
+
+
+
+	
+
+
+</div>
+</html>

@@ -1,0 +1,403 @@
+{
+  "@context" : {
+    "isRefrainOmitted" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isRefrainOmitted",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "morphologicalAnnotation" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#morphologicalAnnotation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isFirstLine" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isFirstLine",
+      "@type" : "@id"
+    },
+    "hasFirstLine" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasFirstLine",
+      "@type" : "@id"
+    },
+    "ordered_list" : {
+      "@id" : "http://purl.org/ontology/olo/core#ordered_list",
+      "@type" : "@id"
+    },
+    "Line" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Line"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "previousToken" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousToken",
+      "@type" : "@id"
+    },
+    "phoneticTranscription" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#phoneticTranscription",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "firstHemistich" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#firstHemistich",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "license" : {
+      "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#license"
+    },
+    "next" : {
+      "@id" : "http://purl.org/ontology/olo/core#next",
+      "@type" : "@id"
+    },
+    "onset" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#onset",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "OrderedLineList" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedLineList"
+    },
+    "isFirstToken" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isFirstToken",
+      "@type" : "@id"
+    },
+    "previousSyllable" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousSyllable",
+      "@type" : "@id"
+    },
+    "index" : {
+      "@id" : "http://purl.org/ontology/olo/core#index",
+      "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+    },
+    "isLastStanza" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isLastStanza",
+      "@type" : "@id"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "Punctuation" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Punctuation"
+    },
+    "isCallOf" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isCallOf",
+      "@type" : "@id"
+    },
+    "hasStanzaItem" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanzaItem",
+      "@type" : "@id"
+    },
+    "hasLastToken" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLastToken",
+      "@type" : "@id"
+    },
+    "lemma" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#lemma",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "previousLine" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousLine",
+      "@type" : "@id"
+    },
+    "slot" : {
+      "@id" : "http://purl.org/ontology/olo/core#slot",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "hasStanzaList" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasStanzaList",
+      "@type" : "@id"
+    },
+    "Concept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "hasFirstSyllable" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasFirstSyllable",
+      "@type" : "@id"
+    },
+    "hasLastLine" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLastLine",
+      "@type" : "@id"
+    },
+    "hasLineItem" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLineItem",
+      "@type" : "@id"
+    },
+    "isRefrain" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isRefrain",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "lineNumber" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#lineNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+    },
+    "isLemma" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isLemma",
+      "@type" : "@id"
+    },
+    "isLastToken" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isLastToken",
+      "@type" : "@id"
+    },
+    "previousStanza" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#previousStanza",
+      "@type" : "@id"
+    },
+    "hasLineList" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLineList",
+      "@type" : "@id"
+    },
+    "hasSyllable" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasSyllable",
+      "@type" : "@id"
+    },
+    "coda" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#coda",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isFirstSyllable" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isFirstSyllable",
+      "@type" : "@id"
+    },
+    "isTheSameAs" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isTheSameAs",
+      "@type" : "@id"
+    },
+    "Agent" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Agent"
+    },
+    "nextToken" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextToken",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "nextStanza" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextStanza",
+      "@type" : "@id"
+    },
+    "OrderedList" : {
+      "@id" : "http://purl.org/ontology/olo/core#OrderedList"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "belongsToWord" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToWord",
+      "@type" : "@id"
+    },
+    "OrderedStanzaList" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#OrderedStanzaList"
+    },
+    "paraphrasis" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#paraphrasis",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "wordNumber" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#wordNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+    },
+    "hasLastStanza" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLastStanza",
+      "@type" : "@id"
+    },
+    "isInflectedForm" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isInflectedForm",
+      "@type" : "@id"
+    },
+    "previous" : {
+      "@id" : "http://purl.org/ontology/olo/core#previous",
+      "@type" : "@id"
+    },
+    "belongsToLineList" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToLineList",
+      "@type" : "@id"
+    },
+    "Syllable" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Syllable"
+    },
+    "containsMentionToPlace" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#containsMentionToPlace",
+      "@type" : "@id"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "nextSyllable" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextSyllable",
+      "@type" : "@id"
+    },
+    "content" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#content",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "belongsToStanzaList" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToStanzaList",
+      "@type" : "@id"
+    },
+    "hasFirstStanza" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasFirstStanza",
+      "@type" : "@id"
+    },
+    "Place" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Place"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "containsMentionTo" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#containsMentionTo",
+      "@type" : "@id"
+    },
+    "Slot" : {
+      "@id" : "http://purl.org/ontology/olo/core#Slot"
+    },
+    "nextLine" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nextLine",
+      "@type" : "@id"
+    },
+    "typeOfStanza" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#typeOfStanza",
+      "@type" : "@id"
+    },
+    "ConceptScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "isStanzaListOfRedaction" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isStanzaListOfRedaction",
+      "@type" : "@id"
+    },
+    "hasLine" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLine",
+      "@type" : "@id"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher"
+    },
+    "isFirstStanza" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isFirstStanza",
+      "@type" : "@id"
+    },
+    "Word" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Word"
+    },
+    "hasLastSyllable" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasLastSyllable",
+      "@type" : "@id"
+    },
+    "Stanza" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Stanza"
+    },
+    "hasFirstToken" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasFirstToken",
+      "@type" : "@id"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/elements/1.1/date"
+    },
+    "nucleusType" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#nucleusType",
+      "@type" : "@id"
+    },
+    "positionInWord" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#positionInWord",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasToken" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#hasToken",
+      "@type" : "@id"
+    },
+    "notes" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#notes",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isLastSyllable" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isLastSyllable",
+      "@type" : "@id"
+    },
+    "isLastLine" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isLastLine",
+      "@type" : "@id"
+    },
+    "containsMentionToAgent" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#containsMentionToAgent",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "sense" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#sense",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "secondHemistich" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#secondHemistich",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "belongsToStanza" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToStanza",
+      "@type" : "@id"
+    },
+    "isLineListOfRedaction" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isLineListOfRedaction",
+      "@type" : "@id"
+    },
+    "isNotMetricStanza" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isNotMetricStanza",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "typeOfStanzaEdition" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#typeOfStanzaEdition",
+      "@type" : "@id"
+    },
+    "stanzaNumber" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#stanzaNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+    },
+    "partOfSpeech" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#partOfSpeech",
+      "@type" : "@id"
+    },
+    "contributors" : {
+      "@id" : "http://purl.org/dc/elements/1.1/contributors"
+    },
+    "Redaction" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"
+    },
+    "Token" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#Token"
+    },
+    "belongsToLine" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#belongsToLine",
+      "@type" : "@id"
+    },
+    "altStanzaNumber" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#altStanzaNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+    },
+    "isEchoOf" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#isEchoOf",
+      "@type" : "@id"
+    },
+    "weight" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#weight",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "inScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+      "@type" : "@id"
+    },
+    "translation" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-structuralElements#translation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    }
+  }
+}
